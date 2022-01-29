@@ -34,8 +34,8 @@ header {
     z-index: 100;
     a {
       img {
-        width: 110px;
-        height: 150px;
+        width: 135px;
+        //height: 150px;
       }
     }
   }
@@ -186,15 +186,6 @@ footer {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
   -webkit-filter: blur(0.02rem);
-}
-
-@keyframes hue {
-  from {
-    filter: hue-rotate(0);
-  }
-  to {
-    filter: hue-rotate(360deg);
-  }
 }
 
 //====== ABOUT ==========

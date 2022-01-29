@@ -104,6 +104,28 @@
   }
 }
 
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
 /*=== INITIAL TYPOGRAPHY===*/
 :root {
   --color-one: #4362ce;
@@ -247,8 +269,7 @@ header div.myLogo {
 }
 
 header div.myLogo a img {
-  width: 110px;
-  height: 150px;
+  width: 135px;
 }
 
 header nav {
@@ -455,28 +476,6 @@ footer {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
   -webkit-filter: blur(0.02rem);
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0);
-            filter: hue-rotate(0);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0);
-            filter: hue-rotate(0);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
 }
 
 #about .container h3 {
