@@ -361,7 +361,7 @@ footer {
 }
 
 #hero div.container .sub-name {
-  font-family: var(--text-opensans);
+  font-family: var(--text-consolas);
   font-weight: 600;
   color: white;
   text-transform: uppercase;
@@ -477,6 +477,7 @@ footer {
       -ms-flex: 60%;
           flex: 60%;
   margin-left: 9rem;
+  font-family: var(--text-consolas);
 }
 
 #about .container .details .about-text p.about-up {

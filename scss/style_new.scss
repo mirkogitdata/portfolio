@@ -218,6 +218,7 @@ footer {
       .about-text {
         flex: 60%;
         margin-left: 9rem;
+        font-family: var(--text-consolas);
         p.about-up {
           @include about-up;
           text-align: left;

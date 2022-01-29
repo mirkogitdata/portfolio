@@ -93,7 +93,7 @@ img {
 }
 
 @mixin sub-name {
-  font-family: var(--text-opensans);
+  font-family: var(--text-consolas);
   font-weight: 600;
   //color: darken($text-fff, 33%);
   color: darken(#fff, 0%);
