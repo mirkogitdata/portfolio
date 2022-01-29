@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "grid_system.scss"
+    ],
+    "names": [],
+    "file": "grid_system.css"
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Website portfolio by Frontend Developer, Mirko Zivic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!-- SCSS into CSS-->
+<link href="./scss/style_new.css" rel="stylesheet" type="text/css">
+<!-- ANIMATE ON SCROLL-->	
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/animatescroll.js"></script>
+<link href="css/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">  
+	 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+</head>
+	
+<body>	
+<!-- NAVIGATION -->
+<header>
+    <div class="myLogo">
+        <a href="index.html">
+            <img src="image/my-logo.png" alt="check image">
+        </a>
+    </div>
+    <nav id="nav-side">
+        <a href="#"><img src="image/menu01.png" class="nav-toggle-btn" alt=""></a>
+        <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#services">Services</a></li>
+             <li><a href="#portfolio">Portfolio</a></li>
+             <li><a href="#contact">Contact</a></li>
+        </ul>
+       <div class="soc">
+             <a href="https://www.linkedin.com/in/mirkozivic/" target="_blank"><img  src="image/linkedin.png" alt=""></a>
+             <a href="https://github.com/mirkogitdata" target="_blank"><img src="image/github.png" alt=""></a>
+             <a href="https://www.behance.net/search?content=projects&sort=appreciations&time=week&featured_on_behance=true&search=front%20end%20development" target="_blank"><img src="image/behance.png" alt=""></a> 
+       </div> <!--end .soc -->
+   </nav>
+</header>
+
+<!-- HERO -->	
+<div id="hero">
+	<div class="container resp cf">
+	     <h1 class="name" data-aos="zoom-in-down" data-aos-duration="1100" data-aos="ease-in-out">Mirko Živić</h1>
+		 <h3 data-aos="fade-right" data-aos-duration="0" data-aos="ease-out"  data-aos-delay="600" class="sub-name">
+			 <span class="txt-type" data-wait="4000" data-words='["Front-End Developer", "Web Designer","Open to work for you","Feel free to contact me"]'></span><span class="dot"></span>
+		</h3>
+		 <div class="scroll back-to-top" data-aos="flip-up" data-aos-duration="300" data-aos-delay="2200" data-aos="ease-in-out-quart" data-aos-once="true">
+              <a href="#about" class="scrollMe"><i class="fas fa-chevron-up"></i></a>
+		 </div> <!-- end .scroll-->
+	</div> <!-- end .container-->
+</div> <!-- end #hero-->
+<!-- ABOUT -->	
+<section id="about">
+	 <div class="container cf">
+	      <h3><span>Creativity</span> meets <span>technology</span></h3>
+            <div class="details">
+                <div class="profile">
+                    <img src="image/Mirko Zivic.jpg" alt="">
+                </div> <!-- end .profile-->
+                <div class="about-text">
+                     <p class="about-up">My focus is the Frontend development with mindset to collaborate with clients to design a perfect web page and solve problems together. I make my web pages functional and dynamic.
+                     </p>
+                     <p class="about-down">Always ready to learn something new and provide better
+                          digital experience.
+                    </p>	 
+                    <div class="aboutButtons">
+                        <a  href="#services" class="button1 scrollTo">More info</a>
+                        <a href="#portfolio" class="button2 scrollTo">Projects</a>
+                    </div> <!-- end .aboutButtons-->
+                </div> <!-- end .about-text-->
+            </div>
+	 </div> <!-- end .container-->
+</section>
+<!-- SKILLS -->	
+<section id="skills">
+	<div class="container cf">
+	    <h2><span>E</span>xpertise with websites</h2>
+		<p class="h2-sub">Explore my skills</p>
+	</div><!-- end .container-->
+	<div class="center">
+        <!-- <h3 class="skill-heading">Frontend development</h3> -->
+        <div class="skillBox">
+            <p>HTML5</p>
+            <p>72%</p>
+            <div class="skill">
+                 <div class="skill-level num1"></div>
+            </div>
+        </div> <!--end .skillBox-->
+        <div class="skillBox">
+            <p>CSS3 | SCSS</p>
+            <p>70%</p>
+            <div class="skill">
+                 <div class="skill-level num2"></div>
+            </div>
+        </div> <!--end .skillBox-->
+        <div class="skillBox">
+            <p>JavaScript | ES6 | OOP</p>
+            <p>53%</p>
+            <div class="skill">
+                 <div class="skill-level num3"></div>
+            </div>
+        </div> <!--end .skillBox-->
+       <div class="skillBox">
+            <p>ReactJS | JSON | REST API</p>
+            <p>54%</p>
+            <div class="skill">
+                 <div class="skill-level num4"></div>
+            </div>
+        </div> <!--end .skillBox-->
+        <div class="skillBox">
+            <p>JQuery | VueJS | Boostrap</p>
+            <p>60%</p>
+            <div class="skill">
+                 <div class="skill-level num5"></div>
+            </div>
+        </div> <!--end .skillBox-->
+        <div class="skillBox">
+            <p>Photoshop | Sketch | Figma</p>
+            <p>71%</p>
+            <div class="skill">
+                 <div class="skill-level num6"></div>
+            </div>
+        </div> <!--end .skillBox-->
+     </div> <!--end .center-->
+</section>
+<!-- EXPERTISE -->	
+<section id="services">
+	<div class="container cf">
+	       <h2><span>W</span>hat can I do for you?</h2>
+		<p class="h2-sub">My skills presentation</p>
+	</div> <!-- end .container-->
+	<div class="product1 text1 cf">
+		     <div class="product1-text">
+		         <h3>I design websites<br>using Photoshop</h3>
+                 <p class="product-text">The first step leading to beautiful and functional website is it's design. On the basic of the brief prepared by the clients create in Photoshop website layout.</p>
+                 <p class="product-text">My attention during design process is directed to  typography, color model and type of images. Support pixel-perfect orientation to go in line with present trends.</p>
+		     </div> <!-- end .text-->
+             <article class="design" data-aos="zoom-in-down" data-aos-duration="1400" data-aos-delay="900" data-aos-easing="ease">
+               <img src="image/UI design.jpg" alt=""  alt="">
+            </article>
+    </div> <!-- end .product1 -->
+	<div class="product2 text1 cf">
+		      <div class="product1-text">
+		         <h3 class="h3Left">Now I coding in HTML5/CSS3/JS</h3>
+                         <p class="product-text">Clarity and correctness of the code are the most important value for me. All the projects that I conduct are in confornity with the lastest W3C standards.</p>
+                         <p class="product-text">When coding I use the HTML5, CSS3,&nbsp; JavaScript with frameworks such us Angular, React, Sass/Less and Boostrap. In my lastest projects I was use fexbox and grid for more responsive layout.</p>
+		     </div> <!-- end .text-->
+		     <article class="code" data-aos="zoom-in-down" data-aos-duration="1400" data-aos-delay="900" data-aos-easing="ease">
+                         <img src="image/Coding.jpg" alt=""  alt="">
+                     </article>
+    </div> <!-- end .product1 -->
+	<div class="product3 text1 cf">
+		     <div class="product1-text">
+		         <h3>Provide responsive<br>experience for many devices</h3>
+                         <p class="product-text">For different devices coding responsive lines of code with
+                           properties and values. Develop navside navigation with customize properties. Always check preview layout with browser developer tool for different device.</p>
+                         <p class="product-text">In each project I apply the rules of the right composition. I take care of clarity and user-friendly look.</p>
+		     </div> <!-- end .text-->
+                    <article class="responsive" data-aos="zoom-in-down" data-aos-duration="1400" data-aos-delay="900" data-aos-easing="ease">
+                        <img src="image/responsive.jpg" alt=""  alt="">
+                    </article>
+    </div> <!-- end .product1 -->
+</section> <!-- end #portfolio-->	
+<!-- PORTFOLIO -->
+<section id="portfolio">
+	<div class="container cf">
+	       <h2><span>P</span>ortfolio</h2>
+		<p class="h2-sub">Lastest projects</p>
+	</div> <!-- end .container-->
+	<div class="container cf">
+	     <article class="product1" data-aos="zoom-in-down" data-aos-duration="1200" data-aos-easing="ease">
+		       <a href="rosa.html"><img src="image/project1.png" class="image"  alt="">
+                      <div class="overlay">
+                              <div class="text">Open project</div>  
+                      </div>   <!-- end .overlay -->       
+                </a> 
+                <div class="title">
+	           <h5>Rosa</h5>
+                   <p>FRONT-END TECHNOLOGY</p>
+                   <img src="image/double-left-chevron.png" alt="">
+                </div>   
+	     </article> <!-- end .product1-->
+	     <article class="product2" data-aos="zoom-in-down" data-aos-duration="1200" data-aos-easing="ease">
+		       <a href="corporion.html"><img src="image/project2.jpg" class="image"  alt="">
+                      <div class="overlay">
+                              <div class="text">Open project</div>  
+                      </div>   <!-- end .overlay -->       
+                </a> 
+                <div class="title">
+	           <h5>Corporion</h5>
+                   <p>FRONT-END TECHNOLOGY</p>
+                    <img src="image/double-left-chevron.png" alt="">
+                </div>   
+	      </article> <!-- end .product1-->
+	      <article class="product3" data-aos="zoom-in-down" data-aos-duration="1200" data-aos-easing="ease">
+		       <a href="portfolio.html"><img src="image/project3.jpg" class="image"  alt="">
+                      <div class="overlay">
+                              <div class="text">Open project</div>  
+                      </div>   <!-- end .overlay -->       
+                </a> 
+                <div class="title">
+		   <h5>Portfolio</h5>	
+                   <p>FRONT-END TECHNOLOGY</p>
+                   <img src="image/double-left-chevron.png" alt="">
+                </div>   
+	      </article> <!-- end .product1-->
+	      <article class="product4" data-aos="zoom-in-down" data-aos-duration="1200" data-aos-easing="ease">
+		       <a href="portfolio/Denimer.pdf" target="_blank"><img src="portfolio/denimer.jpg" class="image"  alt="">
+                      <div class="overlay">
+                              <div class="text">Open project</div>  
+                      </div>   <!-- end .overlay -->       
+                </a> 
+                <div class="title">
+	           <h5>Denimer</h5>
+                   <p>WEB DESIGN</p>
+                   <img src="image/double-left-chevron.png" alt="">
+                </div>   
+	      </article> <!-- end .product4-->
+	      <article class="product5" data-aos="zoom-in-down" data-aos-duration="1200" data-aos-easing="ease">
+		       <a href="portfolio/Bizzupdone.pdf" target="_blank"><img src="portfolio/bizzupdone.jpg" class="image"  alt="">
+                      <div class="overlay">
+                              <div class="text">Open project</div>  
+                      </div>   <!-- end .overlay -->       
+                </a> 
+                <div class="title">
+		   <h5>Bizzupdone</h5>	
+                   <p>WEB DESIGN</p>
+                   <img src="image/double-left-chevron.png" alt="">
+                </div>   
+	     </article> <!-- end .product5-->
+	     <article class="product6" data-aos="zoom-in-down" data-aos-duration="1200" data-aos-easing="ease">
+		       <a href="portfolio/Corporion.pdf" target="_blank"><img src="portfolio/corporion.jpg" class="image"  alt="">
+                      <div class="overlay">
+                              <div class="text">Open project</div>  
+                      </div>   <!-- end .overlay -->       
+                </a> 
+                <div class="title">
+	           <h5>Corporion</h5>
+                   <p>WEB DESIGN</p>
+                   <img src="image/double-left-chevron.png" alt="">
+                </div>   
+             </article> <!-- end .product6-->
+	</div> <!-- end .container-->
+</section> <!-- end #portfolio-->
+<!-- EMAIL -->	
+<section id="contact" class="email">
+	<div class="container cf">
+	       <h3><span>W</span>ant to work with me?</h3>
+		<p class="h2-sub">Send email to mirkoduartes@gmail.com</p>
+		<div class="soc">
+		      <h5>Social connection</h5>
+        	      <a href="https://www.linkedin.com/in/mirkozivic/" target="_blank"><img  src="image/linkedin.png" alt=""></a>
+    	              <a href="https://github.com/mirkogitdata" target="_blank"><img src="image/github.png" alt=""></a>
+    	              <a href="https://www.behance.net/search?content=projects&sort=appreciations&time=week&featured_on_behance=true&search=front%20end%20development" target="_blank"><img src="image/behance.png" alt=""></a> 
+        </div> <!--end .soc -->
+	</div> <!-- end .container-->
+</section>	
+<!-- FOOTER --->	
+<footer>
+	<div class="container cf">
+        <p class="copy-right">&copy;&nbsp;2019&nbsp;-&nbsp;2022&nbsp;&nbsp;Mirko Živić</p>    
+	</div> <!-- end .container-->
+</footer>	
+    
+
+<!-- NAVBAR-MENU ON CLICK -->		
+<script type="text/javascript">
+        (function() {
+            var bodyEl = $('body'),
+                navToggleBtn = bodyEl.find('.nav-toggle-btn'),
+	        menuLink = bodyEl.find('nav ul li a');
+            navToggleBtn.on('click', function(e) {
+                bodyEl.toggleClass('active-nav');
+                e.preventDefault();
+            });
+            menuLink.on('click', function() {
+				bodyEl.toggleClass('active-nav').style.display = "none"; //=== return nav to position right: 0;
+			});
+        })();  
+</script>
+<!-- SCROLL-TO-->
+<script src="js/scrollTo.js" type="text/javascript"></script>
+	
+<!-- SCROLL-ME-->
+<script src="js/scrollMe.js" type="text/javascript"></script>
+
+<!-- Animation on scroll -->    
+ 
+<script src="js/aos.js"></script> 
+    
+<script>
+    AOS.init();
+</script> 
+	
+<script src="js/typed.js"></script>
+
+<!--Skills Effect Animation-->
+<script src="js/scroll_out.js"></script>
+<script type="text/javascript">
+    ScrollOut({
+        targets: 'h3, .skill-level, .button1, .button2, .product-text'
+    })
+ </script>
+
+
+</body>
+	
+</html>

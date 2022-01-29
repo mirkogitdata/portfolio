@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,800&subset=cyrillic-ext,latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+/*===COLORS===*/
+
+$color-primary: #23263b;
+$color-secondary: #4362ce;
+$color-fff: #fff;
+$color-overlay: rgba(67, 98, 206, 0.8);
+$color-bg: rgba(80, 86, 135, 0.1);
+/*===TEXT COLOR===*/
+$text-000: #000;
+$text-fff: #fff;
+$text-000sec: lighten($text-000, 15%);
+
+//----- FONT -------
+$text-font: 'Open Sans', sans-serif;
+$text-font2: 'Monoton', cursive;
+$text-skills: consolas;
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+/* Default: 
+
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 12px; } 
+h6 { font-size: 10px; }
+
+*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.5rem 0;
+}
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 6rem 0;
+  font-size: 1.3em;
+}
+
+.cf {
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+//========= HERO =======
+@mixin hero {
+  width: 100%;
+  height: 100vh;
+  background: url('../image/hero-image3.png') center/cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  animation: hue 10s infinite alternate;
+  -webkit-animation: hue 10s infinite alternate;
+}
+
+@mixin name {
+  text-shadow: 2px 0.2px;
+  color: $text-fff;
+}
+
+@mixin sub-name {
+  font-family: $text-font;
+  font-weight: 600;
+  //color: darken($text-fff, 33%);
+  color: darken($color-fff, 0%);
+  text-transform: uppercase;
+}
+
+@mixin scroll-text {
+  font-family: $text-font;
+  text-transform: uppercase;
+  color: lighten(rgba(128, 145, 207, 0.9), 29%);
+  border-radius: 5px;
+  letter-spacing: 0.4px;
+  font-weight: 800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+//====== ABOUT ==========
+
+@mixin h2-about {
+  font-family: $text-font2;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-top: -1.2rem;
+}
+
+@mixin h2-monoton {
+  background: $color-secondary;
+  color: $text-fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 0.5rem;
+}
+
+@mixin h2-monoton2 {
+  background: $color-primary;
+  color: $text-fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+@mixin about-up {
+  font-weight: 600;
+  margin-top: 5rem;
+  padding-top: 1.5em;
+}
+
+@mixin about-down {
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.button1 {
+  background: $color-secondary;
+  color: $text-fff;
+  padding: 12px 22px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.button2 {
+  background: $color-secondary;
+  color: $text-fff;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: 6px;
+  margin-left: 15px;
+}
+
+@mixin h2-span {
+  padding: 1px 4px;
+  background: $color-secondary;
+  color: $text-fff;
+}
+
+@mixin h2-sub {
+  font-size: 26px;
+  font-style: italic;
+  padding-top: 2rem;
+  color: #000;
+  text-align: center;
+}
+
+//======= PORTFOLIO ========
+
+//========= FOOTER =====
+@mixin footer {
+  background: #23263b;
+}
+
+@mixin soc-img {
+  background: rgba(255, 255, 255, 0.8);
+  margin-right: 7px;
+  margin-left: 7px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 53px;
+  border-radius: 53px;
+  -webkit-border-radius: 53px;
+  -moz-border-radius: 53px;
+  -ms-border-radius: 53px;
+  -o-border-radius: 53px;
+  &:hover {
+    transition: 0.3s all;
+    transform: scale(2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+  }
+}

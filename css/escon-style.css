@@ -1,0 +1,1144 @@
+/* CSS Document */
+/*Responsive for laptop device*/
+/*Responsive for tablet device*/
+/*Responsive for mobile device*/
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  color: #fcfcfc;
+  font-weight: 300; }
+
+h1 {
+  font-size: 80px; }
+
+h2 {
+  font-size: 54px; }
+
+h3 {
+  font-size: 40px; }
+
+h4 {
+  font-size: 23px; }
+
+h5 {
+  font-size: 22px; }
+
+h6 {
+  font-size: 20px; }
+
+p {
+  letter-spacing: 1.5px; }
+
+a:link {
+  color: #fcfcfc;
+  text-decoration: none; }
+a:visited {
+  color: #fcfcfc;
+  text-decoration: none; }
+a:hover {
+  color: #fff;
+  text-decoration: none; }
+a:active {
+  color: #fff; }
+
+.wrapper {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 300; }
+  .wrapper::after {
+    display: table;
+    content: "";
+    clear: both; }
+
+.cf::after {
+  display: table;
+  content: "";
+  clear: both;
+  display: table;
+  content: "";
+  clear: both; }
+
+img {
+  max-width: 100%;
+  vertical-align: bottom; }
+
+.soldone-intro {
+  background: #0e3f5b;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  padding-bottom: 75px;
+  padding-top: 20px;
+  padding-left: 100px; }
+  .soldone-intro h4 {
+    padding: 20px;
+    padding-left: 0;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 220px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.8px; }
+  .soldone-intro img {
+    width: 180px; }
+  .soldone-intro .about {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 52px;
+    font-weight: 900;
+    padding-top: 15px; }
+  .soldone-intro .about-top {
+    margin-top: 80px; }
+
+.sidelogo {
+  font-family: "Prosto One", cursive;
+  width: 892px;
+  padding: 20px 10px;
+  background-color: #fff;
+  position: fixed;
+  top: 320px;
+  left: -420px;
+  transform: rotate(90deg);
+  color: #23263b;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 24px;
+  z-index: 1;
+  text-align: center; }
+
+.hero-layer {
+  background: rgba(49, 48, 54, 0.15);
+  height: 550px; }
+
+.intro {
+  color: rgba(2, 2, 2, 0.8);
+  background: #fff; }
+  .intro h2 {
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 0;
+    float: left;
+    font-family: "Abril Fatface", cursive; }
+  .intro p {
+    float: right;
+    color: rgba(2, 2, 2, 0.6);
+    line-height: 40px;
+    padding-top: 80px;
+    font-size: 23px;
+    font-weight: 700; }
+
+.part1 {
+  background: #eef7fc;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 30px; }
+  .part1 img {
+    padding-bottom: 100px;
+    padding-top: 100px; }
+
+.portfolio {
+  color: rgba(3, 3, 3, 0.9);
+  background: #fff;
+  text-align: left; }
+
+.text1 {
+  color: rgba(2, 2, 2, 0.8);
+  text-align: left;
+  margin-top: -100px; }
+  .text1 h2 {
+    float: right;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 0;
+    margin-top: 205px;
+    margin-right: 110px;
+    font-family: "Abril Fatface", cursive; }
+  .text1 p {
+    color: rgba(2, 2, 2, 0.6);
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 550px;
+    position: relative;
+    top: 475px;
+    left: 700px; }
+
+.image1 {
+  background: #6193ff;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  width: 600px;
+  float: left; }
+  .image1 img {
+    padding-top: 100px;
+    margin-left: 0px; }
+
+text2 {
+  color: rgba(2, 2, 2, 0.8);
+  text-align: left;
+  margin-top: -100px; }
+
+.text2 h2 {
+  float: left;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  padding: 60px 0;
+  margin-top: 0px;
+  margin-left: 60px;
+  font-family: "Abril Fatface", cursive; }
+.text2 p {
+  color: rgba(2, 2, 2, 0.6);
+  line-height: 40px;
+  font-size: 23px;
+  font-weight: 700;
+  width: 550px;
+  padding-bottom: 75px;
+  position: relative;
+  top: -45px;
+  left: 60px; }
+
+.image2 {
+  background: #1f3a75;
+  margin-bottom: 0px;
+  margin-top: -500px;
+  width: 600px;
+  float: right; }
+  .image2 img {
+    padding-bottom: 100px;
+    margin-left: 100px; }
+
+.text3 {
+  color: rgba(2, 2, 2, 0.8);
+  text-align: left; }
+  .text3 h2 {
+    float: right;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 0;
+    margin-top: 110px;
+    margin-right: 98px;
+    font-family: "Abril Fatface", cursive; }
+  .text3 p {
+    color: rgba(2, 2, 2, 0.6);
+    line-height: 40px;
+    margin-bottom: 140px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 550px;
+    position: relative;
+    top: 378px;
+    left: 701px; }
+
+.image3 {
+  background: #eef7fc;
+  margin-bottom: 100px;
+  margin-top: -180px;
+  width: 600px;
+  float: left; }
+  .image3 img {
+    padding-top: 120px;
+    margin-left: 0px; }
+    .image3 img:nth-of-type(2) {
+      margin-right: 150px;
+      margin-top: 77px;
+      float: right; }
+
+.text4 {
+  color: rgba(2, 2, 2, 0.8);
+  text-align: left; }
+  .text4 h2 {
+    float: left;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 0;
+    margin-top: 0px;
+    margin-left: 60px;
+    font-family: "Abril Fatface", cursive; }
+  .text4 p {
+    color: rgba(2, 2, 2, 0.6);
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 550px;
+    padding-bottom: 75px;
+    position: relative;
+    top: -45px;
+    left: 60px; }
+
+.image4 {
+  margin-top: -500px;
+  background: #6193ff;
+  margin-bottom: 200px;
+  width: 600px;
+  float: right; }
+  .image4 img:nth-of-type(1) {
+    padding-bottom: 127px;
+    margin-left: 150px;
+    margin-bottom: 70px; }
+  .image4 img:nth-of-type(2) {
+    padding-bottom: 120px;
+    margin-right: 0px;
+    float: right; }
+
+.email {
+  background: #303452; }
+  .email .container {
+    margin: 0 auto;
+    padding: 60px 0px 70px;}
+    .email .container h3 span {
+      padding: 1px 4px;
+      background: #4362ce;
+      color: #fff; }
+    .email .container .h2-sub {
+      font-size: 26px;
+      font-style: italic;
+      padding-top: 2rem;
+      font-size: 28px;
+      color: #bfbfbf; }
+    .email .container .soc {
+      margin-top: 5rem; }
+      .email .container .soc h5 {
+        color: #dbdbdb; }
+      .email .container .soc a img {
+        background: rgba(255, 255, 255, 0.8);
+        width: 44px;
+        margin-right: 7px;
+        margin-left: 7px;
+        border-radius: 14px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        margin-top: 2rem;
+        width: 51px; }
+
+footer {
+  background: #23263b; }
+  footer .container {
+    margin: 0 auto;
+    padding: 20px 0px; }
+
+
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center; }
+  .container::after {
+    display: table;
+    content: "";
+    clear: both; }
+
+@media screen and (min-width: 1024px) and (max-width: 1260px) {
+  .wrapper {
+    width: 900px; }
+
+  .soldone-intro {
+    background: #0e3f5b;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    padding-bottom: 36px;
+    padding-top: 20px;
+    padding-left: 100px; }
+    .soldone-intro h4 {
+      padding: 10px;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      text-transform: uppercase;
+      font-size: 19px;
+      width: 184px;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.8px; }
+    .soldone-intro img {
+      width: 180px;
+      height: 90px; }
+    .soldone-intro .about {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 37px;
+      font-weight: 900;
+      padding-top: 15px; }
+
+  .sidelogo {
+    padding: 5px 10px 10px;
+    top: 370px;
+    left: -500px;
+    font-size: 20px;
+    width: 1015px; }
+
+  .about-top {
+    margin-top: 120px; }
+
+  .hero-layer {
+    height: 650px; }
+
+  .intro h2 {
+    font-size: 38px;
+    word-spacing: 7px;
+    letter-spacing: 2px;
+    padding: 30px 0;
+    margin-left: 30px;
+    float: left;
+    font-family: "Abril Fatface", cursive; }
+  .intro p {
+    width: 380px;
+    padding-top: 50px;
+    padding-left: 40px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    color: rgba(3, 3, 3, 0.6); }
+
+  .text1 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: left;
+    margin-top: 100px; }
+    .text1 h2 {
+      float: right;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 30px 0;
+      margin-top: -10px;
+      margin-right: 62px;
+      font-size: 39px;
+      font-family: "Abril Fatface", cursive; }
+    .text1 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 30px;
+      font-size: 17px;
+      font-weight: 700;
+      width: 400px;
+      letter-spacing: 0.4px;
+      position: relative;
+      top: 160px;
+      left: 475px; }
+
+  .image1 {
+    background: rgba(11, 154, 229, 0.7);
+    margin-top: -125px;
+    width: 425px;
+    float: left; }
+    .image1 img {
+      width: 375px;
+      height: 225px;
+      padding-top: 50px;
+      margin-right: 50px; }
+
+  .text2 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: left;
+    margin-top: 40px; }
+    .text2 h2 {
+      float: left;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 30px 0;
+      margin-top: -20px;
+      margin-bottom: -20px;
+      margin-left: 30px;
+      font-size: 39px;
+      font-family: "Abril Fatface", cursive; }
+    .text2 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      font-size: 17px;
+      font-weight: 700;
+      width: 380px;
+      position: relative;
+      top: 25px;
+      left: 30px; }
+
+  .image2 {
+    background: #1f3a75;
+    margin-bottom: 100px;
+    margin-top: -320px;
+    width: 425px;
+    float: right; }
+    .image2 img {
+      width: 375px;
+      height: 225px;
+      padding-bottom: 50px;
+      margin-left: 50px; }
+
+  .text3 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: left;
+    margin-top: 80px; }
+    .text3 h2 {
+      float: right;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 30px 0;
+      margin-top: -57px;
+      margin-right: 53px;
+      font-size: 39px;
+      font-family: "Abril Fatface", cursive; }
+    .text3 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      font-size: 17px;
+      width: 400px;
+      position: relative;
+      top: 116px;
+      left: 477px; }
+
+  .image3 {
+    background: rgba(11, 154, 229, 0.7);
+    margin-bottom: 120px;
+    margin-top: -260px;
+    width: 425px;
+    float: left; }
+    .image3 img {
+      width: 190px;
+      height: 244px;
+      padding-top: 50px;
+      margin-right: 30px;
+      margin-left: 0px; }
+      .image3 img:nth-of-type(2) {
+        width: 100px;
+        height: 181px;
+        margin-right: 80px;
+        margin-top: 63px;
+        float: right; }
+
+  .text4 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: left;
+    margin-top: 0px; }
+    .text4 h2 {
+      float: left;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 30px 0;
+      margin-top: -20px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      font-size: 39px;
+      font-family: "Abril Fatface", cursive; }
+    .text4 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      font-size: 17px;
+      font-weight: 700;
+      width: 380px;
+      position: relative;
+      top: -5px;
+      left: 30px; }
+
+  .image4 {
+    background: #d3ebff;
+    margin-bottom: 120px;
+    margin-top: -330px;
+    width: 425px;
+    float: right; }
+    .image4 img:nth-of-type(1) {
+      width: 100px;
+      height: 181px;
+      margin-left: 80px;
+      padding-bottom: 50px; }
+    .image4 img:nth-of-type(2) {
+      width: 190px;
+      height: 244px;
+      padding-bottom: 50px; }
+	
+   .email .container h3 {
+      font-size: 1.9em; }
+    .email .container .h2-sub {
+      font-size: 26px;
+      font-style: italic;
+      padding-top: 2rem;
+      font-size: 1.5em; }
+  footer {
+    background: #23263b; }
+    footer .container {
+      border-top: 3px solid rgba(255, 255, 255, 0.1); }
+
+  .container {
+    width: 900px; }
+
+  .soc {
+    padding-top: 35px;
+    margin-bottom: 20px; }
+    .soc a img {
+      background: rgba(255, 255, 255, 0.8);
+      width: 56px;
+      margin-right: 9px;
+      margin-left: 9px;
+      border-radius: 15px;
+      border: 3px solid rgba(255, 255, 255, 0.6); }
+
+  .copy-right {
+    font-size: 18px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff; } }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 700px; }
+
+  .soldone-intro {
+    background: #0e3f5b;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    padding-bottom: 36px;
+    padding-top: 20px;
+    padding-left: 60px; }
+    .soldone-intro h4 {
+      padding: 10px;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      text-transform: uppercase;
+      font-size: 18px;
+      width: 175px;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.8px; }
+    .soldone-intro img {
+      width: 150px;
+      height: 70px; }
+    .soldone-intro .about {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 28px;
+      font-weight: 900;
+      padding-top: 15px; }
+
+  .sidelogo {
+    padding: 5px 10px 10px;
+    top: 300px;
+    left: -500px;
+    font-size: 20px;
+    width: 1015px;
+    margin-top: 0; }
+
+  .about-top {
+    margin-top: 90px; }
+
+  .hero-layer {
+    height: 550px; }
+
+  .intro h2 {
+    font-size: 30px;
+    padding: 15px 0;
+    text-align: center;
+    float: none; }
+  .intro p {
+    float: none;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+    color: rgba(3, 3, 3, 0.6); }
+
+  .part1 {
+    background: rgba(217, 237, 244, 0.6);
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 30px; }
+    .part1 img {
+      padding-bottom: 50px;
+      padding-top: 50px; }
+
+  .text1 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center;
+    margin-top: 100px; }
+    .text1 h2 {
+      float: none;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 15px 0;
+      margin-top: -40px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 30px; }
+    .text1 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 25px;
+      font-size: 15px;
+      font-weight: 700;
+      width: 400px;
+      letter-spacing: 0.4px;
+      position: relative;
+      top: 0;
+      left: 153px; }
+
+  .image1 {
+    background: rgba(11, 154, 229, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    width: 550px;
+    float: none; }
+    .image1 img {
+      width: 500px;
+      height: 250px;
+      padding-top: 50px;
+      margin-right: 50px;
+      text-align: center; }
+
+  .text2 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text2 h2 {
+      float: none;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 15px 0;
+      margin-top: -40px;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 30px;
+      font-family: "Abril Fatface", cursive; }
+    .text2 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 25px;
+      letter-spacing: 0.4px;
+      font-size: 15px;
+      font-weight: 700;
+      width: 380px;
+      position: relative;
+      top: 10px;
+      left: 157px; }
+
+  .image2 {
+    background: #1f3a75;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: -30px;
+    width: 550px;
+    float: none; }
+    .image2 img {
+      width: 500px;
+      height: 250px;
+      padding-bottom: 50px;
+      margin-left: 50px; }
+
+  .text3 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center;
+    margin-top: 0px; }
+    .text3 h2 {
+      float: none;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 15px 0;
+      margin-top: -40px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 30px;
+      font-family: "Abril Fatface", cursive; }
+    .text3 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 25px;
+      letter-spacing: 0.4px;
+      font-size: 15px;
+      width: 400px;
+      position: relative;
+      top: 0px;
+      left: 152px; }
+
+  .image3 {
+    background: rgba(11, 154, 229, 0.7);
+    margin-bottom: 120px;
+    margin-top: -90px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 550px;
+    float: none; }
+    .image3 img {
+      width: 190px;
+      height: 244px;
+      padding-top: 50px;
+      margin-right: 120px;
+      margin-left: 0px; }
+      .image3 img:nth-of-type(2) {
+        width: 100px;
+        height: 181px;
+        margin-right: 140px;
+        margin-top: 63px;
+        float: right; }
+
+  .text4 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text4 h2 {
+      float: none;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 15px 0;
+      margin-top: -60px;
+      margin-bottom: 30px;
+      margin-right: auto;
+      margin-left: auto;
+      font-family: "Abril Fatface", cursive;
+      font-size: 30px; }
+    .text4 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 25px;
+      letter-spacing: 0.4px;
+      font-size: 15px;
+      font-weight: 700;
+      width: 380px;
+      padding-bottom: 75px;
+      position: relative;
+      top: 0px;
+      left: 158px; }
+
+  .image4 {
+    background: #d3ebff;
+    margin-bottom: 90px;
+    margin-top: -30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 550px;
+    float: none; }
+    .image4 img:nth-of-type(1) {
+      width: 100px;
+      height: 181px;
+      padding-bottom: 127px;
+      margin-left: 20px;
+      margin-bottom: 70px; }
+    .image4 img:nth-of-type(2) {
+      width: 190px;
+      height: 244px;
+      padding-bottom: 120px;
+      margin-right: 0px;
+      float: right; }
+
+	 .email .container h3 {
+      font-size: 1.5em; }
+    .email .container p.h2-sub {
+      font-size: 1.2em; }
+    .email .container div.soc h5 {
+      margin-bottom: 3rem; }
+    .email .container div.soc a img {
+      margin: 0px 20px; }
+	
+  footer {
+    background: #23263b; }
+  footer .container p.copy-right {
+      font-size: 0.9em; }
+	
+  .container {
+    width: 700px; }
+
+  .soc {
+    padding-top: 35px;
+    margin-bottom: 20px; }
+    .soc a img {
+      background: rgba(255, 255, 255, 0.8);
+      width: 52px;
+      margin-right: 7px;
+      margin-left: 7px;
+      border-radius: 15px;
+      border: 3px solid rgba(255, 255, 255, 0.6); }
+
+  .copy-right {
+    font-size: 17px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff; } }
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 90%; }
+  .soldone-intro {
+    background: #0e3f5b;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    padding-bottom: 36px;
+    padding-top: 20px;
+    padding-left: 0px;
+    height: auto; }
+    .soldone-intro h4 {
+      padding: 10px;
+      padding-left: 0;
+      margin-bottom: 60px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-size: 16px;
+      width: auto;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.8px;
+      text-align: left; }
+    .soldone-intro img {
+      width: 120px;
+      height: 60px; }
+    .soldone-intro .about {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 22px;
+      font-weight: 900;
+      padding-top: 0px; }
+      
+    .sidelogo {
+     padding: 10px 0px 5px;
+    top: 0px;
+    left: -182px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    transform: rotate(0deg);
+    position: fixed;
+    display: none;  }
+
+.about-top {
+    margin-top: 50px; }
+
+  .hero-layer {
+    height: 435px; }
+
+  .intro h2 {
+    font-size: 23px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding: 15px 0;
+    text-align: center;
+    float: none; }
+  .intro p {
+    float: none;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: rgba(3, 3, 3, 0.6); }
+
+  .part1 {
+    background: rgba(217, 237, 244, 0.6);
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 30px; }
+    .part1 img {
+      height: 100%;
+      padding-bottom: 30px;
+      padding-top: 30px; }
+
+  .text1 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center;
+    margin-top: 100px; }
+    .text1 h2 {
+      float: none;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      padding: 15px 0;
+      margin-top: -40px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 23px; }
+    .text1 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      width: auto;
+      letter-spacing: 0.4px;
+      position: relative;
+      top: 0;
+      left: 0; }
+
+  .image1 {
+    background: rgba(11, 154, 229, 0.7);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    width: auto;
+    height: auto;
+    float: none; }
+    .image1 img {
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-right: 30px; }
+
+  .text2 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text2 h2 {
+      float: none;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      padding: 15px 0;
+      margin-top: -40px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 23px;
+      font-family: "Abril Fatface", cursive; }
+    .text2 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      font-size: 14px;
+      font-weight: 700;
+      width: auto;
+      position: relative;
+      top: 0;
+      left: 0; }
+
+  .image2 {
+    background: #1f3a75;
+    margin-bottom: 100px;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    float: none; }
+    .image2 img {
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-left: 0px;
+      text-align: center; }
+
+  .text3 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text3 h2 {
+      float: none;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      padding: 15px 0;
+      margin-top: -40px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 23px;
+      font-family: "Abril Fatface", cursive; }
+    .text3 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      font-size: 14px;
+      width: auto;
+      position: relative;
+      top: 0px;
+      left: 0; }
+
+  .image3 {
+    background: rgba(11, 154, 229, 0.7);
+    margin-bottom: 120px;
+    margin-top: -80px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    float: none; }
+    .image3 img {
+      width: 200px;
+      height: 274px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 10px;
+      padding-left: 10px; }
+      .image3 img:nth-of-type(2) {
+        width: 130px;
+        height: 211px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 63px;
+        float: none;
+        padding-left: 10px; }
+
+  .text4 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text4 h2 {
+      float: none;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      padding: 15px 0;
+      margin-top: -60px;
+      margin-bottom: -30px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 23px;
+      font-family: "Abril Fatface", cursive; }
+    .text4 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      font-size: 14px;
+      font-weight: 700;
+      width: auto;
+      position: relative;
+      top: 35px;
+      left: 0; }
+
+  .image4 {
+    background: #d3ebff;
+    margin-bottom: 90px;
+    margin-top: -30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    float: none; }
+    .image4 img:nth-of-type(1) {
+      width: 130px;
+      height: 211px;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 16px;
+      padding-right: 10px;
+      padding-left: 10px; }
+    .image4 img:nth-of-type(2) {
+      width: 200px;
+      height: 274px;
+      padding-bottom: 16px;
+      padding-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 14px;
+      padding-left: 10px;
+      padding-right: 10px; }
+  
+	.email .container h3 {
+      font-size: 1.3em; }
+    .email .container p.h2-sub {
+      font-size: 1em; }
+    .email .container div.soc {
+      margin-top: 3rem; }
+      .email .container div.soc h5 {
+        margin-bottom: 3rem; }
+      .email .container div.soc a img {
+        margin: 0px 20px; }
+	
+  footer {
+    background: #23263b; }
+     footer .container p.copy-right {
+      font-size: 0.8em; }
+	
+  .container {
+    width: 90%; }
+
+  .soc {
+    padding-top: 35px;
+    margin-bottom: 20px; }
+    .soc a img {
+      background: rgba(255, 255, 255, 0.8);
+      width: 46px;
+      margin-right: 7px;
+      margin-left: 7px;
+      border-radius: 14px;
+      border: 3px solid rgba(255, 255, 255, 0.6); }
+
+  .copy-right {
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff; } }
+
+/*# sourceMappingURL=style.css.map */

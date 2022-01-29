@@ -1,0 +1,910 @@
+/* CSS Document */
+/*Responsive forlaptop device*/
+/*Responsive for tablet device*/
+/*Responsive for mobile device*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  color: #fcfcfc;
+  font-weight: 300; }
+
+h1 {
+  font-size: 80px; }
+
+h2 {
+  font-size: 54px; }
+
+h3 {
+  font-size: 40px; }
+
+h4 {
+  font-size: 23px; }
+
+h5 {
+  font-size: 22px; }
+
+h6 {
+  font-size: 20px; }
+
+p {
+  letter-spacing: 1.5px; }
+
+a:link {
+  color: #fcfcfc;
+  text-decoration: none; }
+a:visited {
+  color: #fcfcfc;
+  text-decoration: none; }
+a:hover {
+  color: #fff;
+  text-decoration: none; }
+a:active {
+  color: #fff; }
+
+.wrapper {
+  width: 1300px;
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 300; }
+  .wrapper::after {
+    display: table;
+    content: "";
+    clear: both; }
+
+.cf::after {
+  display: table;
+  content: "";
+  clear: both;
+  display: table;
+  content: "";
+  clear: both; }
+
+img {
+  vertical-align: bottom;
+  max-width: 100%; }
+
+.corp-intro {
+  background: #00003f;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  padding-bottom: 65px;
+  padding-top: 20px;
+  margin-top: -20px;
+  padding-left: 100px; }
+  .corp-intro h4 {
+    padding: 20px;
+    padding-left: 0;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 220px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.8px; }
+  .corp-intro img {
+    width: 380px;
+    height: 84px; }
+  .corp-intro .about {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 52px;
+    font-weight: 900;
+    padding-top: 15px; }
+
+.sidelogo {
+  font-family: "Prosto One", cursive;
+  width: 892px;
+  padding: 20px 10px;
+  background-color: #fff;
+  position: fixed;
+  top: 320px;
+  left: -420px;
+  transform: rotate(90deg);
+  color: #23263b;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 24px;
+  z-index: 1;
+  text-align: center; }
+
+.about-top {
+  margin-top: 100px; }
+
+.intro {
+  color: rgba(2, 2, 2, 0.8);
+  background: #fff; }
+  .intro h2 {
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 0;
+    float: left;
+    font-family: "Abril Fatface", cursive; }
+  .intro p {
+    float: right;
+    color: rgba(2, 2, 2, 0.6);
+    line-height: 40px;
+    padding-top: 100px;
+    font-size: 23px;
+    font-weight: 700; }
+
+.part1 {
+  background: #f2f2fd;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px; }
+  .part1 img {
+    padding-bottom: 100px;
+    padding-top: 100px; }
+
+.text1 {
+  color: rgba(2, 2, 2, 0.8);
+  text-align: left;
+  margin-top: 150px; }
+  .text1 h2 {
+    float: right;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 0;
+    margin-top: 83px;
+    margin-right: 57px;
+    font-family: "Abril Fatface", cursive; }
+  .text1 p {
+    color: rgba(2, 2, 2, 0.6);
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 550px;
+    letter-spacing: 0.4px;
+    position: relative;
+    top: 343px;
+    left: 700px; }
+
+.image1 {
+  background: #40406f;
+  margin-bottom: 100px;
+  margin-top: -125px;
+  width: 600px;
+  float: left; }
+  .image1 img {
+    padding-top: 100px;
+    margin-left: 100px; }
+
+.text2 {
+  color: rgba(2, 2, 2, 0.8);
+  text-align: left; }
+  .text2 h2 {
+    float: left;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 0;
+    margin-top: 83px;
+    margin-left: 60px;
+    font-family: "Abril Fatface", cursive; }
+  .text2 p {
+    color: rgba(2, 2, 2, 0.6);
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 550px;
+    padding-bottom: 75px;
+    position: relative;
+    top: -45px;
+    left: 60px; }
+
+.image2 {
+  background: #4820ff;
+  margin-bottom: 100px;
+  margin-top: -600px;
+  width: 600px;
+  float: right; }
+  .image2 img {
+    padding-top: 100px;
+    margin-right: 100px; }
+
+.text3 {
+  color: rgba(2, 2, 2, 0.8);
+  text-align: left; }
+  .text3 h2 {
+    float: right;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 0;
+    margin-top: 30px;
+    margin-right: 103px;
+    font-family: "Abril Fatface", cursive; }
+  .text3 p {
+    color: rgba(2, 2, 2, 0.6);
+    line-height: 40px;
+    margin-bottom: 140px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 550px;
+    position: relative;
+    top: 298px;
+    left: 700px; }
+
+.image3 {
+  background: #f2f2fd;
+  margin-bottom: 200px;
+  margin-top: -300px;
+  width: 600px;
+  float: left; }
+  .image3 img {
+    padding-top: 100px;
+    margin-left: 100px; }
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center; }
+  .container::after {
+    display: table;
+    content: "";
+    clear: both; }
+
+.email {
+  background: #303452; }
+  .email .container {
+    margin: 0 auto;
+    padding: 60px 0px 70px;}
+    .email .container h3 span {
+      padding: 1px 4px;
+      background: #4362ce;
+      color: #fff; }
+    .email .container .h2-sub {
+      font-size: 26px;
+      font-style: italic;
+      padding-top: 2rem;
+      font-size: 28px;
+      color: #bfbfbf; }
+    .email .container .soc {
+      margin-top: 5rem; }
+      .email .container .soc h5 {
+        color: #dbdbdb; }
+      .email .container .soc a img {
+        background: rgba(255, 255, 255, 0.8);
+        width: 44px;
+        margin-right: 7px;
+        margin-left: 7px;
+        border-radius: 14px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        margin-top: 2rem;
+        width: 51px; }
+
+footer {
+  background: #23263b; }
+  footer .container {
+    margin: 0 auto;
+    padding: 20px 0px; }	
+
+@media screen and (min-width: 1024px) and (max-width: 1260px) {
+  .wrapper {
+    width: 900px; }
+
+  .corp-intro {
+    background: #00003f;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-left: 50px; }
+    .corp-intro h4 {
+      padding: 10px;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      text-transform: uppercase;
+      font-size: 19px;
+      width: 184px;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.8px; }
+    .corp-intro img {
+      width: 280px;
+      height: 54px; }
+    .corp-intro .about {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 37px;
+      font-weight: 900;
+      padding-top: 15px; }
+
+  .sidelogo {
+    padding: 5px 10px 10px;
+    top: 320px;
+    left: -440px;
+    font-size: 20px; }
+
+  .about-top {
+    margin-top: 120px; }
+
+  .intro h2 {
+    font-size: 38px;
+    word-spacing: 7px;
+    letter-spacing: 2px;
+    padding: 30px 0;
+    margin-left: 30px;
+    float: left;
+    font-family: "Abril Fatface", cursive; }
+  .intro p {
+    width: 380px;
+    padding-top: 50px;
+    padding-left: 40px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.4px; }
+
+  .part1 img {
+    padding-bottom: 50px;
+    padding-top: 50px; }
+
+  .text1 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: left;
+    margin-top: 100px; }
+    .text1 h2 {
+      float: right;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 30px 0;
+      margin-top: -20px;
+      margin-right: 20px;
+      font-size: 39px;
+      font-family: "Abril Fatface", cursive; }
+    .text1 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 30px;
+      font-size: 17px;
+      font-weight: 700;
+      width: 400px;
+      letter-spacing: 0.4px;
+      position: relative;
+      top: 150px;
+      left: 475px; }
+
+  .image1 {
+    background: #40406f;
+    margin-top: -125px;
+    width: 425px;
+    float: left; }
+    .image1 img {
+      width: 375px;
+      height: 225px;
+      padding-top: 50px;
+      margin-left: 50px; }
+
+  .text2 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: left; }
+    .text2 h2 {
+      float: left;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 30px 0;
+      margin-top: -20px;
+      margin-left: 30px;
+      font-size: 39px;
+      font-family: "Abril Fatface", cursive; }
+    .text2 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      font-size: 17px;
+      font-weight: 700;
+      width: 380px;
+      position: relative;
+      top: -25px;
+      left: 30px; }
+
+  .image2 {
+    background: #4820ff;
+    margin-bottom: 100px;
+    margin-top: -390px;
+    width: 425px;
+    float: right; }
+    .image2 img {
+      width: 375px;
+      height: 225px;
+      padding-top: 50px;
+      margin-right: 50px; }
+
+  .text3 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: left; }
+    .text3 h2 {
+      float: right;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 30px 0;
+      margin-top: -30px;
+      margin-right: 53px;
+      font-size: 39px;
+      font-family: "Abril Fatface", cursive; }
+    .text3 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      font-size: 17px;
+      width: 400px;
+      position: relative;
+      top: 143px;
+      left: 477px; }
+
+  .image3 {
+    background: #f2f2fd;
+    margin-bottom: 120px;
+    margin-top: -280px;
+    width: 425px;
+    float: left; }
+    .image3 img {
+      width: 375px;
+      height: 225px;
+      padding-top: 50px;
+      margin-left: 50px; }
+
+	.email .container h3 {
+      font-size: 1.9em; }
+    .email .container .h2-sub {
+      font-size: 26px;
+      font-style: italic;
+      padding-top: 2rem;
+      font-size: 1.5em; }
+ 
+  footer {
+    background: #23263b; }
+    footer .container {
+      border-top: 3px solid rgba(255, 255, 255, 0.1); }
+
+  .container {
+    width: 900px; }
+
+  .soc {
+    padding-top: 35px;
+    margin-bottom: 20px; }
+    .soc a img {
+      background: rgba(255, 255, 255, 0.8);
+      width: 56px;
+      margin-right: 9px;
+      margin-left: 9px;
+      border-radius: 15px;
+      border: 3px solid rgba(255, 255, 255, 0.6); }
+
+  .copy-right {
+    font-size: 18px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff; } }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 700px; }
+
+  .corp-intro {
+    background: #00003f;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 60px; }
+    .corp-intro h4 {
+      padding: 10px;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      text-transform: uppercase;
+      font-size: 16px;
+      width: 157px;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.8px; }
+    .corp-intro img {
+      width: 230px;
+      height: 44px; }
+    .corp-intro .about {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 28px;
+      font-weight: 900;
+      padding-top: 15px; }
+
+  .sidelogo {
+    text-align: center;
+    padding: 5px 10px 10px;
+    top: 320px;
+    left: -440px;
+    font-size: 20px; }
+
+  .about-top {
+    margin-top: 90px; }
+
+  .intro h2 {
+    font-size: 30px;
+    padding: 15px 0;
+    float: none;
+    text-align: center; }
+  .intro p {
+    float: none;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+    color: rgba(3, 3, 3, 0.6); }
+
+  .part1 img {
+    height: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+
+  .text1 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center;
+    margin-top: 100px; }
+    .text1 h2 {
+      float: none;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 15px 0;
+      margin-top: -40px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 30px;
+      font-family: "Abril Fatface", cursive; }
+    .text1 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 25px;
+      font-size: 15px;
+      font-weight: 700;
+      width: 400px;
+      letter-spacing: 0.4px;
+      position: relative;
+      top: 0px;
+      left: 20%; }
+
+  .image1 {
+    background: #40406f;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    float: none; }
+    .image1 img {
+      width: 500px;
+      height: 250px;
+      padding-top: 50px;
+      margin-left: 50px;
+      text-align: center; }
+
+  .text2 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text2 h2 {
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 15px 0;
+      margin-top: -40px;
+      font-size: 30px;
+      font-family: "Abril Fatface", cursive; }
+    .text2 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 25px;
+      letter-spacing: 0.4px;
+      font-size: 15px;
+      font-weight: 700;
+      width: 400px;
+      position: relative;
+      top: -10px;
+      left: 20%; }
+
+  .image2 {
+    background: #4820ff;
+    margin-bottom: 100px;
+    margin-top: -60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 550px;
+    float: none; }
+    .image2 img {
+      width: 500px;
+      height: 250px;
+      padding-top: 50px;
+      margin-right: 50px; }
+
+  .text3 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text3 h2 {
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+      word-spacing: 7px;
+      letter-spacing: 2px;
+      padding: 15px 0;
+      margin-top: -40px;
+      font-size: 30px;
+      font-family: "Abril Fatface", cursive; }
+    .text3 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 25px;
+      letter-spacing: 0.4px;
+      font-size: 15px;
+      width: 400px;
+      position: relative;
+      top: 0px;
+      left: 20%; }
+
+  .image3 {
+    margin-right: auto;
+    margin-left: auto;
+    background: #f2f2fd;
+    margin-bottom: 90px;
+    margin-top: -100px;
+    width: 550px;
+    float: none; }
+    .image3 img {
+      width: 500px;
+      height: 250px;
+      padding-top: 50px;
+      margin-left: 50px; }
+
+	.email .container h3 {
+      font-size: 1.5em; }
+    .email .container p.h2-sub {
+      font-size: 1.2em; }
+    .email .container div.soc h5 {
+      margin-bottom: 3rem; }
+    .email .container div.soc a img {
+      margin: 0px 20px; }
+
+  footer .container p.copy-right {
+      font-size: 0.9em; }
+  footer {
+    background: #23263b; }
+
+  .container {
+    width: 700px; }
+
+  .soc {
+    padding-top: 35px;
+    margin-bottom: 20px; }
+    .soc a img {
+      background: rgba(255, 255, 255, 0.8);
+      width: 52px;
+      margin-right: 7px;
+      margin-left: 7px;
+      border-radius: 15px;
+      border: 3px solid rgba(255, 255, 255, 0.6); }
+
+  .copy-right {
+    font-size: 17px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff; } }
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 90%; }
+
+  .corp-intro {
+    background: #00003f;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 0px;
+    height: auto; }
+    .corp-intro h4 {
+      padding: 10px;
+       padding-left: 0;
+      margin-bottom: 60px;
+      margin-top: 20px;
+      margin-left: px;
+      text-transform: uppercase;
+      font-size: 16px;
+      width: auto;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.8px;
+      text-align: left; }
+    .corp-intro img {
+      width: 230px;
+      height: 34px; }
+    .corp-intro .about {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 22px;
+      font-weight: 900;
+      padding-top: 0px; }
+
+  .sidelogo {
+     padding: 10px 0px 5px;
+    top: 0px;
+    left: -182px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    transform: rotate(0deg);
+    position: fixed;
+    display: none; }
+
+  .about-top {
+    margin-top: 50px; }
+
+  .intro h2 {
+    font-size: 23px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding: 15px 0;
+    float: none;
+    text-align: center; }
+  .intro p {
+    float: none;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: rgba(3, 3, 3, 0.6); }
+
+  .part1 img {
+    height: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px; }
+
+  .text1 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center;
+    margin-top: 100px; }
+    .text1 h2 {
+      float: none;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      padding: 15px 0;
+      margin-top: -40px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 23px;
+      font-family: "Abril Fatface", cursive; }
+    .text1 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      width: auto;
+      letter-spacing: 0.4px;
+      position: relative;
+      top: 0;
+      left: 0; }
+
+  .image1 {
+    background: #40406f;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    float: none; }
+    .image1 img {
+      width: 100%;
+      height: 250px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-left: 0px;
+      text-align: center; }
+
+  .image2 {
+    background: #4820ff;
+    margin-bottom: 100px;
+    margin-top: -50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    float: none; }
+    .image2 img {
+      width: 100%;
+      height: 250px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-left: 0px;
+      text-align: center; }
+
+  .image3 {
+    margin-right: auto;
+    margin-left: auto;
+    background: #f2f2fd;
+    margin-bottom: 90px;
+    margin-top: -100px;
+    width: auto;
+    height: auto;
+    float: none; }
+    .image3 img {
+      width: 100%;
+      height: 250px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-left: 0px;
+      text-align: center; }
+
+  .text2 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text2 h2 {
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      padding: 15px 0;
+      margin-top: -40px;
+      font-size: 23px;
+      font-family: "Abril Fatface", cursive; }
+    .text2 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      font-size: 14px;
+      font-weight: 700;
+      width: auto;
+      position: relative;
+      top: 0;
+      left: 0; }
+
+  .text3 {
+    color: rgba(3, 3, 3, 0.9);
+    text-align: center; }
+    .text3 h2 {
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      padding: 15px 0;
+      margin-top: -50px;
+      font-size: 25px;
+      font-family: "Abril Fatface", cursive; }
+    .text3 p {
+      color: rgba(3, 3, 3, 0.6);
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      font-size: 14px;
+      width: auto;
+      position: relative;
+      top: 0;
+      left: 0; }
+  
+   .email .container h3 {
+      font-size: 1.3em; }
+   .email .container p.h2-sub {
+      font-size: 1em; }
+   .email .container div.soc {
+      margin-top: 3rem; }
+   .email .container div.soc h5 {
+        margin-bottom: 3rem; }
+   .email .container div.soc a img {
+        margin: 0px 20px; }
+	
+  footer {
+    background: #23263b; }
+     footer .container p.copy-right {
+      font-size: 0.8em; }
+  
+  .container {
+    width: 90%; }
+
+  .soc {
+    padding-top: 35px;
+    margin-bottom: 20px; }
+    .soc a img {
+      background: rgba(255, 255, 255, 0.8);
+      width: 46px;
+      margin-right: 7px;
+      margin-left: 7px;
+      border-radius: 14px;
+      border: 3px solid rgba(255, 255, 255, 0.6); }
+
+  .copy-right {
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff; } }
+
+/*# sourceMappingURL=style.css.map */

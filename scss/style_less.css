@@ -1,0 +1,3488 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,800&subset=cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+/*===COLORS===*/
+/*===TEXT COLOR===*/
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+/* Default: 
+
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 12px; } 
+h6 { font-size: 10px; }
+
+*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.5rem 0;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 6rem 0;
+  font-size: 1.3em;
+}
+
+.cf::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.button1 {
+  background: #4362ce;
+  color: #fff;
+  padding: 12px 22px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.button2 {
+  background: #4362ce;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: 6px;
+  margin-left: 15px;
+}
+
+/*Media Queries - Responsive*/
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #6780d7;
+  -webkit-transform: translateX(250px);
+          transform: translateX(250px);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.active-nav nav {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 14px;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  color: #9dc6d1;
+  line-height: 40px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background: #4362ce;
+  color: white;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+nav a .nav-toggle-btn {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 280px;
+  width: 36px;
+  height: 36px;
+  -webkit-transition: 0.1s ease-out all;
+  transition: 0.1s ease-out all;
+}
+
+nav a .nav-toggle-btn:hover {
+  width: 39px;
+  height: 39px;
+}
+
+.content {
+  padding-top: 300px;
+  height: 2000px;
+  background-color: #ccf;
+  text-align: center;
+}
+
+.active-nav #hero,
+.active-nav #about,
+.active-nav #skills,
+.active-nav #services,
+.active-nav #portfolio,
+.active-nav #contact,
+.active-nav footer {
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+}
+
+#hero,
+#about,
+#skills,
+#services,
+#portfolio,
+#contact,
+footer {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  nav div.soc {
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav a .nav-toggle-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 270px;
+    width: 31px;
+    height: 32px;
+    -webkit-transition: 0.1s ease-out all;
+    transition: 0.1s ease-out all;
+  }
+  nav a .nav-toggle-btn:hover {
+    width: 32px;
+    height: 33px;
+  }
+  nav ul li {
+    margin-bottom: -5px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  nav a .nav-toggle-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 270px;
+    width: 27px;
+    height: 28px;
+    -webkit-transition: 0.1s ease-out all;
+    transition: 0.1s ease-out all;
+  }
+  nav a .nav-toggle-btn:hover {
+    width: 28px;
+    height: 29px;
+  }
+  nav div.soc {
+    margin-top: 2.4rem;
+  }
+  nav div.soc a img {
+    background: rgba(255, 255, 255, 0.8);
+    width: 44px;
+    margin-right: 7px;
+    margin-left: 7px;
+    border-radius: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: block;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 0;
+    left: 94px;
+  }
+}
+
+nav .soc {
+  margin-top: 7rem;
+}
+
+nav .soc a img {
+  background: rgba(255, 255, 255, 0.8);
+  width: 44px;
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 0;
+  left: 94px;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../image/hero-image3.png") center/cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  animation: hue 10s infinite alternate;
+  -webkit-animation: hue 10s infinite alternate;
+}
+
+@media only screen and (max-width: 1600px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../image/hero-image3.png") center/cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
+    -webkit-animation: hue 10s infinite alternate;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+  }
+  #hero .container {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 300px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 576px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 768px) {
+  #hero .container {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 995px) {
+  #hero .container {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1200px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1600px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  #hero .container h1.name {
+    font-size: 4em;
+  }
+  #hero .container h3.sub-name {
+    font-size: 2.4em;
+  }
+  #hero .container div.scroll {
+    margin-top: 15rem;
+  }
+  #hero .container div.scroll p {
+    margin-bottom: -28px;
+  }
+  #hero .container div.scroll a img {
+    bottom: -3rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../image/hero-image3.png") center/cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
+    -webkit-animation: hue 10s infinite alternate;
+    background-size: cover;
+    height: 100vh;
+  }
+  #hero .container {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    top: -70px;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 300px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 576px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 768px) {
+  #hero .container {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 995px) {
+  #hero .container {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1600px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #hero .container h1.name {
+    margin-top: -10rem;
+    font-size: 2.8em;
+  }
+  #hero .container h3.sub-name {
+    font-size: 2em;
+    padding-bottom: 9rem;
+  }
+  #hero .container div.scroll {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../image/hero-image3.png") center/cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
+    -webkit-animation: hue 10s infinite alternate;
+    background-size: cover;
+    height: 100vh;
+  }
+  #hero .container {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 300px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 576px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  #hero .container {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 995px) {
+  #hero .container {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1200px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1600px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero .container h1.name {
+    margin-top: -5rem;
+    font-size: 2.8em;
+  }
+  #hero .container h3.sub-name {
+    font-size: 1.5em;
+    padding-bottom: 14rem;
+  }
+  #hero .container div.scroll {
+    margin-top: -4.5rem;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../image/hero-image3.png") center/cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
+    -webkit-animation: hue 10s infinite alternate;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center bottom;
+    height: 100vh;
+  }
+  #hero .container {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 300px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 576px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 768px) {
+  #hero .container {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 995px) {
+  #hero .container {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 1200px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 1600px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #hero .container h1.name {
+    margin-top: 0rem;
+    font-size: 2.8em;
+  }
+  #hero .container h3.sub-name {
+    font-size: 1.5em;
+    padding-bottom: 9rem;
+  }
+  #hero .container div.scroll {
+    margin-top: -2rem;
+  }
+  #hero .container div.scroll p {
+    font-size: 0.8em;
+  }
+  #hero .container div.scroll a img {
+    width: 56px;
+    height: 34px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../image/hero-image3.png") center/cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
+    -webkit-animation: hue 10s infinite alternate;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center bottom;
+    height: 100vh;
+  }
+  #hero .container {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+  #hero .container {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 995px) {
+  #hero .container {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1200px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1600px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero .container h1.name {
+    margin-top: 0rem;
+    font-size: 2.2em;
+  }
+  #hero .container h3.sub-name {
+    font-size: 1.3em;
+  }
+  #hero .container div.scroll {
+    margin-top: 2rem;
+  }
+  #hero .container div.scroll p {
+    font-size: 0.7em;
+  }
+  #hero .container div.scroll a img {
+    width: 54px;
+    height: 31px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../image/hero-image3.png") center/cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
+    -webkit-animation: hue 10s infinite alternate;
+    background-attachment: scroll;
+    height: auto;
+  }
+  #hero .container {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 300px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 576px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 768px) {
+  #hero .container {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 995px) {
+  #hero .container {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 1200px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 1600px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #hero .container h1.name {
+    font-size: 2em;
+    margin-top: -4rem;
+  }
+  #hero .container h3.sub-name {
+    font-size: 1.1em;
+  }
+  #hero .container div.scroll {
+    margin-top: 8rem;
+  }
+  #hero .container div.scroll p {
+    font-size: 0.6em;
+    margin-bottom: -2.5rem;
+  }
+  #hero .container div.scroll a img {
+    width: 41px;
+    height: 24px;
+    cursor: pointer;
+  }
+}
+
+#hero .container {
+  font-size: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0px 20px 0px;
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+}
+
+@media only screen and (min-width: 300px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  #hero .container {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #hero .container {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  #hero .container {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #hero .container {
+    padding: 0;
+  }
+}
+
+#hero .container h1.name {
+  text-shadow: 2px 0.2px;
+  color: #fff;
+  margin-top: 16rem;
+  letter-spacing: 1px;
+}
+
+#hero .container .sub-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+#hero .container .sub-name .txt-type > .txt {
+  /*border-right: 0.3rem solid #777;
+            padding-right: .7rem;*/
+}
+
+#hero .container .sub-name .dot {
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+  border-right: 0.3rem solid white;
+  padding-right: 0.7rem;
+}
+
+@-webkit-keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+#hero .container .scroll p {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: rgba(235, 238, 248, 0.9);
+  border-radius: 5px;
+  letter-spacing: 0.4px;
+  font-weight: 800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#hero .container .scroll a img {
+  width: 91px;
+  height: 42px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 995px) {
+  #hero .container {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+#hero::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(0.2rem);
+  z-index: -1;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-filter: blur(0.2rem);
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+#about {
+  font-size: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0px 20px 0px;
+  max-width: 1250px;
+  margin: 0 auto;
+  color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+  #about {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 300px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 576px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  #about {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 995px) {
+  #about {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1200px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1600px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #about .container h2 {
+    font-size: 2.2em;
+  }
+  #about .container div.about-text p.about-up {
+    font-size: 1.3em;
+    margin-top: 10.8rem;
+    line-height: 27px;
+  }
+  #about .container div.about-text p.about-down {
+    font-size: 1.3em;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #about {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 300px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 576px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 768px) {
+  #about {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 995px) {
+  #about {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 1200px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 1600px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #about .container h2 {
+    font-size: 1.8em;
+  }
+  #about .container div.profile {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    float: left;
+    width: 100%;
+    margin-top: 6rem;
+  }
+  #about .container div.profile img {
+    width: 380px;
+    border-radius: 6px;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 995px) {
+  #about .container div.profile {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #about .container div.about-text {
+    width: 520px;
+  }
+  #about .container div.about-text p.about-up {
+    font-size: 1.3em;
+    margin-top: 3rem;
+    line-height: 29px;
+    text-align: center;
+  }
+  #about .container div.about-text p.about-down {
+    font-size: 1.3em;
+    line-height: 29px;
+    text-align: center;
+  }
+  #about .container div.about-text .aboutButtons {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+  #about {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 995px) {
+  #about {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1200px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1600px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about .container h2 {
+    font-size: 1.5em;
+  }
+  #about .container div.profile {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    float: left;
+    margin-top: 6rem;
+  }
+  #about .container div.profile img {
+    width: 60%;
+    border-radius: 6px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 995px) {
+  #about .container div.profile {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about .container div.about-text {
+    width: 70%;
+  }
+  #about .container div.about-text p.about-up {
+    font-size: 1.2em;
+    margin-top: 1rem;
+    line-height: 29px;
+  }
+  #about .container div.about-text p.about-down {
+    font-size: 1.2em;
+    line-height: 29px;
+  }
+  #about .container div.about-text .aboutButtons {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #about {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: -2rem;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 300px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 576px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 768px) {
+  #about {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 995px) {
+  #about {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 1200px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 1600px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #about .container {
+    padding-top: 3rem;
+  }
+  #about .container h2 {
+    font-size: 1.3em;
+  }
+  #about .container div.profile {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    float: left;
+    margin-top: 4rem;
+  }
+  #about .container div.profile img {
+    width: 100%;
+    border-radius: 6px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 995px) {
+  #about .container div.profile {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #about .container div.about-text {
+    width: 100%;
+  }
+  #about .container div.about-text p.about-up {
+    font-size: 1.1em;
+    margin-top: 1rem;
+    line-height: 28px;
+  }
+  #about .container div.about-text p.about-down {
+    font-size: 1.1em;
+    line-height: 28px;
+  }
+  #about .container div.about-text .aboutButtons {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+  }
+  #about .container div.about-text .aboutButtons .button1 {
+    display: block;
+    margin: 0 auto 2rem;
+  }
+  #about .container div.about-text .aboutButtons .button2 {
+    display: block;
+    margin: 2rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  #about {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  #about {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #about {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #about {
+    padding: 0;
+  }
+}
+
+#about .container {
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#about .container h2 {
+  font-family: "Monoton", cursive;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-top: -1.2rem;
+}
+
+#about .container h2 span {
+  background: #4362ce;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 0.5rem;
+}
+
+#about .container h2 span:nth-of-type(2) {
+  background: #23263b;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+#about .container .profile {
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: left;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+#about .container .profile img {
+  width: 380px;
+  border-radius: 6px;
+  border: 2px solid #7d84b2;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 995px) {
+  #about .container .profile {
+    width: 55%;
+    vertical-align: top;
+  }
+}
+
+#about .container .about-text {
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#about .container .about-text p.about-up {
+  font-weight: 600;
+  margin-top: 5rem;
+  padding-top: 1.5em;
+  line-height: 52px;
+  font-size: 29px;
+  text-align: left;
+  font-size: 1.4em;
+  line-height: 34px;
+  margin-top: 6.5rem;
+}
+
+#about .container .about-text .about-down {
+  font-weight: 600;
+  margin-top: 3rem;
+  line-height: 52px;
+  font-size: 29px;
+  margin-bottom: 5rem;
+  text-align: left;
+  font-size: 1.4em;
+  line-height: 34px;
+}
+
+#about .container .about-text .aboutButtons {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  text-align: left;
+}
+
+#about .container .about-text .aboutButtons .button1 {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+}
+
+#about .container .about-text .aboutButtons .button1:hover {
+  padding: 11px 20px;
+  -webkit-transition: 0.05s all ease-in;
+  transition: 0.05s all ease-in;
+  opacity: 0.7;
+}
+
+#about .container .about-text .aboutButtons .button1[data-scroll='in'] {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  opacity: 1;
+}
+
+#about .container .about-text .aboutButtons .button2 {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+}
+
+#about .container .about-text .aboutButtons .button2:hover {
+  padding: 11px 27px;
+  -webkit-transition: 0.05s padding ease-in;
+  transition: 0.05s padding ease-in;
+  opacity: 0.7;
+}
+
+#about .container .about-text .aboutButtons .button2[data-scroll='in'] {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 995px) {
+  #about .container .about-text {
+    width: 45%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  #about .container {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+#skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 86, 135, 0.2)), to(rgba(67, 98, 206, 0.1)));
+  background: linear-gradient(to bottom, rgba(80, 86, 135, 0.2), rgba(67, 98, 206, 0.1));
+}
+
+@media only screen and (max-width: 1400px) {
+  #skills .container h2 {
+    font-size: 2.2em;
+  }
+  #skills .container p.h2-sub {
+    font-size: 26px;
+    font-style: italic;
+    padding-top: 2rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.6em;
+  }
+  #skills div.center {
+    width: 50vw;
+  }
+  #skills div.center * {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #skills .container h2 {
+    font-size: 2.1em;
+  }
+  #skills .container p.h2-sub {
+    font-size: 26px;
+    font-style: italic;
+    padding-top: 2rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  #skills div.center {
+    width: 60vw;
+  }
+  #skills div.center * {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #skills .container h2 {
+    font-size: 1.7em;
+  }
+  #skills .container p.h2-sub {
+    font-size: 1.3em;
+  }
+  #skills div.center {
+    width: 70vw;
+  }
+  #skills div.center * {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #skills .container h2 {
+    font-size: 1.5em;
+  }
+  #skills .container p.h2-sub {
+    font-size: 1.1em;
+  }
+  #skills div.center {
+    width: 100vw;
+    margin: 2rem 0rem 0rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #skills div.center * {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #skills .container h2 {
+    font-size: 1.2em;
+    margin-top: -1rem;
+  }
+  #skills .container p.h2-sub {
+    font-size: 0.9em;
+    margin-top: -1rem;
+    margin-bottom: -3rem;
+  }
+  #skills div.center {
+    width: 100vw;
+    padding: 4rem 2rem 1.4rem;
+  }
+  #skills div.center * {
+    font-size: 0.45em;
+  }
+}
+
+#skills .container {
+  /*=== @include col(12,12); input with grid_system
+        or input row() ===*/
+}
+
+#skills .container h2 {
+  color: #000;
+}
+
+#skills .container h2 span {
+  padding: 1px 4px;
+  background: #4362ce;
+  color: #fff;
+}
+
+#skills .container .h2-sub {
+  font-size: 26px;
+  font-style: italic;
+  padding-top: 2rem;
+  color: #000;
+  text-align: center;
+}
+
+#skills .center {
+  font-family: consolas;
+  width: 50vw;
+  padding: 4rem 5rem 1.4rem;
+  margin: 4rem 0rem 7rem;
+  background: #23263b;
+  background: rgba(128, 145, 207, 0.6);
+  border-radius: 6px;
+  color: #23263b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px #23263b;
+          box-shadow: 0 20px 50px #23263b;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+#skills .center .skillBox {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 28px 0;
+}
+
+#skills .center .skillBox p {
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.7px;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 1.55em;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  text-shadow: 1.5px 0.2px;
+}
+
+#skills .center .skillBox p:nth-child(1) {
+  float: left;
+  position: relative;
+  top: -38px;
+  font-weight: 700;
+}
+
+#skills .center .skillBox p:nth-child(2) {
+  float: right;
+  position: relative;
+  top: -38px;
+  font-weight: 700;
+}
+
+#skills .center .skillBox .skill {
+  /*background: #4362ce;*/
+  background: #fff;
+  padding: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #4362ce;
+  /*border: 3px solid #23263b;*/
+  /*.skill-level[data-scroll="in"]:before {
+					transform: scaleX(0);
+					transition-delay: 0.5s;
+				}
+				*/
+}
+
+#skills .center .skillBox .skill .skill-level {
+  background: none;
+  height: 12px;
+  transition: 1.5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+#skills .center .skillBox .skill .skill-level:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4362ce;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition-delay: 8s;
+          transition-delay: 8s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+#skills .center .skillBox .skill .skill-level[data-scroll='in'] {
+  transition: 1s ease-in;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: 1s ease-in;
+  -moz-transition: 1s ease-in;
+  -ms-transition: 1s ease-in;
+  -o-transition: 1s ease-in;
+}
+
+#skills .center .skillBox .skill .num1 {
+  width: 72%;
+}
+
+#skills .center .skillBox .skill .num2 {
+  width: 71%;
+}
+
+#skills .center .skillBox .skill .num3 {
+  width: 56%;
+}
+
+#skills .center .skillBox .skill .num4 {
+  width: 53%;
+}
+
+#skills .center .skillBox .skill .num5 {
+  width: 60%;
+}
+
+#skills .center .skillBox .skill .num6 {
+  width: 80%;
+}
+
+#services {
+  font-size: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0px 20px 0px;
+  max-width: 1250px;
+  margin: 0 auto;
+  color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+  #services {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 300px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 576px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  #services {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 995px) {
+  #services {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1200px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1600px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #services .container {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #services .container h2 {
+    font-size: 2.1em;
+  }
+  #services .container p.h2-sub {
+    font-size: 26px;
+    font-style: italic;
+    padding-top: 2rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 995px) {
+  #services .container {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 576px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1200px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1600px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: right;
+  }
+  #services .product1 .product1-text h3,
+  #services .product2 .product1-text h3,
+  #services .product3 .product1-text h3 {
+    font-size: 1.9em;
+  }
+  #services .product1 .product1-text p.product-text,
+  #services .product2 .product1-text p.product-text,
+  #services .product3 .product1-text p.product-text {
+    font-size: 19px;
+  }
+  #services .product1 .product1-text .product-text:nth-of-type(2),
+  #services .product2 .product1-text .product-text:nth-of-type(2),
+  #services .product3 .product1-text .product-text:nth-of-type(2) {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 995px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #services .product1 .design,
+  #services .product2 .design,
+  #services .product3 .design {
+    padding-top: 8.7rem;
+  }
+  #services .product1 .design img,
+  #services .product2 .design img,
+  #services .product3 .design img {
+    width: 84%;
+    padding-top: 3.2em;
+  }
+  #services .product1 .code,
+  #services .product2 .code,
+  #services .product3 .code {
+    padding-top: 12rem;
+  }
+  #services .product1 .code img,
+  #services .product2 .code img,
+  #services .product3 .code img {
+    width: 87%;
+    padding-top: 2rem;
+  }
+  #services .product1 .responsive,
+  #services .product2 .responsive,
+  #services .product3 .responsive {
+    padding-top: 4.3rem;
+  }
+  #services .product1 .responsive img,
+  #services .product2 .responsive img,
+  #services .product3 .responsive img {
+    width: 87%;
+    padding-top: 8rem;
+  }
+  #services div.product2 {
+    margin-top: -3rem;
+  }
+  #services div.product3 {
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #services {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 300px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 576px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 768px) {
+  #services {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 995px) {
+  #services {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 1200px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 1600px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #services .container {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: -2rem;
+  }
+  #services .container h2 {
+    font-size: 1.9em;
+  }
+  #services .container p.h2-sub {
+    font-size: 26px;
+    font-style: italic;
+    padding-top: 2rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 995px) {
+  #services .container {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 576px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 768px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 992px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 1200px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 1600px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+  }
+  #services .product1 .product1-text h3,
+  #services .product2 .product1-text h3,
+  #services .product3 .product1-text h3 {
+    font-size: 1.5em;
+  }
+  #services .product1 .product1-text p.product-text,
+  #services .product2 .product1-text p.product-text,
+  #services .product3 .product1-text p.product-text {
+    font-size: 17px;
+  }
+  #services .product1 .product1-text p.product-text:nth-of-type(2),
+  #services .product2 .product1-text p.product-text:nth-of-type(2),
+  #services .product3 .product1-text p.product-text:nth-of-type(2) {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 995px) and (min-width: 995px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #services .product1 .design,
+  #services .product2 .design,
+  #services .product3 .design {
+    padding-top: 8.7rem;
+    margin-top: -3rem;
+  }
+  #services .product1 .design img,
+  #services .product2 .design img,
+  #services .product3 .design img {
+    width: 84%;
+    padding-top: 0em;
+    margin-top: 0rem;
+  }
+  #services .product1 .code,
+  #services .product2 .code,
+  #services .product3 .code {
+    padding-top: 2rem;
+  }
+  #services .product1 .code img,
+  #services .product2 .code img,
+  #services .product3 .code img {
+    width: 87%;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+  #services .product1 .responsive,
+  #services .product2 .responsive,
+  #services .product3 .responsive {
+    padding-top: 4.3rem;
+  }
+  #services .product1 .responsive img,
+  #services .product2 .responsive img,
+  #services .product3 .responsive img {
+    width: 87%;
+    padding-top: 0rem;
+  }
+  #services div.product1 .product1-text {
+    text-align: left;
+    float: none;
+  }
+  #services div.product2 .product1-text {
+    text-align: left;
+    float: none;
+  }
+  #services div.product2 .code {
+    float: none;
+    margin-top: -6rem;
+  }
+  #services div.product3 .product1-text {
+    margin-top: -2rem;
+    text-align: left;
+  }
+  #services div.product3 .responsive {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #services {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+  #services {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 995px) {
+  #services {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1200px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1600px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #services .container {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: -2rem;
+  }
+  #services .container h2 {
+    font-size: 1.7em;
+  }
+  #services .container p.h2-sub {
+    font-size: 26px;
+    font-style: italic;
+    padding-top: 2rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: -2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 995px) {
+  #services .container {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 992px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1200px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1600px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+  }
+  #services .product1 .product1-text h3,
+  #services .product2 .product1-text h3,
+  #services .product3 .product1-text h3 {
+    font-size: 1.3em;
+    text-align: left;
+  }
+  #services .product1 .product1-text p.product-text,
+  #services .product2 .product1-text p.product-text,
+  #services .product3 .product1-text p.product-text {
+    font-size: 15px;
+    text-align: left;
+    margin-top: -1rem;
+  }
+  #services .product1 .product1-text p.product-text:nth-of-type(2),
+  #services .product2 .product1-text p.product-text:nth-of-type(2),
+  #services .product3 .product1-text p.product-text:nth-of-type(2) {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 995px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #services .product1 .design,
+  #services .product2 .design,
+  #services .product3 .design {
+    padding-top: 8.7rem;
+    margin-top: -5rem;
+  }
+  #services .product1 .design img,
+  #services .product2 .design img,
+  #services .product3 .design img {
+    width: 90%;
+    padding-top: 0em;
+    margin-top: 0rem;
+  }
+  #services .product1 .code,
+  #services .product2 .code,
+  #services .product3 .code {
+    padding-top: 2rem;
+  }
+  #services .product1 .code img,
+  #services .product2 .code img,
+  #services .product3 .code img {
+    width: 95%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  #services .product1 .responsive,
+  #services .product2 .responsive,
+  #services .product3 .responsive {
+    padding-top: 4.3rem;
+  }
+  #services .product1 .responsive img,
+  #services .product2 .responsive img,
+  #services .product3 .responsive img {
+    width: 95%;
+    padding-top: 0rem;
+  }
+  #services div.product2 .product1-text {
+    text-align: left;
+    float: none;
+    margin-top: -2rem;
+  }
+  #services div.product2 .code {
+    float: none;
+    margin-top: -8rem;
+  }
+  #services div.product3 .product1-text {
+    margin-top: -2rem;
+    text-align: left;
+  }
+  #services div.product3 .responsive {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #services {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 300px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 576px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 768px) {
+  #services {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 995px) {
+  #services {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 1200px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 1600px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #services .container {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: -2rem;
+  }
+  #services .container h2 {
+    font-size: 1.4em;
+    margin-top: -1.2rem;
+  }
+  #services .container p.h2-sub {
+    font-size: 26px;
+    font-style: italic;
+    padding-top: 2rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: -1rem;
+    margin-bottom: -6rem;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 995px) {
+  #services .container {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 576px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 768px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 992px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 1200px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 1600px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 100%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+  }
+  #services .product1 .product1-text h3,
+  #services .product2 .product1-text h3,
+  #services .product3 .product1-text h3 {
+    font-size: 1.3em;
+    text-align: left;
+  }
+  #services .product1 .product1-text p.product-text,
+  #services .product2 .product1-text p.product-text,
+  #services .product3 .product1-text p.product-text {
+    font-size: 15px;
+    text-align: left;
+    margin-top: -1rem;
+  }
+  #services .product1 .product1-text p.product-text:nth-of-type(2),
+  #services .product2 .product1-text p.product-text:nth-of-type(2),
+  #services .product3 .product1-text p.product-text:nth-of-type(2) {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 995px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #services .product1 .design,
+  #services .product2 .design,
+  #services .product3 .design {
+    padding-top: 8.7rem;
+    margin-top: -5rem;
+  }
+  #services .product1 .design img,
+  #services .product2 .design img,
+  #services .product3 .design img {
+    width: 90%;
+    padding-top: 0em;
+    margin-top: 0rem;
+  }
+  #services .product1 .code,
+  #services .product2 .code,
+  #services .product3 .code {
+    padding-top: 2rem;
+  }
+  #services .product1 .code img,
+  #services .product2 .code img,
+  #services .product3 .code img {
+    width: 95%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  #services .product1 .responsive,
+  #services .product2 .responsive,
+  #services .product3 .responsive {
+    padding-top: 4.3rem;
+  }
+  #services .product1 .responsive img,
+  #services .product2 .responsive img,
+  #services .product3 .responsive img {
+    width: 95%;
+    padding-top: 0rem;
+  }
+  #services div.product2 .product1-text {
+    text-align: left;
+    float: none;
+    margin-top: -4rem;
+  }
+  #services div.product2 .code {
+    float: none;
+    margin-top: -8rem;
+  }
+  #services div.product3 .product1-text {
+    margin-top: -4.5rem;
+    text-align: left;
+  }
+  #services div.product3 .responsive {
+    margin-top: -2rem;
+    margin-bottom: -5rem;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  #services {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #services {
+    padding: 0 3% 0 3%;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  #services {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #services {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #services {
+    padding: 0;
+  }
+}
+
+#services .container h2 span {
+  padding: 1px 4px;
+  background: #4362ce;
+  color: #fff;
+}
+
+#services .container .h2-sub {
+  font-size: 26px;
+  font-style: italic;
+  padding-top: 2rem;
+  color: #000;
+  text-align: center;
+}
+
+#services .product1,
+#services .product2,
+#services .product3 {
+  font-size: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0px 20px 0px;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+@media only screen and (min-width: 576px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #services .product1,
+  #services .product2,
+  #services .product3 {
+    padding: 0;
+  }
+}
+
+#services .product1 .product1-text,
+#services .product2 .product1-text,
+#services .product3 .product1-text {
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: right;
+}
+
+#services .product1 .product1-text h3,
+#services .product2 .product1-text h3,
+#services .product3 .product1-text h3 {
+  position: relative;
+  display: inline-block;
+  transition: 0.8s ease-in-out;
+  transform: translateX(-300px);
+  opacity: 0;
+  padding-bottom: 40px;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -ms-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+  -webkit-transform: translateX(-300px);
+  -moz-transform: translateX(-300px);
+  -ms-transform: translateX(-300px);
+  -o-transform: translateX(-300px);
+}
+
+#services .product1 .product1-text h3[data-scroll='in'],
+#services .product2 .product1-text h3[data-scroll='in'],
+#services .product3 .product1-text h3[data-scroll='in'] {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  opacity: 1;
+}
+
+#services .product1 .product1-text h3.h3Left,
+#services .product2 .product1-text h3.h3Left,
+#services .product3 .product1-text h3.h3Left {
+  transform: translateX(300px);
+  -webkit-transform: translateX(300px);
+  -moz-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  -o-transform: translateX(300px);
+}
+
+#services .product1 .product1-text h3.h3Left[data-scroll='in'],
+#services .product2 .product1-text h3.h3Left[data-scroll='in'],
+#services .product3 .product1-text h3.h3Left[data-scroll='in'] {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  opacity: 1;
+}
+
+#services .product1 .product1-text .product-text,
+#services .product2 .product1-text .product-text,
+#services .product3 .product1-text .product-text {
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  transition: 0.7s ease-out;
+  transform: translateY(150px);
+  opacity: 0;
+  -webkit-transform: translateY(150px);
+  -moz-transform: translateY(150px);
+  -ms-transform: translateY(150px);
+  -o-transform: translateY(150px);
+  -webkit-transition: 0.7s ease-out;
+  -moz-transition: 0.7s ease-out;
+  -ms-transition: 0.7s ease-out;
+  -o-transition: 0.7s ease-out;
+}
+
+#services .product1 .product1-text .product-text[data-scroll='in'],
+#services .product2 .product1-text .product-text[data-scroll='in'],
+#services .product3 .product1-text .product-text[data-scroll='in'] {
+  transform: translateY(0);
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+#services .product1 .product1-text .product-text:nth-of-type(2),
+#services .product2 .product1-text .product-text:nth-of-type(2),
+#services .product3 .product1-text .product-text:nth-of-type(2) {
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 995px) {
+  #services .product1 .product1-text,
+  #services .product2 .product1-text,
+  #services .product3 .product1-text {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+#services .product1 .design,
+#services .product1 .code,
+#services .product1 .responsive,
+#services .product2 .design,
+#services .product2 .code,
+#services .product2 .responsive,
+#services .product3 .design,
+#services .product3 .code,
+#services .product3 .responsive {
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 995px) {
+  #services .product1 .design,
+  #services .product1 .code,
+  #services .product1 .responsive,
+  #services .product2 .design,
+  #services .product2 .code,
+  #services .product2 .responsive,
+  #services .product3 .design,
+  #services .product3 .code,
+  #services .product3 .responsive {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+#services .product1 .design,
+#services .product2 .design,
+#services .product3 .design {
+  padding-top: 8.7rem;
+}
+
+#services .product1 .design img,
+#services .product2 .design img,
+#services .product3 .design img {
+  width: 84%;
+}
+
+#services .product1 .code,
+#services .product2 .code,
+#services .product3 .code {
+  padding-top: 12rem;
+}
+
+#services .product1 .code img,
+#services .product2 .code img,
+#services .product3 .code img {
+  width: 87%;
+}
+
+#services .product1 .responsive,
+#services .product2 .responsive,
+#services .product3 .responsive {
+  padding-top: 4.3rem;
+}
+
+#services .product1 .responsive img,
+#services .product2 .responsive img,
+#services .product3 .responsive img {
+  width: 87%;
+}
+
+#services .product2 .product1-text {
+  text-align: left;
+  float: right;
+}
+
+#services .product2 .code {
+  float: left;
+}
+
+#services .product3 {
+  margin-bottom: 5rem;
+}
+
+#portfolio {
+  color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 86, 135, 0.2)), to(rgba(67, 98, 206, 0.1)));
+  background: linear-gradient(to bottom, rgba(80, 86, 135, 0.2), rgba(67, 98, 206, 0.1));
+}
+
+@media only screen and (max-width: 1200px) {
+  #portfolio .container h2 {
+    font-size: 2.1em;
+  }
+  #portfolio .container .h2-sub {
+    font-size: 26px;
+    font-style: italic;
+    padding-top: 2rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #portfolio .container h2 {
+    font-size: 1.7em;
+  }
+  #portfolio .container p.h2-sub {
+    font-size: 1.3em;
+  }
+  #portfolio .container article.product1,
+  #portfolio .container article.product2,
+  #portfolio .container article.product3 {
+    margin-top: 3rem;
+  }
+  #portfolio .container article.product1,
+  #portfolio .container article.product2,
+  #portfolio .container article.product3,
+  #portfolio .container article.product3,
+  #portfolio .container article.product4,
+  #portfolio .container article.product5,
+  #portfolio .container article.product6 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #portfolio .container h2 {
+    font-size: 1.5em;
+  }
+  #portfolio .container p.h2-sub {
+    font-size: 1.1em;
+  }
+  #portfolio .container article.product1,
+  #portfolio .container article.product2,
+  #portfolio .container article.product3 {
+    margin-top: 3rem;
+  }
+  #portfolio .container article.product1 {
+    margin-top: 0rem;
+  }
+  #portfolio .container article.product1,
+  #portfolio .container article.product2,
+  #portfolio .container article.product3,
+  #portfolio .container article.product3,
+  #portfolio .container article.product4,
+  #portfolio .container article.product5,
+  #portfolio .container article.product6 {
+    width: 60%;
+  }
+  #portfolio .container article.product1 .overlay,
+  #portfolio .container article.product2 .overlay,
+  #portfolio .container article.product3 .overlay,
+  #portfolio .container article.product3 .overlay,
+  #portfolio .container article.product4 .overlay,
+  #portfolio .container article.product5 .overlay,
+  #portfolio .container article.product6 .overlay {
+    display: none;
+  }
+  #portfolio .container article.product1 .title img,
+  #portfolio .container article.product2 .title img,
+  #portfolio .container article.product3 .title img,
+  #portfolio .container article.product3 .title img,
+  #portfolio .container article.product4 .title img,
+  #portfolio .container article.product5 .title img,
+  #portfolio .container article.product6 .title img {
+    width: 24px;
+  }
+  #portfolio .container article.product1:hover .title,
+  #portfolio .container article.product2:hover .title,
+  #portfolio .container article.product3:hover .title,
+  #portfolio .container article.product3:hover .title,
+  #portfolio .container article.product4:hover .title,
+  #portfolio .container article.product5:hover .title,
+  #portfolio .container article.product6:hover .title {
+    opacity: 1;
+  }
+  #portfolio .container article.product1:hover a img,
+  #portfolio .container article.product2:hover a img,
+  #portfolio .container article.product3:hover a img,
+  #portfolio .container article.product3:hover a img,
+  #portfolio .container article.product4:hover a img,
+  #portfolio .container article.product5:hover a img,
+  #portfolio .container article.product6:hover a img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    cursor: pointer;
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #portfolio {
+    height: auto;
+  }
+  #portfolio .container h2 {
+    font-size: 1.2em;
+    margin-top: -1rem;
+  }
+  #portfolio .container p.h2-sub {
+    font-size: 0.9em;
+    margin-top: -1rem;
+    margin-bottom: -3rem;
+  }
+  #portfolio .container article.product1,
+  #portfolio .container article.product2,
+  #portfolio .container article.product3 {
+    margin-top: 2rem;
+  }
+  #portfolio .container article.product1 {
+    margin-top: 0rem;
+  }
+  #portfolio .container article.product1,
+  #portfolio .container article.product2,
+  #portfolio .container article.product3,
+  #portfolio .container article.product3,
+  #portfolio .container article.product4,
+  #portfolio .container article.product5,
+  #portfolio .container article.product6 {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  #portfolio .container article.product1 .title h5,
+  #portfolio .container article.product2 .title h5,
+  #portfolio .container article.product3 .title h5,
+  #portfolio .container article.product3 .title h5,
+  #portfolio .container article.product4 .title h5,
+  #portfolio .container article.product5 .title h5,
+  #portfolio .container article.product6 .title h5 {
+    font-size: 1.4em;
+  }
+  #portfolio .container article.product1 .title p,
+  #portfolio .container article.product2 .title p,
+  #portfolio .container article.product3 .title p,
+  #portfolio .container article.product3 .title p,
+  #portfolio .container article.product4 .title p,
+  #portfolio .container article.product5 .title p,
+  #portfolio .container article.product6 .title p {
+    font-size: 1em;
+  }
+  #portfolio .container article.product1 .title img,
+  #portfolio .container article.product2 .title img,
+  #portfolio .container article.product3 .title img,
+  #portfolio .container article.product3 .title img,
+  #portfolio .container article.product4 .title img,
+  #portfolio .container article.product5 .title img,
+  #portfolio .container article.product6 .title img {
+    width: 24px;
+  }
+}
+
+#portfolio .container {
+  margin-bottom: -1rem;
+}
+
+#portfolio .container h2 span {
+  padding: 1px 4px;
+  background: #4362ce;
+  color: #fff;
+}
+
+#portfolio .container .h2-sub {
+  font-size: 26px;
+  font-style: italic;
+  padding-top: 2rem;
+  color: #000;
+  text-align: center;
+}
+
+#portfolio .container .product1,
+#portfolio .container .product2,
+#portfolio .container .product3,
+#portfolio .container .product4,
+#portfolio .container .product5,
+#portfolio .container .product6 {
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #bdc1d8;
+  padding: 35px 20px;
+  margin-bottom: 4rem;
+  background-color: #fff;
+  margin: 0rem 10px 3rem;
+  width: 80%;
+}
+
+#portfolio .container .product1 a img,
+#portfolio .container .product2 a img,
+#portfolio .container .product3 a img,
+#portfolio .container .product4 a img,
+#portfolio .container .product5 a img,
+#portfolio .container .product6 a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+#portfolio .container .product1 a .overlay,
+#portfolio .container .product2 a .overlay,
+#portfolio .container .product3 a .overlay,
+#portfolio .container .product4 a .overlay,
+#portfolio .container .product5 a .overlay,
+#portfolio .container .product6 a .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  background-color: rgba(67, 98, 206, 0.8);
+}
+
+#portfolio .container .product1 a .overlay .text,
+#portfolio .container .product2 a .overlay .text,
+#portfolio .container .product3 a .overlay .text,
+#portfolio .container .product4 a .overlay .text,
+#portfolio .container .product5 a .overlay .text,
+#portfolio .container .product6 a .overlay .text {
+  color: #ebebeb;
+  background: rgba(35, 38, 59, 0.4);
+  padding: 1rem;
+  font-size: 19px;
+  margin-top: 19.7rem;
+  text-transform: uppercase;
+}
+
+#portfolio .container .product1 .title h5,
+#portfolio .container .product2 .title h5,
+#portfolio .container .product3 .title h5,
+#portfolio .container .product4 .title h5,
+#portfolio .container .product5 .title h5,
+#portfolio .container .product6 .title h5 {
+  color: #323655;
+  padding-top: 0.5rem;
+  font-size: 1.6em;
+}
+
+#portfolio .container .product1 .title p,
+#portfolio .container .product2 .title p,
+#portfolio .container .product3 .title p,
+#portfolio .container .product4 .title p,
+#portfolio .container .product5 .title p,
+#portfolio .container .product6 .title p {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #586095;
+  margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+#portfolio .container .product1 .title img,
+#portfolio .container .product2 .title img,
+#portfolio .container .product3 .title img,
+#portfolio .container .product4 .title img,
+#portfolio .container .product5 .title img,
+#portfolio .container .product6 .title img {
+  width: 32px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 995px) {
+  #portfolio .container .product1,
+  #portfolio .container .product2,
+  #portfolio .container .product3,
+  #portfolio .container .product4,
+  #portfolio .container .product5,
+  #portfolio .container .product6 {
+    width: 25%;
+    vertical-align: top;
+  }
+}
+
+#portfolio .container .product1:hover a .overlay,
+#portfolio .container .product2:hover a .overlay,
+#portfolio .container .product3:hover a .overlay,
+#portfolio .container .product4:hover a .overlay,
+#portfolio .container .product5:hover a .overlay,
+#portfolio .container .product6:hover a .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#portfolio .container .product1:hover .title,
+#portfolio .container .product2:hover .title,
+#portfolio .container .product3:hover .title,
+#portfolio .container .product4:hover .title,
+#portfolio .container .product5:hover .title,
+#portfolio .container .product6:hover .title {
+  opacity: 0;
+}
+
+#portfolio .container .product1:hover a img,
+#portfolio .container .product2:hover a img,
+#portfolio .container .product3:hover a img,
+#portfolio .container .product4:hover a img,
+#portfolio .container .product5:hover a img,
+#portfolio .container .product6:hover a img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  cursor: pointer;
+  height: 90%;
+}
+
+#portfolio .container .product2,
+#portfolio .container .product5 {
+  padding-bottom: 35px;
+}
+
+#portfolio .container .product4,
+#portfolio .container .product5,
+#portfolio .container .product6 {
+  margin-top: 3rem;
+}
+
+.email {
+  background: #303452;
+}
+
+@media only screen and (max-width: 1200px) {
+  .email .container h3 {
+    font-size: 1.9em;
+  }
+  .email .container .h2-sub {
+    font-size: 26px;
+    font-style: italic;
+    padding-top: 2rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .email .container h3 {
+    font-size: 1.5em;
+  }
+  .email .container p.h2-sub {
+    font-size: 1.2em;
+  }
+  .email .container div.soc h5 {
+    margin-bottom: 3rem;
+  }
+  .email .container div.soc a img {
+    margin: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .email .container h3 {
+    font-size: 1.3em;
+  }
+  .email .container p.h2-sub {
+    font-size: 1em;
+  }
+  .email .container div.soc {
+    margin-top: 3rem;
+  }
+  .email .container div.soc h5 {
+    margin-bottom: 3rem;
+  }
+  .email .container div.soc a img {
+    margin: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .email {
+    height: auto;
+  }
+  .email .container h3 {
+    font-size: 1.1em;
+  }
+  .email .container p.h2-sub {
+    font-size: 0.8em;
+  }
+  .email .container div.soc {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+  }
+  .email .container div.soc h5 {
+    margin-bottom: 3rem;
+    font-size: 1em;
+  }
+  .email .container div.soc a img {
+    margin: 0px 15px;
+  }
+}
+
+.email .container {
+  margin: 0;
+  padding: 60px 0px 70px;
+}
+
+.email .container h3 span {
+  padding: 1px 4px;
+  background: #4362ce;
+  color: #fff;
+}
+
+.email .container .h2-sub {
+  font-size: 26px;
+  font-style: italic;
+  padding-top: 2rem;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  color: #bfbfbf;
+}
+
+.email .container .soc {
+  margin-top: 5rem;
+}
+
+.email .container .soc h5 {
+  color: #dbdbdb;
+}
+
+.email .container .soc a img {
+  background: rgba(255, 255, 255, 0.8);
+  width: 44px;
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  margin-top: 2rem;
+  width: 51px;
+}
+
+footer {
+  background: #23263b;
+}
+
+@media only screen and (max-width: 995px) {
+  footer .container p.copy-right {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer .container p.copy-right {
+    font-size: 0.8em;
+  }
+}
+
+footer .container {
+  margin: 0;
+  padding: 20px 0px;
+}
+
+footer .container .copy-right {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+/*# sourceMappingURL=style_less.css.map */
