@@ -149,11 +149,6 @@ footer {
         border-right: 0.3rem solid darken(#fff, 0%);
         padding-right: 0.7rem;
       }
-      @keyframes blink {
-        to {
-          opacity: 0;
-        }
-      }
     }
     div.back-to-top {
       margin-top: 9rem;
@@ -170,7 +165,7 @@ footer {
         color: #fff;
         font-size: 5.7rem;
         padding: 2rem;
-        animation: up 2s infinite;
+        animation: down-arrow 2s infinite;
         -webkit-animation: down-arrow 2s infinite;
       }
     }
@@ -199,23 +194,6 @@ footer {
   }
   to {
     filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes down-arrow {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-2rem);
-    -webkit-transform: translateY(-2rem);
-    -moz-transform: translateY(-2rem);
-    -ms-transform: translateY(-2rem);
-    -o-transform: translateY(-2rem);
   }
 }
 
