@@ -2,22 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 
-/*===COLORS===*/
+/*=== INITIAL TYPOGRAPHY===*/
 
-$color-primary: #23263b;
-$color-secondary: #4362ce;
-$color-fff: #fff;
-$color-overlay: rgba(67, 98, 206, 0.8);
-$color-bg: rgba(80, 86, 135, 0.1);
-/*===TEXT COLOR===*/
-$text-000: #000;
-$text-fff: #fff;
-$text-000sec: lighten($text-000, 15%);
-
-//----- FONT -------
-$text-font: 'Open Sans', sans-serif;
-$text-font2: 'Monoton', cursive;
-$text-skills: consolas;
+:root {
+  --color-one: #4362ce;
+  --color-two: #23263b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-overlay: rgba(67, 98, 206, 0.8);
+  --color-bg: rgba(80, 86, 135, 0.1);
+  --text-opensans: 'Open Sans', sans-serif;
+  --text-monoton: 'Monoton', cursive;
+  --text-consolas: consolas;
+}
 
 h1 {
   font-size: 3.2em;
@@ -90,14 +87,14 @@ img {
 
 @mixin name {
   text-shadow: 2px 0.2px;
-  color: $text-fff;
+  color: var(--color-white);
 }
 
 @mixin sub-name {
-  font-family: $text-font;
+  font-family: var(--text-opensans);
   font-weight: 600;
   //color: darken($text-fff, 33%);
-  color: darken($color-fff, 0%);
+  color: darken(#fff, 0%);
   text-transform: uppercase;
 }
 
@@ -116,16 +113,16 @@ img {
 
 //====== ABOUT ==========
 
-@mixin h2-about {
-  font-family: $text-font2;
+@mixin h3-about {
+  font-family: var(--text-monoton);
   letter-spacing: 6px;
   text-transform: uppercase;
   margin-top: -1.2rem;
 }
 
-@mixin h2-monoton {
-  background: $color-secondary;
-  color: $text-fff;
+@mixin h3-monoton {
+  background: var(--color-one);
+  color: var(--color-white);
   padding-left: 1rem;
   padding-right: 1rem;
   border-top-left-radius: 10px;
@@ -133,9 +130,9 @@ img {
   margin-right: 0.5rem;
 }
 
-@mixin h2-monoton2 {
-  background: $color-primary;
-  color: $text-fff;
+@mixin h3-monoton2 {
+  background: var(--color-two);
+  color: var(--color-white);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 0px;
@@ -155,29 +152,99 @@ img {
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
-
+/*
 .button1 {
-  background: $color-secondary;
+  background: $color-primary;
   color: $text-fff;
   padding: 12px 22px;
   text-transform: uppercase;
   border-radius: 6px;
   margin-right: 15px;
+  transition: 0.4s ease-in all;
+  -webkit-transition: 0.4s ease-in all;
+  -moz-transition: 0.4s ease-in all;
+  -ms-transition: 0.4s ease-in all;
+  -o-transition: 0.4s ease-in all;
+  &:hover {
+    background: $color-secondary;
+  }
 }
 
 .button2 {
-  background: $color-secondary;
+  background: $color-primary;
   color: $text-fff;
   text-transform: uppercase;
   padding: 12px 28px;
   border-radius: 6px;
   margin-left: 15px;
+  transition: 0.4s ease-in all;
+  -webkit-transition: 0.4s ease-in all;
+  -moz-transition: 0.4s ease-in all;
+  -ms-transition: 0.4s ease-in all;
+  -o-transition: 0.4s ease-in all;
+  &:hover {
+    background: $color-secondary;
+  }
 }
+*/
+
+@mixin button($class-name: 'btn', $color: var(--color-two)) {
+  .#{$class-name} {
+    width: 140px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    background-color: var(--color-two);
+    color: lighten(#4362ce, 25%);
+    border: 4px solid $color;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color;
+      z-index: -1;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      filter: blur(0);
+      -webkit-filter: blur(0);
+    }
+    &:hover {
+      color: #fff;
+      background-color: $color;
+      &:before {
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+      }
+    }
+  }
+}
+
+@include button('btn-violet', var(--color-one));
 
 @mixin h2-span {
   padding: 1px 4px;
-  background: $color-secondary;
-  color: $text-fff;
+  background: var(--color-one);
+  color: var(--color-white);
 }
 
 @mixin h2-sub {

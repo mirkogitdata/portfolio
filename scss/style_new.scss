@@ -8,8 +8,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: $text-000;
-  font-family: $text-font;
+  color: var(--color-black);
+  font-family: var(--text-opensans);
   text-align: center;
 }
 a {
@@ -50,7 +50,7 @@ header {
     right: 0;
     bottom: 0;
     width: 250px;
-    background-color: lighten($color-secondary, 9%);
+    background-color: lighten(#4362ce, 9%);
     transform: translateX(250px);
     transition: transform 0.4s ease;
     a {
@@ -146,26 +146,12 @@ footer {
       @include sub-name;
       .dot {
         animation: blink 1s infinite;
-        border-right: 0.3rem solid darken($color-fff, 0%);
+        border-right: 0.3rem solid darken(#fff, 0%);
         padding-right: 0.7rem;
       }
       @keyframes blink {
         to {
           opacity: 0;
-        }
-      }
-    }
-    .scroll {
-      p {
-        @include scroll-text;
-      }
-
-      a {
-        img {
-          width: 91px;
-          height: 42px;
-          margin-top: 1.5rem;
-          cursor: pointer;
         }
       }
     }
@@ -239,12 +225,12 @@ footer {
   .container {
     h3 {
       span {
-        @include h2-monoton;
+        @include h3-monoton;
       }
       span:nth-of-type(2) {
-        @include h2-monoton2;
+        @include h3-monoton2;
       }
-      @include h2-about;
+      @include h3-about;
     }
     .details {
       display: flex;
@@ -253,7 +239,7 @@ footer {
       .profile {
         img {
           border-radius: 6px;
-          border: 2px solid lighten($color-primary, 41%);
+          border: 2px solid lighten(#23263b, 41%);
           padding: 5px;
         }
         flex: 40%;
@@ -279,36 +265,36 @@ footer {
           .button1 {
             position: relative;
             display: inline-block;
-            transition: 1s;
             transform: translateX(100px);
             opacity: 0;
-            &:hover {
-              padding: 11px 20px;
-              transition: 0.05s all ease-in;
-              opacity: 0.7;
-            }
           }
           .button1[data-scroll='in'] {
             transform: translateX(0);
-            transition-delay: 0.3s;
+            //transition-delay: 0.3s;
             opacity: 1;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
           }
           .button2 {
             position: relative;
             display: inline-block;
-            transition: 1s;
             transform: translateX(100px);
             opacity: 0;
-            &:hover {
-              padding: 11px 27px;
-              transition: 0.05s padding ease-in;
-              opacity: 0.7;
-            }
+            -webkit-transform: translateX(100px);
+            -moz-transform: translateX(100px);
+            -ms-transform: translateX(100px);
+            -o-transform: translateX(100px);
           }
           .button2[data-scroll='in'] {
             transform: translateX(0);
-            transition-delay: 0.8s;
+            //transition-delay: 0.8s;
             opacity: 1;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
           }
           margin-top: 2rem;
           margin-bottom: 6rem;
@@ -462,7 +448,7 @@ footer {
 //========= EXPERTISE ========
 
 #services {
-  color: $text-000;
+  color: var(--color-black);
   .container {
     h2 {
       span {

@@ -1,7 +1,34 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,800&subset=cyrillic-ext,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Monoton");
 /*===COLORS===*/
-/*===TEXT COLOR===*/
+/*
+$color-primary: #23263b;
+$color-secondary: #4362ce;
+$color-fff: #fff;
+$color-overlay: rgba(67, 98, 206, 0.8);
+$color-bg: rgba(80, 86, 135, 0.1);
+
+$text-000: #000;
+$text-fff: #fff;
+$text-000sec: lighten($text-000, 15%);
+
+//----- FONT -------
+$text-font: 'Open Sans', sans-serif;
+$text-font2: 'Monoton', cursive;
+$text-skills: consolas;
+*/
+:root {
+  --color-one: #4362ce;
+  --color-two: #23263b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-overlay: rgba(67, 98, 206, 0.8);
+  --color-bg: rgba(80, 86, 135, 0.1);
+  --text-opensans: 'Open Sans', sans-serif;
+  --text-monoton: 'Monoton', cursive;
+  --text-consolas: consolas;
+}
+
 h1 {
   font-size: 3.2em;
 }
@@ -58,22 +85,97 @@ img {
   vertical-align: bottom;
 }
 
+/*
 .button1 {
-  background: #4362ce;
-  color: #fff;
+  background: $color-primary;
+  color: $text-fff;
   padding: 12px 22px;
   text-transform: uppercase;
   border-radius: 6px;
   margin-right: 15px;
+  transition: 0.4s ease-in all;
+  -webkit-transition: 0.4s ease-in all;
+  -moz-transition: 0.4s ease-in all;
+  -ms-transition: 0.4s ease-in all;
+  -o-transition: 0.4s ease-in all;
+  &:hover {
+    background: $color-secondary;
+  }
 }
 
 .button2 {
-  background: #4362ce;
-  color: #fff;
+  background: $color-primary;
+  color: $text-fff;
   text-transform: uppercase;
   padding: 12px 28px;
   border-radius: 6px;
   margin-left: 15px;
+  transition: 0.4s ease-in all;
+  -webkit-transition: 0.4s ease-in all;
+  -moz-transition: 0.4s ease-in all;
+  -ms-transition: 0.4s ease-in all;
+  -o-transition: 0.4s ease-in all;
+  &:hover {
+    background: $color-secondary;
+  }
+}
+*/
+.btn-violet {
+  width: 140px;
+  height: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  background-color: var(--color-two);
+  color: #a8b6e8;
+  border: 4px solid var(--color-one);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.btn-violet:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-one);
+  z-index: -1;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+
+.btn-violet:hover {
+  color: #fff;
+  background-color: var(--color-one);
+}
+
+.btn-violet:hover:before {
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
 }
 
 body {
@@ -94,8 +196,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #000;
-  font-family: "Open Sans", sans-serif;
+  color: var(--color-black);
+  font-family: var(--text-opensans);
   text-align: center;
 }
 
@@ -261,13 +363,13 @@ footer {
 
 #hero div.container h1.name {
   text-shadow: 2px 0.2px;
-  color: #fff;
+  color: var(--color-white);
   margin-top: 11rem;
   letter-spacing: 1px;
 }
 
 #hero div.container .sub-name {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--text-opensans);
   font-weight: 600;
   color: white;
   text-transform: uppercase;
@@ -290,26 +392,6 @@ footer {
   to {
     opacity: 0;
   }
-}
-
-#hero div.container .scroll p {
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  color: rgba(235, 238, 248, 0.9);
-  border-radius: 5px;
-  letter-spacing: 0.4px;
-  font-weight: 800;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-#hero div.container .scroll a img {
-  width: 91px;
-  height: 42px;
-  margin-top: 1.5rem;
-  cursor: pointer;
 }
 
 #hero div.container div.back-to-top {
@@ -414,15 +496,15 @@ footer {
 }
 
 #about .container h3 {
-  font-family: "Monoton", cursive;
+  font-family: var(--text-monoton);
   letter-spacing: 6px;
   text-transform: uppercase;
   margin-top: -1.2rem;
 }
 
 #about .container h3 span {
-  background: #4362ce;
-  color: #fff;
+  background: var(--color-one);
+  color: var(--color-white);
   padding-left: 1rem;
   padding-right: 1rem;
   border-top-left-radius: 10px;
@@ -431,8 +513,8 @@ footer {
 }
 
 #about .container h3 span:nth-of-type(2) {
-  background: #23263b;
-  color: #fff;
+  background: var(--color-two);
+  color: var(--color-white);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 0px;
@@ -500,51 +582,38 @@ footer {
 #about .container .details .about-text .aboutButtons .button1 {
   position: relative;
   display: inline-block;
-  -webkit-transition: 1s;
-  transition: 1s;
   -webkit-transform: translateX(100px);
           transform: translateX(100px);
   opacity: 0;
 }
 
-#about .container .details .about-text .aboutButtons .button1:hover {
-  padding: 11px 20px;
-  -webkit-transition: 0.05s all ease-in;
-  transition: 0.05s all ease-in;
-  opacity: 0.7;
-}
-
 #about .container .details .about-text .aboutButtons .button1[data-scroll='in'] {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transform: translateX(0);
   opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
 }
 
 #about .container .details .about-text .aboutButtons .button2 {
   position: relative;
   display: inline-block;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  transform: translateX(100px);
   opacity: 0;
-}
-
-#about .container .details .about-text .aboutButtons .button2:hover {
-  padding: 11px 27px;
-  -webkit-transition: 0.05s padding ease-in;
-  transition: 0.05s padding ease-in;
-  opacity: 0.7;
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
 }
 
 #about .container .details .about-text .aboutButtons .button2[data-scroll='in'] {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
+  transform: translateX(0);
   opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
 }
 
 #skills {
@@ -572,8 +641,8 @@ footer {
 
 #skills .container h2 span {
   padding: 1px 4px;
-  background: #4362ce;
-  color: #fff;
+  background: var(--color-one);
+  color: var(--color-white);
 }
 
 #skills .container .h2-sub {
@@ -721,13 +790,13 @@ footer {
 }
 
 #services {
-  color: #000;
+  color: var(--color-black);
 }
 
 #services .container h2 span {
   padding: 1px 4px;
-  background: #4362ce;
-  color: #fff;
+  background: var(--color-one);
+  color: var(--color-white);
 }
 
 #services .container .h2-sub {
