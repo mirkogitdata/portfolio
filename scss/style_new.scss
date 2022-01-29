@@ -231,42 +231,7 @@ footer {
           line-height: 44px;
         }
         .aboutButtons {
-          .button1 {
-            position: relative;
-            display: inline-block;
-            transform: translateX(100px);
-            opacity: 0;
-          }
-          .button1[data-scroll='in'] {
-            transform: translateX(0);
-            //transition-delay: 0.3s;
-            opacity: 1;
-            -webkit-transform: translateX(0);
-            -moz-transform: translateX(0);
-            -ms-transform: translateX(0);
-            -o-transform: translateX(0);
-          }
-          .button2 {
-            position: relative;
-            display: inline-block;
-            transform: translateX(100px);
-            opacity: 0;
-            -webkit-transform: translateX(100px);
-            -moz-transform: translateX(100px);
-            -ms-transform: translateX(100px);
-            -o-transform: translateX(100px);
-          }
-          .button2[data-scroll='in'] {
-            transform: translateX(0);
-            //transition-delay: 0.8s;
-            opacity: 1;
-            -webkit-transform: translateX(0);
-            -moz-transform: translateX(0);
-            -ms-transform: translateX(0);
-            -o-transform: translateX(0);
-          }
-          margin-top: 2rem;
-          margin-bottom: 6rem;
+          @include button('btn-violet', var(--color-one));
           text-align: left;
         }
       }
