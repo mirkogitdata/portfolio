@@ -94,7 +94,7 @@ img {
 
 @mixin sub-name {
   font-family: var(--text-consolas);
-  font-weight: 600;
+  font-size: 1.7em;
   //color: darken($text-fff, 33%);
   color: darken(#fff, 0%);
   text-transform: uppercase;
