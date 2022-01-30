@@ -204,13 +204,14 @@ a:visited {
 
 header div.myLogo {
   position: fixed;
-  top: 0px;
+  top: 2rem;
   left: 2rem;
   z-index: 100;
 }
 
 header div.myLogo a img {
-  width: 135px;
+  width: 125px;
+  height: 40px;
 }
 
 header nav {
