@@ -1,8 +1,3 @@
-@import './partials/buttons.scss';
-@import './partials/animations.scss';
-@import './partials/typography.scss';
-
-
 //========= HERO =======
 @mixin hero {
   width: 100%;
@@ -82,41 +77,6 @@
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
-/*
-.button1 {
-  background: $color-primary;
-  color: $text-fff;
-  padding: 12px 22px;
-  text-transform: uppercase;
-  border-radius: 6px;
-  margin-right: 15px;
-  transition: 0.4s ease-in all;
-  -webkit-transition: 0.4s ease-in all;
-  -moz-transition: 0.4s ease-in all;
-  -ms-transition: 0.4s ease-in all;
-  -o-transition: 0.4s ease-in all;
-  &:hover {
-    background: $color-secondary;
-  }
-}
-
-.button2 {
-  background: $color-primary;
-  color: $text-fff;
-  text-transform: uppercase;
-  padding: 12px 28px;
-  border-radius: 6px;
-  margin-left: 15px;
-  transition: 0.4s ease-in all;
-  -webkit-transition: 0.4s ease-in all;
-  -moz-transition: 0.4s ease-in all;
-  -ms-transition: 0.4s ease-in all;
-  -o-transition: 0.4s ease-in all;
-  &:hover {
-    background: $color-secondary;
-  }
-}
-*/
 
 @mixin h2-span {
   padding: 1px 4px;
