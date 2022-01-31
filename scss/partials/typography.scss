@@ -1,0 +1,74 @@
+/*===INITIAL FONTS ===*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,800&subset=cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+/*=== INITIAL TYPOGRAPHY===*/
+
+:root {
+  --color-one: #4362ce;
+  --color-two: #23263b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-overlay: rgba(67, 98, 206, 0.8);
+  --color-bg: rgba(80, 86, 135, 0.1);
+  --text-opensans: 'Open Sans', sans-serif;
+  --text-monoton: 'Monoton', cursive;
+  --text-consolas: consolas;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+/* Default: 
+
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 12px; } 
+h6 { font-size: 10px; }
+
+*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.5rem 0;
+}
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 6rem 0;
+  font-size: 1.3em;
+}
+
+.cf {
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
