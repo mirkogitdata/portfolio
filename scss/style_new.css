@@ -1119,4 +1119,30 @@ footer {
   -ms-transition: 0.3s all;
   -o-transition: 0.3s all;
 }
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--color-one);
+  color: var(--color-white);
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
+
+footer .container {
+  margin: 0;
+  padding: 20px 0px;
+}
+
+footer .container .copy-right {
+  font-size: 1em;
+}
 /*# sourceMappingURL=style_new.css.map */

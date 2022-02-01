@@ -78,6 +78,7 @@
   margin-bottom: 5rem;
 }
 
+//======= h2 & p ========
 @mixin h2-span {
   padding: 1px 4px;
   background: var(--color-one);
@@ -92,13 +93,7 @@
   text-align: center;
 }
 
-//======= PORTFOLIO ========
-
-//========= FOOTER =====
-@mixin footer {
-  background: #23263b;
-}
-
+//======= CONTACT ========
 @mixin soc-img {
   background: rgba(255, 255, 255, 0.8);
   margin-right: 7px;
@@ -122,4 +117,16 @@
     -ms-transition: 0.3s all;
     -o-transition: 0.3s all;
   }
+}
+
+//========= FOOTER =====
+@mixin footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-one);
+  color: var(--color-white);
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
 }

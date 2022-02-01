@@ -646,3 +646,15 @@ footer {
     }
   }
 }
+
+//========= FOOTER ===========
+footer {
+  .container {
+    .copy-right {
+      font-size: 1em;
+    }
+    margin: 0;
+    padding: 20px 0px;
+  }
+  @include footer;
+}
