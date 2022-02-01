@@ -7,8 +7,9 @@
     align-items: center;
     text-transform: uppercase;
     position: relative;
-    background-color: var(--color-two);
-    color: lighten(#4362ce, 25%);
+    background-color: var(--color-white);
+    color: var(--color-one);
+    font-weight: 700;
     margin-right: 2rem;
     border: 4px solid $color;
     border-radius: 6px;
