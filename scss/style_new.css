@@ -174,7 +174,7 @@ a:hover {
 }
 
 a:active {
-  background: var(--color-one);
+  background: none;
 }
 
 header div.myLogo {
@@ -194,7 +194,7 @@ header div.myLogo a img {
   -o-transition: 0.3s all;
 }
 
-header div.myLogo a img:hover {
+header div.myLogo a img:hover, header div.myLogo a img:active {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -226,8 +226,8 @@ header nav * {
 header nav a .nav-toggle-btn {
   display: block;
   position: absolute;
-  top: 25px;
-  right: 280px;
+  top: 2rem;
+  right: calc(250px + 2rem);
   width: 36px;
   height: 36px;
   -webkit-transition: 0.1s ease-out all;

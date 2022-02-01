@@ -27,7 +27,7 @@ a {
     color: white;
   }
   &:active {
-    background: var(--color-one);
+    background: none;
   }
 }
 
@@ -47,7 +47,8 @@ header {
         -moz-transition: 0.3s all;
         -ms-transition: 0.3s all;
         -o-transition: 0.3s all;
-        &:hover {
+        &:hover,
+        &:active {
           transform: scale(1.1);
           -webkit-transform: scale(1.1);
           -moz-transform: scale(1.1);
@@ -75,8 +76,8 @@ header {
       .nav-toggle-btn {
         display: block;
         position: absolute;
-        top: 25px;
-        right: 280px;
+        top: 2rem;
+        right: calc(250px + 2rem);
         width: 36px;
         height: 36px;
         transition: 0.1s ease-out all;
