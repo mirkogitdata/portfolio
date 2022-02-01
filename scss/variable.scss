@@ -112,11 +112,11 @@
   -o-border-radius: 53px;
   &:hover {
     transition: 0.3s all;
-    transform: scale(2);
+    transform: scale(1.2);
     -webkit-transform: scale(1.2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
     -webkit-transition: 0.3s all;
     -moz-transition: 0.3s all;
     -ms-transition: 0.3s all;

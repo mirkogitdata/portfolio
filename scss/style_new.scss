@@ -206,7 +206,6 @@ footer {
 }
 
 //====== ABOUT ==========
-
 #about {
   .container {
     h3 {
@@ -615,5 +614,34 @@ footer {
   }
   .container:nth-of-type(2) {
     padding-top: 0;
+  }
+}
+
+//====== PORTFOLIO =========
+#contact {
+  .container {
+    margin: 0;
+    padding: 60px 0px 70px;
+    h2 {
+      span {
+        @include h2-span;
+      }
+    }
+    .h2-sub {
+      @include h2-sub;
+    }
+    div.soc {
+      h4 {
+        color: var(--color-one);
+        letter-spacing: 0rem;
+      }
+      a {
+        img {
+          @include soc-img;
+          margin: 2rem 1rem;
+        }
+      }
+      margin-top: 7rem;
+    }
   }
 }
