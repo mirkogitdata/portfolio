@@ -632,12 +632,13 @@ footer {
     }
     div.soc {
       h4 {
-        color: var(--color-one);
+        color: var(--color-two);
         letter-spacing: 0rem;
       }
       a {
         img {
           @include soc-img;
+          width: calc(53px + 0.7rem);
           margin: 2rem 1rem;
         }
       }
