@@ -363,7 +363,7 @@ footer {
   padding-right: 0.7rem;
 }
 
-#hero div.container div.back-to-top {
+#hero div.container div.scroll-down {
   margin-top: 9rem;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -372,7 +372,7 @@ footer {
   -o-transform: rotate(180deg);
 }
 
-#hero div.container div.back-to-top i {
+#hero div.container div.scroll-down a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -23,62 +23,8 @@
   text-transform: uppercase;
 }
 
-@mixin scroll-text {
-  font-family: $text-font;
-  text-transform: uppercase;
-  color: lighten(rgba(128, 145, 207, 0.9), 29%);
-  border-radius: 5px;
-  letter-spacing: 0.4px;
-  font-weight: 800;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-//====== ABOUT ==========
-
-@mixin h3-about {
-  font-family: var(--text-monoton);
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  margin-top: -1.2rem;
-}
-
-@mixin h3-monoton {
-  background: var(--color-one);
-  color: var(--color-white);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin-right: 0.5rem;
-}
-
-@mixin h3-monoton2 {
-  background: var(--color-two);
-  color: var(--color-white);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  margin-left: 0.5rem;
-  margin-right: 0;
-}
-
-@mixin about-up {
-  font-weight: 600;
-  margin-top: 5rem;
-  padding-top: 1.5em;
-}
-
-@mixin about-down {
-  font-weight: 600;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-}
-
 //======= h2 & p ========
+
 @mixin h2-span {
   padding: 1px 4px;
   background: var(--color-one);
@@ -91,6 +37,19 @@
   padding-top: 2rem;
   color: #000;
   text-align: center;
+}
+
+//====== ABOUT ==========
+@mixin about-up {
+  font-weight: 600;
+  margin-top: 5rem;
+  padding-top: 1.5em;
+}
+
+@mixin about-down {
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 //======= CONTACT ========

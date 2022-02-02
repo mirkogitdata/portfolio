@@ -170,23 +170,25 @@ footer {
         padding-right: 0.7rem;
       }
     }
-    div.back-to-top {
+    div.scroll-down {
       margin-top: 9rem;
       transform: rotate(180deg);
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       -o-transform: rotate(180deg);
-      i {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        font-size: 5.7rem;
-        padding: 2rem;
-        animation: down-arrow 2s infinite;
-        -webkit-animation: down-arrow 2s infinite;
+      a {
+        i {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 5.7rem;
+          padding: 2rem;
+          animation: down-arrow 2s infinite;
+          -webkit-animation: down-arrow 2s infinite;
+        }
       }
     }
   }
