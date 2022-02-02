@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=queries.css.map */
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 90%;
+    padding: 4rem 0;
+  }
+  section#hero div.container h1.name {
+    font-size: 2.6em;
+  }
+  section#hero div.container div.scroll-down {
+    margin-top: 5rem;
+  }
+  section#about .container div.details div.profile {
+    margin-top: 6rem;
+  }
+  section#about .container div.details div.about-text {
+    margin-left: 6rem;
+  }
+  section#services .container:nth-of-type(2) .text1 .product1-text h3 {
+    font-size: 1.8em;
+  }
+  * .container h2 {
+    font-size: 2.2em;
+  }
+}
+/*# sourceMappingURL=queries.css.map */
