@@ -146,11 +146,16 @@ header {
     }
   }
   @media only screen and (max-width: $medium-screens) {
-    div.myLogo {
-      a {
-        img {
-          width: 90px;
+    nav {
+      div.myLogo {
+        a {
+          img {
+            width: 90px;
+          }
         }
+      }
+      div.soc {
+        margin-top: 20rem;
       }
     }
   }

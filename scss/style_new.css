@@ -419,8 +419,11 @@ header nav div.soc a img:hover {
 }
 
 @media only screen and (max-width: 995px) {
-  header div.myLogo a img {
+  header nav div.myLogo a img {
     width: 90px;
+  }
+  header nav div.soc {
+    margin-top: 20rem;
   }
 }
 
