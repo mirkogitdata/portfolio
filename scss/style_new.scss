@@ -145,6 +145,15 @@ header {
       }
     }
   }
+  @media only screen and (max-width: $medium-screens) {
+    div.myLogo {
+      a {
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
 }
 
 .active-nav nav {
@@ -252,7 +261,11 @@ footer {
         max-width: 40%;
         margin-top: 8rem;
         @include transformToLeft;
-        transform: translateX(-300px);
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+        -moz-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+        -o-transform: translateX(-30px);
       }
       .profile[data-scroll='in'] {
         @include transformToLeft-data-scroll;

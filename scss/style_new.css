@@ -154,6 +154,9 @@ img {
   section#about .container div.details div.about-text {
     margin-left: 6rem;
   }
+  section#about .container div.details div.about-text .about-up {
+    margin-top: 7rem;
+  }
   section#services .container:nth-of-type(2) .text1 .product1-text h3 {
     font-size: 1.8em;
   }
@@ -168,14 +171,20 @@ img {
   }
   section#about .container div.details div.about-text {
     font-size: 1.2em;
-    margin-left: 5rem;
+    margin-left: 4rem;
   }
   section#about .container div.details div.about-text .about-up {
-    margin-top: 3rem;
+    margin-top: 5.6rem;
+    line-height: 36px;
   }
   section#about .container div.details div.about-text .about-down {
     margin-top: 2rem;
     margin-bottom: 3rem;
+    line-height: 36px;
+  }
+  section#about .container div.details div.about-text .aboutButtons a.btn-violet {
+    width: 120px;
+    height: 40px;
   }
   section#services .container:nth-of-type(2) .text1 .product1-text h3 {
     font-size: 1.6em;
@@ -185,6 +194,41 @@ img {
   }
   * .container h2 {
     font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  section#hero div.container h1.name {
+    margin-top: 60%;
+    font-size: 2.6em;
+  }
+  section#hero div.container div.scroll-down {
+    margin-top: 45%;
+  }
+  section#about .container div.details div.profile {
+    margin-top: 6rem;
+  }
+  section#about .container div.details div.about-text {
+    font-size: 1.1em;
+    margin-left: 3rem;
+  }
+  section#about .container div.details div.about-text .about-up {
+    margin-top: 6rem;
+    line-height: 29px;
+  }
+  section#about .container div.details div.about-text .about-down {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 29px;
+  }
+  section#skills .center {
+    width: 80vw;
+  }
+  * .container h2 {
+    font-size: 1.8em;
+  }
+  * .container .h2-sub {
+    margin-top: 0.2rem;
   }
 }
 
@@ -374,6 +418,12 @@ header nav div.soc a img:hover {
   }
 }
 
+@media only screen and (max-width: 995px) {
+  header div.myLogo a img {
+    width: 90px;
+  }
+}
+
 .active-nav nav {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -518,7 +568,11 @@ footer {
   -ms-transition: 0.8s ease-in-out;
   -o-transition: 0.8s ease-in-out;
   -webkit-transform: translateX(300px);
-  transform: translateX(-300px);
+  transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
 }
 
 #about .container .details .profile img {
@@ -545,8 +599,7 @@ footer {
 
 #about .container .details .about-text .about-up {
   font-weight: 600;
-  margin-top: 5rem;
-  padding-top: 1.5em;
+  margin-top: 9rem;
   position: relative;
   transition: 0.8s ease-in-out;
   transform: translateX(300px);

@@ -28,6 +28,9 @@ $xl-screens: 1400px;
         }
         div.about-text {
           margin-left: 6rem;
+          .about-up {
+            margin-top: 7rem;
+          }
         }
       }
     }
@@ -60,13 +63,21 @@ $xl-screens: 1400px;
         }
         div.about-text {
           font-size: 1.2em;
-          margin-left: 5rem;
+          margin-left: 4rem;
           .about-up {
-            margin-top: 3rem;
+            margin-top: 5.6rem;
+            line-height: 36px;
           }
           .about-down {
             margin-top: 2rem;
             margin-bottom: 3rem;
+            line-height: 36px;
+          }
+          .aboutButtons {
+            a.btn-violet {
+              width: 120px;
+              height: 40px;
+            }
           }
         }
       }
@@ -92,6 +103,56 @@ $xl-screens: 1400px;
     .container {
       h2 {
         font-size: 2em;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $medium-screens) {
+  section#hero {
+    div.container {
+      h1.name {
+        margin-top: 60%;
+        font-size: 2.6em;
+      }
+      div.scroll-down {
+        margin-top: 45%;
+      }
+    }
+  }
+  section#about {
+    .container {
+      div.details {
+        div.profile {
+          margin-top: 6rem;
+        }
+        div.about-text {
+          font-size: 1.1em;
+          margin-left: 3rem;
+          .about-up {
+            margin-top: 6rem;
+            line-height: 29px;
+          }
+          .about-down {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            line-height: 29px;
+          }
+        }
+      }
+    }
+  }
+  section#skills {
+    .center {
+      width: 80vw;
+    }
+  }
+  * {
+    .container {
+      h2 {
+        font-size: 1.8em;
+      }
+      .h2-sub {
+        margin-top: 0.2rem;
       }
     }
   }
