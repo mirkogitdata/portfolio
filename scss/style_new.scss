@@ -260,11 +260,11 @@ footer {
       .about-text {
         flex: 60%;
         margin-left: 9rem;
+        font-size: 1.3em;
         .about-up {
           @include about-up;
           @include transformToLeft;
           text-align: left;
-          font-size: 1.3em;
           line-height: 44px;
         }
         .about-up[data-scroll='in'] {
@@ -274,7 +274,6 @@ footer {
           @include about-down;
           @include transformToLeft;
           text-align: left;
-          font-size: 1.3em;
           line-height: 44px;
         }
         .about-down[data-scroll='in'] {
@@ -283,6 +282,7 @@ footer {
         .aboutButtons {
           @include button('btn-violet', var(--color-one));
           @include transformToLeft;
+          font-size: 0.8em;
           text-align: left;
         }
         .aboutButtons[data-scroll='in'] {
@@ -345,7 +345,7 @@ footer {
         text-shadow: 0.5px 0.7px;
         margin: 0 0 10px;
         padding: 0;
-        font-size: 1.55em;
+        font-size: 1.53em;
         font-weight: bolder;
         letter-spacing: 1.5px;
         text-shadow: 1.5px 0.2px;

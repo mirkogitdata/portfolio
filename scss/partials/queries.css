@@ -22,4 +22,30 @@
     font-size: 2.2em;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  section#about .container div.details div.profile {
+    margin-top: 5rem;
+  }
+  section#about .container div.details div.about-text {
+    font-size: 1.2em;
+    margin-left: 5rem;
+  }
+  section#about .container div.details div.about-text .about-up {
+    margin-top: 3rem;
+  }
+  section#about .container div.details div.about-text .about-down {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  section#services .container:nth-of-type(2) .text1 .product1-text h3 {
+    font-size: 1.6em;
+  }
+  section#skills .center {
+    width: 60vw;
+  }
+  * .container h2 {
+    font-size: 2em;
+  }
+}
 /*# sourceMappingURL=queries.css.map */

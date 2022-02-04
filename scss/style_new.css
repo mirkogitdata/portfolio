@@ -162,6 +162,32 @@ img {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  section#about .container div.details div.profile {
+    margin-top: 5rem;
+  }
+  section#about .container div.details div.about-text {
+    font-size: 1.2em;
+    margin-left: 5rem;
+  }
+  section#about .container div.details div.about-text .about-up {
+    margin-top: 3rem;
+  }
+  section#about .container div.details div.about-text .about-down {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  section#services .container:nth-of-type(2) .text1 .product1-text h3 {
+    font-size: 1.6em;
+  }
+  section#skills .center {
+    width: 60vw;
+  }
+  * .container h2 {
+    font-size: 2em;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -514,6 +540,7 @@ footer {
       -ms-flex: 60%;
           flex: 60%;
   margin-left: 9rem;
+  font-size: 1.3em;
 }
 
 #about .container .details .about-text .about-up {
@@ -533,7 +560,6 @@ footer {
   -ms-transform: translateX(300px);
   -o-transform: translateX(300px);
   text-align: left;
-  font-size: 1.3em;
   line-height: 44px;
 }
 
@@ -562,7 +588,6 @@ footer {
   -ms-transform: translateX(300px);
   -o-transform: translateX(300px);
   text-align: left;
-  font-size: 1.3em;
   line-height: 44px;
 }
 
@@ -587,6 +612,7 @@ footer {
   -moz-transform: translateX(300px);
   -ms-transform: translateX(300px);
   -o-transform: translateX(300px);
+  font-size: 0.8em;
   text-align: left;
 }
 
@@ -728,7 +754,7 @@ footer {
   text-shadow: 0.5px 0.7px;
   margin: 0 0 10px;
   padding: 0;
-  font-size: 1.55em;
+  font-size: 1.53em;
   font-weight: bolder;
   letter-spacing: 1.5px;
   text-shadow: 1.5px 0.2px;
