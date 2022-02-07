@@ -9,9 +9,6 @@
   section#hero div.container h1.name {
     font-size: 2.6em;
   }
-  section#hero div.container div.scroll-down {
-    margin-top: 5rem;
-  }
   section#about .container div.details div.profile {
     margin-top: 6rem;
   }
@@ -60,11 +57,7 @@
 
 @media only screen and (max-width: 995px) {
   section#hero div.container h1.name {
-    margin-top: 60%;
     font-size: 2.6em;
-  }
-  section#hero div.container div.scroll-down {
-    margin-top: 45%;
   }
   section#about .container div.details div.profile {
     margin-top: 6rem;
@@ -103,6 +96,9 @@
   }
   .container p.h2-sub {
     font-size: 1.1em;
+  }
+  section#hero div.scroll-down a i {
+    font-size: 4rem;
   }
   section#about .container div.details {
     -webkit-box-orient: vertical;

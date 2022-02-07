@@ -207,13 +207,12 @@ footer {
 }
 
 //======= HERO ======
-
 #hero {
   @include hero;
   div.container {
     h1.name {
       @include name;
-      margin-top: 11rem;
+      //margin-top: 11rem;
       letter-spacing: 1px;
     }
     .sub-name {
@@ -224,27 +223,27 @@ footer {
         padding-right: 0.7rem;
       }
     }
-    div.scroll-down {
-      margin-top: 9rem;
-      transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      a {
-        i {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          font-size: 5.7rem;
-          padding: 2rem;
-          animation: down-arrow 2s infinite;
-          -webkit-animation: down-arrow 2s infinite;
-        }
+  }
+  div.scroll-down {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    a {
+      i {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 5.7rem;
+        animation: down-arrow 2s infinite;
+        -webkit-animation: down-arrow 2s infinite;
       }
     }
+    position: absolute;
+    bottom: 4rem;
   }
   &::after {
     content: '';

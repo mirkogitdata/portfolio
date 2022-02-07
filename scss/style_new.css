@@ -148,9 +148,6 @@ img {
   section#hero div.container h1.name {
     font-size: 2.6em;
   }
-  section#hero div.container div.scroll-down {
-    margin-top: 5rem;
-  }
   section#about .container div.details div.profile {
     margin-top: 6rem;
   }
@@ -199,11 +196,7 @@ img {
 
 @media only screen and (max-width: 995px) {
   section#hero div.container h1.name {
-    margin-top: 60%;
     font-size: 2.6em;
-  }
-  section#hero div.container div.scroll-down {
-    margin-top: 45%;
   }
   section#about .container div.details div.profile {
     margin-top: 6rem;
@@ -242,6 +235,9 @@ img {
   }
   .container p.h2-sub {
     font-size: 1.1em;
+  }
+  section#hero div.scroll-down a i {
+    font-size: 4rem;
   }
   section#about .container div.details {
     -webkit-box-orient: vertical;
@@ -565,6 +561,19 @@ footer {
 }
 
 #hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100vh;
   background: url("../image/hero-image3.png") center/cover;
@@ -578,7 +587,6 @@ footer {
 #hero div.container h1.name {
   text-shadow: 2px 0.2px;
   color: var(--color-white);
-  margin-top: 11rem;
   letter-spacing: 1px;
 }
 
@@ -596,16 +604,17 @@ footer {
   padding-right: 0.7rem;
 }
 
-#hero div.container div.scroll-down {
-  margin-top: 9rem;
+#hero div.scroll-down {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+  position: absolute;
+  bottom: 4rem;
 }
 
-#hero div.container div.scroll-down a i {
+#hero div.scroll-down a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,7 +630,6 @@ footer {
           align-items: center;
   color: #fff;
   font-size: 5.7rem;
-  padding: 2rem;
   animation: down-arrow 2s infinite;
   -webkit-animation: down-arrow 2s infinite;
 }

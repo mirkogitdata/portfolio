@@ -18,9 +18,6 @@ $xl-screens: 1400px;
       h1.name {
         font-size: 2.6em;
       }
-      div.scroll-down {
-        margin-top: 5rem;
-      }
     }
   }
   section#about {
@@ -107,11 +104,7 @@ $xl-screens: 1400px;
   section#hero {
     div.container {
       h1.name {
-        margin-top: 60%;
         font-size: 2.6em;
-      }
-      div.scroll-down {
-        margin-top: 45%;
       }
     }
   }
@@ -163,6 +156,15 @@ $xl-screens: 1400px;
     }
     p.h2-sub {
       font-size: 1.1em;
+    }
+  }
+  section#hero {
+    div.scroll-down {
+      a {
+        i {
+          font-size: 4rem;
+        }
+      }
     }
   }
   section#about {

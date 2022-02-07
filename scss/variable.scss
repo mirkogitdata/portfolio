@@ -1,5 +1,9 @@
 //========= HERO =======
 @mixin hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   background: url('../image/hero-image3.png') center/cover;
