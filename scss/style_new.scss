@@ -32,6 +32,12 @@ a {
   }
 }
 
+.container {
+  .h2-sub {
+    font-size: 26px;
+  }
+}
+
 //======= HEADER ======
 header {
   div.myLogo {
@@ -146,16 +152,31 @@ header {
     }
   }
   @media only screen and (max-width: $medium-screens) {
-    nav {
-      div.myLogo {
-        a {
-          img {
-            width: 90px;
-          }
+    div.myLogo {
+      a {
+        img {
+          width: 90px;
         }
       }
+    }
+    nav {
       div.soc {
         margin-top: 20rem;
+      }
+    }
+  }
+  @media only screen and (max-width: $small-screens) {
+    div.myLogo {
+      a {
+        img {
+          width: 75px;
+          height: 36px;
+        }
+      }
+    }
+    nav {
+      div.soc {
+        margin-top: 5rem;
       }
     }
   }
@@ -266,11 +287,11 @@ footer {
         max-width: 40%;
         margin-top: 8rem;
         @include transformToLeft;
-        transform: translateX(-30px);
-        -webkit-transform: translateX(-30px);
-        -moz-transform: translateX(-30px);
-        -ms-transform: translateX(-30px);
-        -o-transform: translateX(-30px);
+        transform: translateX(-300px);
+        -webkit-transform: translateX(-300px);
+        -moz-transform: translateX(-300px);
+        -ms-transform: translateX(-300px);
+        -o-transform: translateX(-300px);
       }
       .profile[data-scroll='in'] {
         @include transformToLeft-data-scroll;
@@ -628,7 +649,7 @@ footer {
       margin-bottom: 4rem;
       background-color: #fff;
       margin: 0rem 10px 3rem;
-      width: 80%;
+      //width: 80%;
     }
   }
   .grid-container {
@@ -641,11 +662,13 @@ footer {
   }
 }
 
-//====== PORTFOLIO =========
+//====== CONTACT =========
 #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .container {
-    margin: 0;
-    padding: 60px 0px 70px;
     h2 {
       span {
         @include h2-span;

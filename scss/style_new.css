@@ -142,6 +142,9 @@ img {
     width: 90%;
     padding: 4rem 0;
   }
+  .container h2 {
+    font-size: 2.2em;
+  }
   section#hero div.container h1.name {
     font-size: 2.6em;
   }
@@ -159,9 +162,6 @@ img {
   }
   section#services .container:nth-of-type(2) .text1 .product1-text h3 {
     font-size: 1.8em;
-  }
-  * .container h2 {
-    font-size: 2.2em;
   }
 }
 
@@ -232,6 +232,102 @@ img {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 3rem 0;
+  }
+  .container h2 {
+    font-size: 1.6em;
+  }
+  .container p.h2-sub {
+    font-size: 1.1em;
+  }
+  section#about .container div.details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#about .container div.details .profile {
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+  }
+  section#about .container div.details div.about-text {
+    margin-left: 0;
+  }
+  section#about .container div.details div.about-text .about-up {
+    margin-top: 3rem;
+    line-height: 29px;
+  }
+  section#about .container div.details div.about-text .about-down {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    line-height: 29px;
+  }
+  section#skills .center {
+    width: 80vw;
+    padding: 4rem 3rem;
+    margin: 2rem 0rem 5rem;
+  }
+  section#skills .center .skillBox {
+    margin: 24px 0;
+  }
+  section#skills .center .skillBox p {
+    font-size: 1.3em;
+  }
+  section#skills .center .skillBox:nth-of-type(6) {
+    margin-bottom: 0;
+  }
+  section#services .container:nth-of-type(2) .product1,
+  section#services .container:nth-of-type(2) .product2,
+  section#services .container:nth-of-type(2) .product3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  section#services .container:nth-of-type(2) .product1 .product1-text,
+  section#services .container:nth-of-type(2) .product2 .product1-text,
+  section#services .container:nth-of-type(2) .product3 .product1-text {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  section#services .container:nth-of-type(2) .product1 .product1-text h3,
+  section#services .container:nth-of-type(2) .product2 .product1-text h3,
+  section#services .container:nth-of-type(2) .product3 .product1-text h3 {
+    padding-bottom: 25px;
+  }
+  section#services .container:nth-of-type(2) .product1 .product1-text .product-text,
+  section#services .container:nth-of-type(2) .product2 .product1-text .product-text,
+  section#services .container:nth-of-type(2) .product3 .product1-text .product-text {
+    font-size: 20px;
+  }
+  section#services .container:nth-of-type(2) .product2 .product1-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  section#services .container:nth-of-type(2) .product2 .code {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  section#services .container:nth-of-type(2) .text1 .product1-text h3 {
+    font-size: 1.4em;
+  }
+  section#portfolio .grid-container {
+    width: 60vw;
+  }
+  section#contact .container div.soc h4 {
+    font-size: 1.4em;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -270,6 +366,10 @@ a:hover {
 
 a:active {
   background: none;
+}
+
+.container .h2-sub {
+  font-size: 26px;
 }
 
 header div.myLogo {
@@ -419,11 +519,21 @@ header nav div.soc a img:hover {
 }
 
 @media only screen and (max-width: 995px) {
-  header nav div.myLogo a img {
+  header div.myLogo a img {
     width: 90px;
   }
   header nav div.soc {
     margin-top: 20rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header div.myLogo a img {
+    width: 75px;
+    height: 36px;
+  }
+  header nav div.soc {
+    margin-top: 5rem;
   }
 }
 
@@ -538,7 +648,6 @@ footer {
 }
 
 #about .container p.h2-sub {
-  font-size: 26px;
   font-style: italic;
   padding-top: 1rem;
   color: #000;
@@ -571,11 +680,11 @@ footer {
   -ms-transition: 0.8s ease-in-out;
   -o-transition: 0.8s ease-in-out;
   -webkit-transform: translateX(300px);
-  transform: translateX(-30px);
-  -webkit-transform: translateX(-30px);
-  -moz-transform: translateX(-30px);
-  -ms-transform: translateX(-30px);
-  -o-transform: translateX(-30px);
+  transform: translateX(-300px);
+  -webkit-transform: translateX(-300px);
+  -moz-transform: translateX(-300px);
+  -ms-transform: translateX(-300px);
+  -o-transform: translateX(-300px);
 }
 
 #about .container .details .profile img {
@@ -770,7 +879,6 @@ footer {
 }
 
 #skills .container .h2-sub {
-  font-size: 26px;
   font-style: italic;
   padding-top: 1rem;
   color: #000;
@@ -925,7 +1033,6 @@ footer {
 }
 
 #services .container .h2-sub {
-  font-size: 26px;
   font-style: italic;
   padding-top: 1rem;
   color: #000;
@@ -1118,7 +1225,6 @@ footer {
 }
 
 #portfolio .container .h2-sub {
-  font-size: 26px;
   font-style: italic;
   padding-top: 1rem;
   color: #000;
@@ -1138,7 +1244,6 @@ footer {
   margin-bottom: 4rem;
   background-color: #fff;
   margin: 0rem 10px 3rem;
-  width: 80%;
 }
 
 #portfolio .container .product1 a img,
@@ -1263,9 +1368,20 @@ footer {
   padding-top: 0;
 }
 
-#contact .container {
-  margin: 0;
-  padding: 60px 0px 70px;
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #contact .container h2 span {
@@ -1275,7 +1391,6 @@ footer {
 }
 
 #contact .container .h2-sub {
-  font-size: 26px;
   font-style: italic;
   padding-top: 1rem;
   color: #000;

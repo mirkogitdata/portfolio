@@ -3,6 +3,9 @@
     width: 90%;
     padding: 4rem 0;
   }
+  .container h2 {
+    font-size: 2.2em;
+  }
   section#hero div.container h1.name {
     font-size: 2.6em;
   }
@@ -20,9 +23,6 @@
   }
   section#services .container:nth-of-type(2) .text1 .product1-text h3 {
     font-size: 1.8em;
-  }
-  * .container h2 {
-    font-size: 2.2em;
   }
 }
 
@@ -90,6 +90,102 @@
   }
   * .container .h2-sub {
     margin-top: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 3rem 0;
+  }
+  .container h2 {
+    font-size: 1.6em;
+  }
+  .container p.h2-sub {
+    font-size: 1.1em;
+  }
+  section#about .container div.details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#about .container div.details .profile {
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+  }
+  section#about .container div.details div.about-text {
+    margin-left: 0;
+  }
+  section#about .container div.details div.about-text .about-up {
+    margin-top: 3rem;
+    line-height: 29px;
+  }
+  section#about .container div.details div.about-text .about-down {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    line-height: 29px;
+  }
+  section#skills .center {
+    width: 80vw;
+    padding: 4rem 3rem;
+    margin: 2rem 0rem 5rem;
+  }
+  section#skills .center .skillBox {
+    margin: 24px 0;
+  }
+  section#skills .center .skillBox p {
+    font-size: 1.3em;
+  }
+  section#skills .center .skillBox:nth-of-type(6) {
+    margin-bottom: 0;
+  }
+  section#services .container:nth-of-type(2) .product1,
+  section#services .container:nth-of-type(2) .product2,
+  section#services .container:nth-of-type(2) .product3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  section#services .container:nth-of-type(2) .product1 .product1-text,
+  section#services .container:nth-of-type(2) .product2 .product1-text,
+  section#services .container:nth-of-type(2) .product3 .product1-text {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  section#services .container:nth-of-type(2) .product1 .product1-text h3,
+  section#services .container:nth-of-type(2) .product2 .product1-text h3,
+  section#services .container:nth-of-type(2) .product3 .product1-text h3 {
+    padding-bottom: 25px;
+  }
+  section#services .container:nth-of-type(2) .product1 .product1-text .product-text,
+  section#services .container:nth-of-type(2) .product2 .product1-text .product-text,
+  section#services .container:nth-of-type(2) .product3 .product1-text .product-text {
+    font-size: 20px;
+  }
+  section#services .container:nth-of-type(2) .product2 .product1-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  section#services .container:nth-of-type(2) .product2 .code {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  section#services .container:nth-of-type(2) .text1 .product1-text h3 {
+    font-size: 1.4em;
+  }
+  section#portfolio .grid-container {
+    width: 60vw;
+  }
+  section#contact .container div.soc h4 {
+    font-size: 1.4em;
   }
 }
 /*# sourceMappingURL=queries.css.map */
