@@ -175,8 +175,42 @@ header {
       }
     }
     nav {
+      a {
+        .nav-toggle-btn {
+          width: 32px;
+          height: 32px;
+          &:hover {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
       div.soc {
         margin-top: 5rem;
+      }
+    }
+  }
+  @media only screen and (max-width: $tiny-screens) {
+    div.myLogo {
+      a {
+        img {
+          width: 70px;
+          height: 32px;
+        }
+      }
+    }
+    nav {
+      div.soc {
+        a {
+          img {
+            width: 47px;
+            border-radius: 47px;
+            -webkit-border-radius: 47px;
+            -moz-border-radius: 47px;
+            -ms-border-radius: 47px;
+            -o-border-radius: 47px;
+          }
+        }
       }
     }
   }
@@ -394,12 +428,6 @@ footer {
         top: -38px;
         font-weight: 700;
       }
-      p:nth-child(2) {
-        float: right;
-        position: relative;
-        top: -38px;
-        font-weight: 700;
-      }
       .skill {
         /*background: #4362ce;*/
         background: #fff;
@@ -610,6 +638,10 @@ footer {
           opacity: 0;
           transition: 0.8s ease;
           background-color: var(--color-overlay);
+          -webkit-transition: 0.8s ease;
+          -moz-transition: 0.8s ease;
+          -ms-transition: 0.8s ease;
+          -o-transition: 0.8s ease;
         }
       }
       .title {

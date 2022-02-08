@@ -5,6 +5,7 @@ $medium-screens: 995px;
 $large-screens: 1200px;
 $xl-screens: 1400px;
 
+//========= xl-screens =======
 @media only screen and (max-width: $xl-screens) {
   .container {
     width: 90%;
@@ -47,6 +48,7 @@ $xl-screens: 1400px;
     }
   }
 }
+//========= large-screens =======
 @media only screen and (max-width: $large-screens) {
   section#about {
     .container {
@@ -100,6 +102,7 @@ $xl-screens: 1400px;
     }
   }
 }
+//========= medium-screens =======
 @media only screen and (max-width: $medium-screens) {
   section#hero {
     div.container {
@@ -146,7 +149,7 @@ $xl-screens: 1400px;
     }
   }
 }
-
+//========= small-screens =======
 @media only screen and (max-width: $small-screens) {
   .container {
     width: 80%;
@@ -254,6 +257,91 @@ $xl-screens: 1400px;
       div.soc {
         h4 {
           font-size: 1.4em;
+        }
+      }
+    }
+  }
+}
+//========= tiny-screens =======
+@media only screen and (max-width: $tiny-screens) {
+  .container {
+    width: 90%;
+    padding: 3rem 0;
+    h2 {
+      font-size: 1.4em;
+    }
+    p.h2-sub {
+      font-size: 1em;
+    }
+  }
+  section#hero {
+    div.container {
+      h1.name {
+        font-size: 2.2em;
+      }
+      .sub-name {
+        font-size: 1.4em;
+      }
+    }
+  }
+  section#skills {
+    .center {
+      width: 90vw;
+      padding: 4rem 1rem;
+      .skillBox {
+        margin: 20px 0;
+        p {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+  section#services {
+    .container:nth-of-type(2) {
+      .text1 {
+        .product1-text {
+          h3 {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+  section#portfolio {
+    .grid-container {
+      width: 90vw;
+      .product1,
+      .product2,
+      .product3,
+      .product4,
+      .product5,
+      .product6 {
+        .title {
+          h5 {
+            font-size: 1.3em;
+          }
+          p {
+            font-size: 1em;
+          }
+          img {
+            width: 26px;
+          }
+        }
+      }
+    }
+  }
+  section#contact {
+    .container {
+      div.soc {
+        margin-top: 5rem;
+        h4 {
+          font-size: 1.2em;
+        }
+        a {
+          img {
+            width: calc(47px + 0.7rem);
+            margin: 1.5rem 0.8rem;
+          }
         }
       }
     }

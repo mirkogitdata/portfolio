@@ -324,6 +324,75 @@ img {
   }
 }
 
+@media only screen and (max-width: 560px) {
+  .container {
+    width: 90%;
+    padding: 3rem 0;
+  }
+  .container h2 {
+    font-size: 1.4em;
+  }
+  .container p.h2-sub {
+    font-size: 1em;
+  }
+  section#hero div.container h1.name {
+    font-size: 2.2em;
+  }
+  section#hero div.container .sub-name {
+    font-size: 1.4em;
+  }
+  section#skills .center {
+    width: 90vw;
+    padding: 4rem 1rem;
+  }
+  section#skills .center .skillBox {
+    margin: 20px 0;
+  }
+  section#skills .center .skillBox p {
+    font-size: 1.2em;
+  }
+  section#services .container:nth-of-type(2) .text1 .product1-text h3 {
+    font-size: 1.2em;
+  }
+  section#portfolio .grid-container {
+    width: 90vw;
+  }
+  section#portfolio .grid-container .product1 .title h5,
+  section#portfolio .grid-container .product2 .title h5,
+  section#portfolio .grid-container .product3 .title h5,
+  section#portfolio .grid-container .product4 .title h5,
+  section#portfolio .grid-container .product5 .title h5,
+  section#portfolio .grid-container .product6 .title h5 {
+    font-size: 1.3em;
+  }
+  section#portfolio .grid-container .product1 .title p,
+  section#portfolio .grid-container .product2 .title p,
+  section#portfolio .grid-container .product3 .title p,
+  section#portfolio .grid-container .product4 .title p,
+  section#portfolio .grid-container .product5 .title p,
+  section#portfolio .grid-container .product6 .title p {
+    font-size: 1em;
+  }
+  section#portfolio .grid-container .product1 .title img,
+  section#portfolio .grid-container .product2 .title img,
+  section#portfolio .grid-container .product3 .title img,
+  section#portfolio .grid-container .product4 .title img,
+  section#portfolio .grid-container .product5 .title img,
+  section#portfolio .grid-container .product6 .title img {
+    width: 26px;
+  }
+  section#contact .container div.soc {
+    margin-top: 5rem;
+  }
+  section#contact .container div.soc h4 {
+    font-size: 1.2em;
+  }
+  section#contact .container div.soc a img {
+    width: calc(47px + 0.7rem);
+    margin: 1.5rem 0.8rem;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -528,8 +597,31 @@ header nav div.soc a img:hover {
     width: 75px;
     height: 36px;
   }
+  header nav a .nav-toggle-btn {
+    width: 32px;
+    height: 32px;
+  }
+  header nav a .nav-toggle-btn:hover {
+    width: 35px;
+    height: 35px;
+  }
   header nav div.soc {
     margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header div.myLogo a img {
+    width: 70px;
+    height: 32px;
+  }
+  header nav div.soc a img {
+    width: 47px;
+    border-radius: 47px;
+    -webkit-border-radius: 47px;
+    -moz-border-radius: 47px;
+    -ms-border-radius: 47px;
+    -o-border-radius: 47px;
   }
 }
 
@@ -939,13 +1031,6 @@ footer {
   font-weight: 700;
 }
 
-#skills .center .skillBox p:nth-child(2) {
-  float: right;
-  position: relative;
-  top: -38px;
-  font-weight: 700;
-}
-
 #skills .center .skillBox .skill {
   /*background: #4362ce;*/
   background: #fff;
@@ -1280,9 +1365,12 @@ footer {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   background-color: var(--color-overlay);
+  -webkit-transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+  -o-transition: 0.8s ease;
 }
 
 #portfolio .container .product1 a .overlay .text,
