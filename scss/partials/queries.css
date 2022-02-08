@@ -202,6 +202,22 @@
   section#hero div.container .sub-name {
     font-size: 1.4em;
   }
+  section#about .container div.details {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+  section#about .container div.details .profile {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  section#about .container div.details .profile img {
+    border: none;
+    padding: 0;
+  }
   section#skills .center {
     width: 90vw;
     padding: 4rem 1rem;

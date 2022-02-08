@@ -284,6 +284,22 @@ $xl-screens: 1400px;
       }
     }
   }
+  section#about {
+    .container {
+      div.details {
+        justify-content: center;
+        overflow: hidden;
+        .profile {
+          flex: 100%;
+          max-width: 100%;
+          img {
+            border: none;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
   section#skills {
     .center {
       width: 90vw;
