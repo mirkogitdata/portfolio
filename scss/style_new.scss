@@ -742,3 +742,19 @@ footer {
   }
   @include footer;
 }
+
+//========= PRELOADER ===========
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background: url('https://i.gifer.com/3HKV.gif') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#afterLoad {
+  display: none;
+}
