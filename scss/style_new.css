@@ -646,6 +646,10 @@ header nav div.soc a img:hover {
           transform: translate3d(0, 0, 0);
 }
 
+.active-nav header .myLogo {
+  display: none;
+}
+
 .active-nav #hero,
 .active-nav #about,
 .active-nav #skills,

@@ -266,18 +266,20 @@
     
 <!-- NAVBAR-MENU ON CLICK -->		
 <script type="text/javascript">
-        (function() {
-            var bodyEl = $('body'),
-                navToggleBtn = bodyEl.find('.nav-toggle-btn'),
-	        menuLink = bodyEl.find('nav ul li a');
-            navToggleBtn.on('click', function(e) {
-                bodyEl.toggleClass('active-nav');
-                e.preventDefault();
-            });
-            menuLink.on('click', function() {
-				bodyEl.toggleClass('active-nav').style.display = "none"; //=== return nav to position right: 0;
-			});
-        })();  
+    (function() {
+        const bodyEl = $('body'),
+            navToggleBtn = bodyEl.find('.nav-toggle-btn'),
+            menuLink = bodyEl.find('nav ul li a'),
+            myLogo = bodyEl.find('header .myLogo');
+        navToggleBtn.on('click', function(e) {
+            bodyEl.toggleClass('active-nav');
+            myLogo.toggleClass('active-nav');
+            e.preventDefault();
+        });
+        menuLink.on('click', function() {
+            bodyEl.toggleClass('active-nav').style.display = "none"; //=== return nav to position right: 0;
+        });
+    })();  
 </script>
 <!-- SCROLL-TO-->
 <script src="js/scrollTo.js" type="text/javascript"></script>
