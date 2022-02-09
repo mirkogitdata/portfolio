@@ -1,12 +1,12 @@
  $('.scrollMe').click(function() {
 		 
-		 var getElement = $(this).attr('href');
+		 let getElement = $(this).attr('href');
 		 
 		 if($(getElement).length) {
 			 
-			 var getOffset = $(getElement).offset().top;
+			 let getOffset = $(getElement).offset().top;
 			 
-			 var targetDistance = 0;
+			 let targetDistance = 0;
 			 
 			 $('html,body').animate({
 				 

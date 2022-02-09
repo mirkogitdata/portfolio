@@ -265,7 +265,7 @@
     font-size: 1.2em;
   }
   section#contact .container div.soc a img {
-    width: calc(47px + 0.7rem);
+    width: calc(40px + 0.7rem);
     margin: 1.5rem 0.8rem;
   }
 }

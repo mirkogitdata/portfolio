@@ -2,9 +2,9 @@
 		 
 		 if($(id).length) {
 			 
-			 var getOffset = $(id).offset().top;
+			 let getOffset = $(id).offset().top;
 			 
-			 var targetDistance = 50;
+			 let targetDistance = 50;
 			 
 			 $('html,body').animate({
 				 
@@ -16,13 +16,13 @@
 	 
 	 $('.scrollTo').click(function() {
 		 
-		 var getElement = $(this).attr('href');
+		 let getElement = $(this).attr('href');
 		 
 		 if($(getElement).length) {
 			 
-			 var getOffset = $(getElement).offset().top;
+			 let getOffset = $(getElement).offset().top;
 			 
-			 var targetDistance = 0;
+			 let targetDistance = 0;
 			 
 			 $('html,body').animate({
 				 

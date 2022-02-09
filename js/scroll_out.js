@@ -1,4 +1,4 @@
-var ScrollOut = (function () {
+const ScrollOut = (function () {
   'use strict';
 
   function clamp(v, min, max) {
@@ -19,8 +19,8 @@ var ScrollOut = (function () {
       return '-' + match[0].toLowerCase();
   }
 
-  var win = window;
-  var root = document.documentElement;
+  const win = window;
+  const root = document.documentElement;
   /** find elements */
   function $(e, parent) {
       return !e || e.length === 0
@@ -32,15 +32,15 @@ var ScrollOut = (function () {
               : // selector and NodeList are converted to Element[]
                   [].slice.call(e[0].nodeName ? e : (parent || root).querySelectorAll(e));
   }
-  var setAttrs = function (el, attrs) {
+  let setAttrs = function (el, attrs) {
       // tslint:disable-next-line:forin
-      for (var key in attrs) {
+      for (let key in attrs) {
           el.setAttribute("data-" + hyphenate(key), attrs[key]);
       }
   };
-  var setProps = function (cssProps) {
+  let setProps = function (cssProps) {
       return function (el, props) {
-          for (var key in props) {
+          for (let key in props) {
               if (cssProps === true || cssProps[key]) {
                   el.style.setProperty("--" + hyphenate(key), round(props[key]));
               }
@@ -48,8 +48,8 @@ var ScrollOut = (function () {
       };
   };
 
-  var clearTask;
-  var subscribers = [];
+  let clearTask;
+  let subscribers = [];
   function subscribe(fn) {
       subscribers.push(fn);
       if (!clearTask) {
@@ -65,7 +65,7 @@ var ScrollOut = (function () {
   }
   function loop() {
       // process subscribers
-      var s = subscribers.slice();
+      let s = subscribers.slice();
       s.forEach(function (s2) { return s2(); });
       // schedule next loop if the queue needs it
       clearTask = subscribers.length ? requestAnimationFrame(loop) : 0;
@@ -73,10 +73,10 @@ var ScrollOut = (function () {
 
   function noop() { }
 
-  var SCROLL = 'scroll';
-  var RESIZE = 'resize';
-  var ON = 'addEventListener';
-  var OFF = 'removeEventListener';
+  const SCROLL = 'scroll';
+  const RESIZE = 'resize';
+  const ON = 'addEventListener';
+  const OFF = 'removeEventListener';
   /**
    * Creates a new instance of ScrollOut that marks elements in the viewport with
    * an "in" class and marks elements outside of the viewport with an "out"
@@ -86,30 +86,30 @@ var ScrollOut = (function () {
       // Apply default options.
       opts = opts || {};
       // Debounce onChange/onHidden/onShown.
-      var onChange = opts.onChange || noop;
-      var onHidden = opts.onHidden || noop;
-      var onShown = opts.onShown || noop;
-      var onScroll = opts.onScroll || noop;
-      var props = opts.cssProps ? setProps(opts.cssProps) : noop;
-      var se = opts.scrollingElement;
-      var container = se ? $(se)[0] : win;
-      var doc = se ? $(se)[0] : root;
-      var rootChanged = false;
-      var scrollingElementContext = {};
-      var elementContextList;
-      var sub;
-      var clientOffsetX, clientOffsety;
+      let onChange = opts.onChange || noop;
+      let onHidden = opts.onHidden || noop;
+      let onShown = opts.onShown || noop;
+      let onScroll = opts.onScroll || noop;
+      let props = opts.cssProps ? setProps(opts.cssProps) : noop;
+      let se = opts.scrollingElement;
+      let container = se ? $(se)[0] : win;
+      let doc = se ? $(se)[0] : root;
+      let rootChanged = false;
+      let scrollingElementContext = {};
+      let elementContextList;
+      let sub;
+      let clientOffsetX, clientOffsety;
       function index() {
           elementContextList = $(opts.targets || '[data-scroll]', $(opts.scope || doc)[0]).map(function (el) { return ({ element: el }); });
       }
       function update() {
           // Calculate position, direction and ratio.
-          var clientWidth = doc.clientWidth;
-          var clientHeight = doc.clientHeight;
-          var scrollDirX = sign(-clientOffsetX + (clientOffsetX = doc.scrollLeft || win.pageXOffset));
-          var scrollDirY = sign(-clientOffsety + (clientOffsety = doc.scrollTop || win.pageYOffset));
-          var scrollPercentX = doc.scrollLeft / (doc.scrollWidth - clientWidth || 1);
-          var scrollPercentY = doc.scrollTop / (doc.scrollHeight - clientHeight || 1);
+          let clientWidth = doc.clientWidth;
+          let clientHeight = doc.clientHeight;
+          let scrollDirX = sign(-clientOffsetX + (clientOffsetX = doc.scrollLeft || win.pageXOffset));
+          let scrollDirY = sign(-clientOffsety + (clientOffsety = doc.scrollTop || win.pageYOffset));
+          let scrollPercentX = doc.scrollLeft / (doc.scrollWidth - clientWidth || 1);
+          let scrollPercentY = doc.scrollTop / (doc.scrollHeight - clientHeight || 1);
           // Detect if the root context has changed.
           rootChanged =
               rootChanged ||
@@ -121,38 +121,38 @@ var ScrollOut = (function () {
           scrollingElementContext.scrollDirY = scrollDirY;
           scrollingElementContext.scrollPercentX = scrollPercentX;
           scrollingElementContext.scrollPercentY = scrollPercentY;
-          var hasChildChanged;
-          for (var index_1 = 0; index_1 < elementContextList.length; index_1++) {
-              var ctx = elementContextList[index_1];
-              var element = ctx.element;
+          let hasChildChanged;
+          for (let index_1 = 0; index_1 < elementContextList.length; index_1++) {
+              let ctx = elementContextList[index_1];
+              let element = ctx.element;
               // find the distance from the element to the scrolling container
-              var target = element;
-              var offsetX = 0;
-              var offsetY = 0;
+              let target = element;
+              let offsetX = 0;
+              let offsetY = 0;
               do {
                   offsetX += target.offsetLeft;
                   offsetY += target.offsetTop;
                   target = target.offsetParent;
               } while (target && target !== container);
               // Get element dimensions.
-              var elementHeight = element.clientHeight || element.offsetHeight || 0;
-              var elementWidth = element.clientWidth || element.offsetWidth || 0;
+              let elementHeight = element.clientHeight || element.offsetHeight || 0;
+              let elementWidth = element.clientWidth || element.offsetWidth || 0;
               // Find visible ratios for each element.
-              var visibleX = (clamp(offsetX + elementWidth, clientOffsetX, clientOffsetX + clientWidth) -
+              let visibleX = (clamp(offsetX + elementWidth, clientOffsetX, clientOffsetX + clientWidth) -
                   clamp(offsetX, clientOffsetX, clientOffsetX + clientWidth)) /
                   elementWidth;
-              var visibleY = (clamp(offsetY + elementHeight, clientOffsety, clientOffsety + clientHeight) -
+              let visibleY = (clamp(offsetY + elementHeight, clientOffsety, clientOffsety + clientHeight) -
                   clamp(offsetY, clientOffsety, clientOffsety + clientHeight)) /
                   elementHeight;
-              var intersectX = visibleX === 1 ? 0 : sign(offsetX - clientOffsetX);
-              var intersectY = visibleY === 1 ? 0 : sign(offsetY - clientOffsety);
-              var viewportX = clamp((clientOffsetX - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2), -1, 1);
-              var viewportY = clamp((clientOffsety - (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2), -1, 1);
-              var visible = +(opts.offset
+              let intersectX = visibleX === 1 ? 0 : sign(offsetX - clientOffsetX);
+              let intersectY = visibleY === 1 ? 0 : sign(offsetY - clientOffsety);
+              let viewportX = clamp((clientOffsetX - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2), -1, 1);
+              let viewportY = clamp((clientOffsety - (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2), -1, 1);
+              let visible = +(opts.offset
                   ? opts.offset <= clientOffsety
                   : (opts.threshold || 0) < visibleX * visibleY);
-              var changedVisible = ctx.visible !== visible;
-              var changed = changedVisible ||
+              let changedVisible = ctx.visible !== visible;
+              let changed = changedVisible ||
                   ctx._changed ||
                   ctx.visible !== visible ||
                   ctx.visibleX !== visibleX ||
@@ -202,11 +202,11 @@ var ScrollOut = (function () {
               props(doc, scrollingElementContext);
               onScroll(doc, scrollingElementContext, elementContextList);
           }
-          var len = elementContextList.length;
-          for (var x = len - 1; x > -1; x--) {
-              var ctx = elementContextList[x];
-              var el = ctx.element;
-              var visible = ctx.visible;
+          let len = elementContextList.length;
+          for (let x = len - 1; x > -1; x--) {
+              let ctx = elementContextList[x];
+              let el = ctx.element;
+              let visible = ctx.visible;
               if (ctx._changed) {
                   ctx._changed = false;
                   props(el, ctx);

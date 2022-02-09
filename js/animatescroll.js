@@ -142,7 +142,7 @@
     $.fn.animatescroll = function(options) {
         
         // fetches options
-        var opts = $.extend({},$.fn.animatescroll.defaults,options);
+        let opts = $.extend({},$.fn.animatescroll.defaults,options);
 
         // make sure the callback is a function
         if (typeof opts.onScrollStart == 'function') {
@@ -152,7 +152,7 @@
                 
         if(opts.element == "html,body") {
             // Get the distance of particular id or class from top
-            var offset = this.offset().top;
+            let offset = this.offset().top;
         
             // Scroll the page to the desired position
             $(opts.element).stop().animate({ scrollTop: offset - opts.padding}, opts.scrollSpeed, opts.easing);
