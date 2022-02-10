@@ -1,3 +1,4 @@
+//========= BUTTON COMPONENT =======
 @mixin button($class-name: 'btn', $color: var(--color-two)) {
   .#{$class-name} {
     width: 140px;
