@@ -1,0 +1,93 @@
+//========= HERO =======
+@mixin hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url('../image/hero-image3.png') center/cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  animation: hue 10s infinite alternate;
+  -webkit-animation: hue 10s infinite alternate;
+}
+
+@mixin name {
+  text-shadow: 2px 0.2px;
+  color: var(--color-white);
+}
+
+@mixin sub-name {
+  font-family: var(--text-consolas);
+  font-size: 1.7em;
+  //color: darken($text-fff, 33%);
+  color: darken(#fff, 0%);
+  text-transform: uppercase;
+}
+
+//======= h2 & p ========
+
+@mixin h2-span {
+  padding: 1px 4px;
+  background: var(--color-one);
+  color: var(--color-white);
+}
+
+@mixin h2-sub {
+  font-style: italic;
+  padding-top: 1rem;
+  color: #000;
+  text-align: center;
+}
+
+//====== ABOUT ==========
+@mixin about-up {
+  font-weight: 600;
+  margin-top: 9rem;
+}
+
+@mixin about-down {
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+//======= CONTACT ========
+@mixin soc-img {
+  background: rgba(255, 255, 255, 0.8);
+  margin-right: 7px;
+  margin-left: 7px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 53px;
+  border-radius: 53px;
+  -webkit-border-radius: 53px;
+  -moz-border-radius: 53px;
+  -ms-border-radius: 53px;
+  -o-border-radius: 53px;
+  &:hover {
+    transition: 0.3s all;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+  }
+}
+
+//========= FOOTER =====
+@mixin footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-one);
+  color: var(--color-white);
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
