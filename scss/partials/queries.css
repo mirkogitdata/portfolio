@@ -218,12 +218,10 @@
     border: none;
     padding: 0;
   }
-  section#about .container div.details div.about-text .aboutButtons {
-    font-size: 0.6em;
-  }
   section#about .container div.details div.about-text .aboutButtons a.btn-violet {
-    width: 90px;
+    width: 110px;
     height: 32px;
+    margin-right: 1rem;
   }
   section#skills .center {
     width: 90vw;
