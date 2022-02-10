@@ -334,6 +334,7 @@ $xl-screens: 1400px;
   }
   section#portfolio {
     .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       width: 90vw;
       .product1,
       .product2,

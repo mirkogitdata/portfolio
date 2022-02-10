@@ -376,6 +376,8 @@ img {
     font-size: 1.2em;
   }
   section#portfolio .grid-container {
+    -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     width: 90vw;
   }
   section#portfolio .grid-container .product1 .title h5,
