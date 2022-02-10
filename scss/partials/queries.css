@@ -200,7 +200,7 @@
     font-size: 2.2em;
   }
   section#hero div.container .sub-name {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   section#about .container div.details {
     -webkit-box-pack: center;
@@ -217,6 +217,13 @@
   section#about .container div.details .profile img {
     border: none;
     padding: 0;
+  }
+  section#about .container div.details div.about-text .aboutButtons {
+    font-size: 0.6em;
+  }
+  section#about .container div.details div.about-text .aboutButtons a.btn-violet {
+    width: 90px;
+    height: 32px;
   }
   section#skills .center {
     width: 90vw;

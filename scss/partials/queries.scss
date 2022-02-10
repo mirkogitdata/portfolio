@@ -280,7 +280,7 @@ $xl-screens: 1400px;
         font-size: 2.2em;
       }
       .sub-name {
-        font-size: 1.4em;
+        font-size: 1.2em;
       }
     }
   }
@@ -295,6 +295,15 @@ $xl-screens: 1400px;
           img {
             border: none;
             padding: 0;
+          }
+        }
+        div.about-text {
+          .aboutButtons {
+            font-size: 0.6em;
+            a.btn-violet {
+              width: 90px;
+              height: 32px;
+            }
           }
         }
       }
