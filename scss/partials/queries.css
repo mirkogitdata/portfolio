@@ -22,7 +22,6 @@
     font-size: 1.8em;
   }
 }
-
 @media only screen and (max-width: 1200px) {
   section#about .container div.details div.profile {
     margin-top: 5rem;
@@ -54,7 +53,6 @@
     font-size: 2em;
   }
 }
-
 @media only screen and (max-width: 995px) {
   section#hero div.container h1.name {
     font-size: 2.6em;
@@ -85,7 +83,6 @@
     margin-top: 0.2rem;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .container {
     width: 80%;
@@ -101,10 +98,7 @@
     font-size: 4rem;
   }
   section#about .container div.details {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   section#about .container div.details .profile {
     transform: translateX(300px);
@@ -140,39 +134,32 @@
     margin-bottom: 0;
   }
   section#services .container:nth-of-type(2) .product1,
-  section#services .container:nth-of-type(2) .product2,
-  section#services .container:nth-of-type(2) .product3 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+section#services .container:nth-of-type(2) .product2,
+section#services .container:nth-of-type(2) .product3 {
+    flex-direction: column;
     margin-bottom: 4rem;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text,
-  section#services .container:nth-of-type(2) .product2 .product1-text,
-  section#services .container:nth-of-type(2) .product3 .product1-text {
+section#services .container:nth-of-type(2) .product2 .product1-text,
+section#services .container:nth-of-type(2) .product3 .product1-text {
     text-align: left;
     margin-bottom: 3rem;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text h3,
-  section#services .container:nth-of-type(2) .product2 .product1-text h3,
-  section#services .container:nth-of-type(2) .product3 .product1-text h3 {
+section#services .container:nth-of-type(2) .product2 .product1-text h3,
+section#services .container:nth-of-type(2) .product3 .product1-text h3 {
     padding-bottom: 25px;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text .product-text,
-  section#services .container:nth-of-type(2) .product2 .product1-text .product-text,
-  section#services .container:nth-of-type(2) .product3 .product1-text .product-text {
+section#services .container:nth-of-type(2) .product2 .product1-text .product-text,
+section#services .container:nth-of-type(2) .product3 .product1-text .product-text {
     font-size: 20px;
   }
   section#services .container:nth-of-type(2) .product2 .product1-text {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   section#services .container:nth-of-type(2) .product2 .code {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   section#services .container:nth-of-type(2) .text1 .product1-text h3 {
     font-size: 1.4em;
@@ -184,7 +171,6 @@
     font-size: 1.4em;
   }
 }
-
 @media only screen and (max-width: 560px) {
   .container {
     width: 90%;
@@ -203,15 +189,11 @@
     font-size: 1.2em;
   }
   section#about .container div.details {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     overflow: hidden;
   }
   section#about .container div.details .profile {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
+    flex: 100%;
     max-width: 100%;
   }
   section#about .container div.details .profile img {
@@ -237,32 +219,31 @@
     font-size: 1.2em;
   }
   section#portfolio .grid-container {
-    -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     width: 90vw;
   }
   section#portfolio .grid-container .product1 .title h5,
-  section#portfolio .grid-container .product2 .title h5,
-  section#portfolio .grid-container .product3 .title h5,
-  section#portfolio .grid-container .product4 .title h5,
-  section#portfolio .grid-container .product5 .title h5,
-  section#portfolio .grid-container .product6 .title h5 {
+section#portfolio .grid-container .product2 .title h5,
+section#portfolio .grid-container .product3 .title h5,
+section#portfolio .grid-container .product4 .title h5,
+section#portfolio .grid-container .product5 .title h5,
+section#portfolio .grid-container .product6 .title h5 {
     font-size: 1.3em;
   }
   section#portfolio .grid-container .product1 .title p,
-  section#portfolio .grid-container .product2 .title p,
-  section#portfolio .grid-container .product3 .title p,
-  section#portfolio .grid-container .product4 .title p,
-  section#portfolio .grid-container .product5 .title p,
-  section#portfolio .grid-container .product6 .title p {
+section#portfolio .grid-container .product2 .title p,
+section#portfolio .grid-container .product3 .title p,
+section#portfolio .grid-container .product4 .title p,
+section#portfolio .grid-container .product5 .title p,
+section#portfolio .grid-container .product6 .title p {
     font-size: 1em;
   }
   section#portfolio .grid-container .product1 .title img,
-  section#portfolio .grid-container .product2 .title img,
-  section#portfolio .grid-container .product3 .title img,
-  section#portfolio .grid-container .product4 .title img,
-  section#portfolio .grid-container .product5 .title img,
-  section#portfolio .grid-container .product6 .title img {
+section#portfolio .grid-container .product2 .title img,
+section#portfolio .grid-container .product3 .title img,
+section#portfolio .grid-container .product4 .title img,
+section#portfolio .grid-container .product5 .title img,
+section#portfolio .grid-container .product6 .title img {
     width: 26px;
   }
   section#contact .container div.soc {
@@ -275,5 +256,4 @@
     width: calc(40px + 0.7rem);
     margin: 1.5rem 0.8rem;
   }
-}
-/*# sourceMappingURL=queries.css.map */
+}/*# sourceMappingURL=queries.css.map */

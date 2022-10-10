@@ -9,8 +9,8 @@
   --color-black: #000;
   --color-overlay: rgba(67, 98, 206, 0.8);
   --color-bg: rgba(80, 86, 135, 0.1);
-  --text-opensans: 'Open Sans', sans-serif;
-  --text-monoton: 'Monoton', cursive;
+  --text-opensans: "Open Sans", sans-serif;
+  --text-monoton: "Monoton", cursive;
   --text-consolas: consolas;
 }
 
@@ -61,12 +61,11 @@ h5 {
 
 .cf::after {
   display: table;
-  content: '';
+  content: "";
   clear: both;
 }
 
 img {
   width: 100%;
   vertical-align: bottom;
-}
-/*# sourceMappingURL=typography.css.map */
+}/*# sourceMappingURL=typography.css.map */

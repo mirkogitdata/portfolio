@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "buttons.scss"
-    ],
-    "names": [],
-    "file": "buttons.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"buttons.css"}
