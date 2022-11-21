@@ -17,16 +17,20 @@ body {
   text-align: center;
   overflow-x: hidden;
 }
+
 a {
   &:link {
     text-decoration: none;
   }
+
   &:visited {
     text-decoration: none;
   }
+
   &:hover {
     color: white;
   }
+
   &:active {
     background: none;
   }
@@ -45,6 +49,7 @@ header {
     top: 2rem;
     left: 2rem;
     z-index: 100;
+
     a {
       img {
         width: 125px;
@@ -54,6 +59,7 @@ header {
         -moz-transition: 0.3s all;
         -ms-transition: 0.3s all;
         -o-transition: 0.3s all;
+
         &:hover,
         &:active {
           transform: scale(1.1);
@@ -65,11 +71,13 @@ header {
       }
     }
   }
+
   nav {
     * {
       margin: 0;
       padding: 0;
     }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,6 +92,7 @@ header {
     background-color: lighten(#4362ce, 9%);
     transform: translateX(250px);
     transition: transform 0.4s ease;
+
     a {
       .nav-toggle-btn {
         display: block;
@@ -93,22 +102,27 @@ header {
         width: 36px;
         height: 36px;
         transition: 0.1s ease-out all;
+
         &:hover {
           width: 39px;
           height: 39px;
         }
       }
     }
+
     ul {
       list-style: none;
+
       li {
         height: 60px;
         line-height: 60px;
         transition: all 0.3s ease-in;
+
         &:hover {
           background: #4362ce;
           color: white;
         }
+
         a {
           display: block;
           text-align: center;
@@ -117,6 +131,7 @@ header {
         }
       }
     }
+
     div.soc {
       a {
         img {
@@ -128,9 +143,11 @@ header {
           left: 94px;
         }
       }
+
       margin-top: 4rem;
     }
   }
+
   @media only screen and (max-width: $xl-screens) {
     div.myLogo {
       a {
@@ -139,6 +156,7 @@ header {
         }
       }
     }
+
     nav {
       ul {
         li {
@@ -146,11 +164,13 @@ header {
           line-height: 50px;
         }
       }
+
       div.soc {
         margin-top: 2rem;
       }
     }
   }
+
   @media only screen and (max-width: $medium-screens) {
     div.myLogo {
       a {
@@ -159,12 +179,14 @@ header {
         }
       }
     }
+
     nav {
       div.soc {
         margin-top: 20rem;
       }
     }
   }
+
   @media only screen and (max-width: $small-screens) {
     div.myLogo {
       a {
@@ -174,22 +196,26 @@ header {
         }
       }
     }
+
     nav {
       a {
         .nav-toggle-btn {
           width: 32px;
           height: 32px;
+
           &:hover {
             width: 35px;
             height: 35px;
           }
         }
       }
+
       div.soc {
         margin-top: 5rem;
       }
     }
   }
+
   @media only screen and (max-width: $tiny-screens) {
     div.myLogo {
       a {
@@ -199,6 +225,7 @@ header {
         }
       }
     }
+
     nav {
       div.soc {
         a {
@@ -219,9 +246,11 @@ header {
 .active-nav nav {
   transform: translate3d(0, 0, 0);
 }
+
 .active-nav header .myLogo {
   display: none;
 }
+
 .active-nav #hero,
 .active-nav #about,
 .active-nav #skills,
@@ -245,14 +274,17 @@ footer {
 //======= HERO ======
 #hero {
   @include hero;
+
   div.container {
     h1.name {
       @include name;
       //margin-top: 11rem;
       letter-spacing: 1px;
     }
+
     .sub-name {
       @include sub-name;
+
       .dot {
         animation: blink 1s infinite;
         border-right: 0.3rem solid darken(#fff, 0%);
@@ -260,12 +292,14 @@ footer {
       }
     }
   }
+
   div.scroll-down {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+
     a {
       i {
         display: flex;
@@ -278,9 +312,11 @@ footer {
         -webkit-animation: down-arrow 2s infinite;
       }
     }
+
     position: absolute;
     bottom: 4rem;
   }
+
   &::after {
     content: '';
     width: 100%;
@@ -305,13 +341,16 @@ footer {
         @include h2-span;
       }
     }
+
     p.h2-sub {
       @include h2-sub;
     }
+
     .details {
       display: flex;
       justify-content: flex-end;
       align-content: center;
+
       .profile {
         img {
           border-radius: 6px;
@@ -322,6 +361,7 @@ footer {
           -ms-border-radius: 6px;
           -o-border-radius: 6px;
         }
+
         flex: 40%;
         max-width: 40%;
         margin-top: 8rem;
@@ -332,37 +372,45 @@ footer {
         -ms-transform: translateX(-300px);
         -o-transform: translateX(-300px);
       }
+
       .profile[data-scroll='in'] {
         @include transformToLeft-data-scroll;
       }
+
       .about-text {
         flex: 60%;
         margin-left: 9rem;
         font-size: 1.3em;
+
         .about-up {
           @include about-up;
           @include transformToLeft;
           text-align: left;
           line-height: 44px;
         }
+
         .about-up[data-scroll='in'] {
           @include transformToLeft-data-scroll;
         }
+
         .about-down {
           @include about-down;
           @include transformToLeft;
           text-align: left;
           line-height: 44px;
         }
+
         .about-down[data-scroll='in'] {
           @include transformToLeft-data-scroll;
         }
+
         .aboutButtons {
           @include button('btn-violet', var(--color-one));
           @include transformToLeft;
           font-size: 0.8em;
           text-align: left;
         }
+
         .aboutButtons[data-scroll='in'] {
           @include transformToLeft-data-scroll;
         }
@@ -380,22 +428,24 @@ footer {
   justify-content: center;
   align-items: center;
   //background: rgba(35, 38, 59, 0.06);
-  background: linear-gradient(
-    to bottom,
-    rgba(80, 86, 135, 0.2),
-    rgba(67, 98, 206, 0.1)
-  );
+  background: linear-gradient(to bottom,
+      rgba(80, 86, 135, 0.2),
+      rgba(67, 98, 206, 0.1));
+
   .container {
     h2 {
       color: #000;
+
       span {
         @include h2-span;
       }
     }
+
     .h2-sub {
       @include h2-sub;
     }
   }
+
   .center {
     font-family: cosolas;
     width: 50vw;
@@ -411,11 +461,13 @@ footer {
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+
     .skillBox {
       float: left;
       box-sizing: border-box;
       width: 100%;
       margin: 28px 0;
+
       p {
         //color:rgba(0,0,0, 1.0);
         color: darken(#23263b, 20%);
@@ -428,18 +480,21 @@ footer {
         letter-spacing: 1.5px;
         text-shadow: 1.5px 0.2px;
       }
+
       p:nth-child(1) {
         float: left;
         position: relative;
         top: -38px;
         font-weight: 700;
       }
+
       .skill {
         /*background: #4362ce;*/
         background: #fff;
         padding: 3px;
         box-sizing: border-box;
         border: 1px solid #4362ce;
+
         /*border: 3px solid #23263b;*/
         .skill-level {
           //background:  #4362ce;
@@ -454,6 +509,7 @@ footer {
           -o-transition: 1.5s;
           transition-delay: 1s;
         }
+
         .skill-level:before {
           content: '';
           position: absolute;
@@ -470,6 +526,7 @@ footer {
           -ms-transition: 1s;
           -o-transition: 1s;
         }
+
         .skill-level[data-scroll='in'] {
           transition: 1s ease-in;
           transform: scaleX(1);
@@ -478,6 +535,7 @@ footer {
           -ms-transition: 1s ease-in;
           -o-transition: 1s ease-in;
         }
+
         /*.skill-level[data-scroll="in"]:before {
 					transform: scaleX(0);
 					transition-delay: 0.5s;
@@ -486,20 +544,25 @@ footer {
         .num1 {
           width: 72%;
         }
+
         .num2 {
           width: 71%;
         }
+
         .num3 {
-          width: 56%;
+          width: 62%;
         }
+
         .num4 {
-          width: 53%;
+          width: 63%;
         }
+
         .num5 {
-          width: 60%;
+          width: 54%;
         }
+
         .num6 {
-          width: 80%;
+          width: 68%;
         }
       }
     }
@@ -509,19 +572,23 @@ footer {
 //========= SERVICES ========
 #services {
   color: var(--color-black);
+
   .container {
     h2 {
       span {
         @include h2-span;
       }
     }
+
     .h2-sub {
       @include h2-sub;
     }
   }
+
   .container:nth-of-type(2) {
     padding: 0;
   }
+
   .product1,
   .product2,
   .product3 {
@@ -529,6 +596,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 7rem;
+
     .product1-text {
       h3 {
         padding-bottom: 40px;
@@ -539,54 +607,68 @@ footer {
         -ms-transform: translateX(-300px);
         -o-transform: translateX(-300px);
       }
+
       h3[data-scroll='in'] {
         @include transformToLeft-data-scroll;
       }
+
       h3.h3Left {
         @include transformToLeft;
       }
+
       h3.h3Left[data-scroll='in'] {
         @include transformToLeft-data-scroll;
       }
+
       .product-text {
         font-size: 22px;
         @include transformToUp;
       }
+
       .product-text[data-scroll='in'] {
         @include transformToUp-data-scroll;
       }
+
       .product-text:nth-of-type(2) {
         margin-top: 40px;
       }
+
       flex: 45%;
       text-align: right;
     }
+
     .design {
       img {
         width: 82%;
       }
+
       flex: 50%;
       align-self: flex-end;
     }
   }
+
   .product2 {
     .product1-text {
       order: 2;
       text-align: left;
     }
+
     .code {
       img {
         width: 87%;
       }
+
       flex: 50%;
       align-self: flex-end;
       order: 1;
     }
   }
+
   .product3 {
     .responsive {
       flex: 50%;
       align-self: flex-end;
+
       img {
         width: 87%;
       }
@@ -598,20 +680,21 @@ footer {
 #portfolio {
   width: 100%;
   color: var(--color-black);
-  background: linear-gradient(
-    to bottom,
-    rgba(80, 86, 135, 0.2),
-    rgba(67, 98, 206, 0.1)
-  );
+  background: linear-gradient(to bottom,
+      rgba(80, 86, 135, 0.2),
+      rgba(67, 98, 206, 0.1));
+
   .container {
     h2 {
       span {
         @include h2-span;
       }
     }
+
     .h2-sub {
       @include h2-sub;
     }
+
     .product1,
     .product2,
     .product3,
@@ -625,6 +708,7 @@ footer {
           //height: auto;
           transition: 0.8s ease;
         }
+
         .overlay {
           .text {
             color: darken(#fff, 8%);
@@ -634,6 +718,7 @@ footer {
             margin-top: 19.7rem;
             text-transform: uppercase;
           }
+
           position: absolute;
           top: 0;
           bottom: 0;
@@ -650,12 +735,14 @@ footer {
           -o-transition: 0.8s ease;
         }
       }
+
       .title {
         h5 {
           color: lighten(#23263b, 8%);
           padding-top: 0.5rem;
           font-size: 1.6em;
         }
+
         p {
           font-size: 1.1em;
           font-weight: 600;
@@ -663,24 +750,30 @@ footer {
           margin-top: 0.7rem;
           margin-bottom: 0.5rem;
         }
+
         img {
           width: 32px;
           transform: rotate(90deg);
         }
       }
+
       position: relative;
       overflow: hidden;
+
       &:hover a .overlay {
         opacity: 1;
         cursor: pointer;
       }
+
       &:hover .title {
         opacity: 0;
       }
+
       &:hover a img {
         transform: scale(1.25);
         cursor: pointer;
       }
+
       border: 2px solid lighten(#23263b, 61%);
       padding: 35px 20px;
       margin-bottom: 4rem;
@@ -689,11 +782,13 @@ footer {
       //width: 80%;
     }
   }
+
   .grid-container {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
+
   .container:nth-of-type(2) {
     padding-top: 0;
   }
@@ -705,20 +800,24 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   .container {
     h2 {
       span {
         @include h2-span;
       }
     }
+
     .h2-sub {
       @include h2-sub;
     }
+
     div.soc {
       h4 {
         color: var(--color-two);
         letter-spacing: 0rem;
       }
+
       a {
         img {
           @include soc-img;
@@ -726,6 +825,7 @@ footer {
           margin: 2rem 1rem;
         }
       }
+
       margin-top: 7rem;
     }
   }
@@ -737,9 +837,11 @@ footer {
     .copy-right {
       font-size: 1em;
     }
+
     margin: 0;
     padding: 20px 0px;
   }
+
   @include footer;
 }
 
