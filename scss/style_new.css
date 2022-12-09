@@ -610,7 +610,7 @@ footer {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: url("../image/hero-image3.png") center/cover;
+  background: url("../image/celebration-event.png") center/cover;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1325,7 +1325,7 @@ footer .container .copy-right {
   top: 0;
   left: 0;
   z-index: 2000;
-  background: url("../image/preloader.gif") no-repeat center center;
+  background: url("../image/holidays.gif") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100%;
