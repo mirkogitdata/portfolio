@@ -134,25 +134,25 @@
     margin-bottom: 0;
   }
   section#services .container:nth-of-type(2) .product1,
-section#services .container:nth-of-type(2) .product2,
-section#services .container:nth-of-type(2) .product3 {
+  section#services .container:nth-of-type(2) .product2,
+  section#services .container:nth-of-type(2) .product3 {
     flex-direction: column;
     margin-bottom: 4rem;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text,
-section#services .container:nth-of-type(2) .product2 .product1-text,
-section#services .container:nth-of-type(2) .product3 .product1-text {
+  section#services .container:nth-of-type(2) .product2 .product1-text,
+  section#services .container:nth-of-type(2) .product3 .product1-text {
     text-align: left;
     margin-bottom: 3rem;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text h3,
-section#services .container:nth-of-type(2) .product2 .product1-text h3,
-section#services .container:nth-of-type(2) .product3 .product1-text h3 {
+  section#services .container:nth-of-type(2) .product2 .product1-text h3,
+  section#services .container:nth-of-type(2) .product3 .product1-text h3 {
     padding-bottom: 25px;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text .product-text,
-section#services .container:nth-of-type(2) .product2 .product1-text .product-text,
-section#services .container:nth-of-type(2) .product3 .product1-text .product-text {
+  section#services .container:nth-of-type(2) .product2 .product1-text .product-text,
+  section#services .container:nth-of-type(2) .product3 .product1-text .product-text {
     font-size: 20px;
   }
   section#services .container:nth-of-type(2) .product2 .product1-text {
@@ -223,27 +223,27 @@ section#services .container:nth-of-type(2) .product3 .product1-text .product-tex
     width: 90vw;
   }
   section#portfolio .grid-container .product1 .title h5,
-section#portfolio .grid-container .product2 .title h5,
-section#portfolio .grid-container .product3 .title h5,
-section#portfolio .grid-container .product4 .title h5,
-section#portfolio .grid-container .product5 .title h5,
-section#portfolio .grid-container .product6 .title h5 {
+  section#portfolio .grid-container .product2 .title h5,
+  section#portfolio .grid-container .product3 .title h5,
+  section#portfolio .grid-container .product4 .title h5,
+  section#portfolio .grid-container .product5 .title h5,
+  section#portfolio .grid-container .product6 .title h5 {
     font-size: 1.3em;
   }
   section#portfolio .grid-container .product1 .title p,
-section#portfolio .grid-container .product2 .title p,
-section#portfolio .grid-container .product3 .title p,
-section#portfolio .grid-container .product4 .title p,
-section#portfolio .grid-container .product5 .title p,
-section#portfolio .grid-container .product6 .title p {
+  section#portfolio .grid-container .product2 .title p,
+  section#portfolio .grid-container .product3 .title p,
+  section#portfolio .grid-container .product4 .title p,
+  section#portfolio .grid-container .product5 .title p,
+  section#portfolio .grid-container .product6 .title p {
     font-size: 1em;
   }
   section#portfolio .grid-container .product1 .title img,
-section#portfolio .grid-container .product2 .title img,
-section#portfolio .grid-container .product3 .title img,
-section#portfolio .grid-container .product4 .title img,
-section#portfolio .grid-container .product5 .title img,
-section#portfolio .grid-container .product6 .title img {
+  section#portfolio .grid-container .product2 .title img,
+  section#portfolio .grid-container .product3 .title img,
+  section#portfolio .grid-container .product4 .title img,
+  section#portfolio .grid-container .product5 .title img,
+  section#portfolio .grid-container .product6 .title img {
     width: 26px;
   }
   section#contact .container div.soc {

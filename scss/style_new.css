@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,800&subset=cyrillic-ext,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Monoton");
-@-webkit-keyframes down-arrow {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-2rem);
-    -webkit-transform: translateY(-2rem);
-    -moz-transform: translateY(-2rem);
-    -ms-transform: translateY(-2rem);
-    -o-transform: translateY(-2rem);
-  }
-}
 @keyframes down-arrow {
   0% {
     opacity: 0;
@@ -32,22 +16,9 @@
     -o-transform: translateY(-2rem);
   }
 }
-@-webkit-keyframes blink {
-  to {
-    opacity: 0;
-  }
-}
 @keyframes blink {
   to {
     opacity: 0;
-  }
-}
-@-webkit-keyframes hue {
-  from {
-    filter: hue-rotate(0);
-  }
-  to {
-    filter: hue-rotate(360deg);
   }
 }
 @keyframes hue {
@@ -264,25 +235,25 @@ img {
     margin-bottom: 0;
   }
   section#services .container:nth-of-type(2) .product1,
-section#services .container:nth-of-type(2) .product2,
-section#services .container:nth-of-type(2) .product3 {
+  section#services .container:nth-of-type(2) .product2,
+  section#services .container:nth-of-type(2) .product3 {
     flex-direction: column;
     margin-bottom: 4rem;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text,
-section#services .container:nth-of-type(2) .product2 .product1-text,
-section#services .container:nth-of-type(2) .product3 .product1-text {
+  section#services .container:nth-of-type(2) .product2 .product1-text,
+  section#services .container:nth-of-type(2) .product3 .product1-text {
     text-align: left;
     margin-bottom: 3rem;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text h3,
-section#services .container:nth-of-type(2) .product2 .product1-text h3,
-section#services .container:nth-of-type(2) .product3 .product1-text h3 {
+  section#services .container:nth-of-type(2) .product2 .product1-text h3,
+  section#services .container:nth-of-type(2) .product3 .product1-text h3 {
     padding-bottom: 25px;
   }
   section#services .container:nth-of-type(2) .product1 .product1-text .product-text,
-section#services .container:nth-of-type(2) .product2 .product1-text .product-text,
-section#services .container:nth-of-type(2) .product3 .product1-text .product-text {
+  section#services .container:nth-of-type(2) .product2 .product1-text .product-text,
+  section#services .container:nth-of-type(2) .product3 .product1-text .product-text {
     font-size: 20px;
   }
   section#services .container:nth-of-type(2) .product2 .product1-text {
@@ -353,27 +324,27 @@ section#services .container:nth-of-type(2) .product3 .product1-text .product-tex
     width: 90vw;
   }
   section#portfolio .grid-container .product1 .title h5,
-section#portfolio .grid-container .product2 .title h5,
-section#portfolio .grid-container .product3 .title h5,
-section#portfolio .grid-container .product4 .title h5,
-section#portfolio .grid-container .product5 .title h5,
-section#portfolio .grid-container .product6 .title h5 {
+  section#portfolio .grid-container .product2 .title h5,
+  section#portfolio .grid-container .product3 .title h5,
+  section#portfolio .grid-container .product4 .title h5,
+  section#portfolio .grid-container .product5 .title h5,
+  section#portfolio .grid-container .product6 .title h5 {
     font-size: 1.3em;
   }
   section#portfolio .grid-container .product1 .title p,
-section#portfolio .grid-container .product2 .title p,
-section#portfolio .grid-container .product3 .title p,
-section#portfolio .grid-container .product4 .title p,
-section#portfolio .grid-container .product5 .title p,
-section#portfolio .grid-container .product6 .title p {
+  section#portfolio .grid-container .product2 .title p,
+  section#portfolio .grid-container .product3 .title p,
+  section#portfolio .grid-container .product4 .title p,
+  section#portfolio .grid-container .product5 .title p,
+  section#portfolio .grid-container .product6 .title p {
     font-size: 1em;
   }
   section#portfolio .grid-container .product1 .title img,
-section#portfolio .grid-container .product2 .title img,
-section#portfolio .grid-container .product3 .title img,
-section#portfolio .grid-container .product4 .title img,
-section#portfolio .grid-container .product5 .title img,
-section#portfolio .grid-container .product6 .title img {
+  section#portfolio .grid-container .product2 .title img,
+  section#portfolio .grid-container .product3 .title img,
+  section#portfolio .grid-container .product4 .title img,
+  section#portfolio .grid-container .product5 .title img,
+  section#portfolio .grid-container .product6 .title img {
     width: 26px;
   }
   section#contact .container div.soc {
@@ -610,7 +581,7 @@ footer {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: url("../image/hero-image3.png") center/cover;
+  background: url("../image/celebration-event.png") center/cover;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -629,8 +600,7 @@ footer {
   text-transform: uppercase;
 }
 #hero div.container .sub-name .dot {
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  animation: blink 1s infinite;
   border-right: 0.3rem solid white;
   padding-right: 0.7rem;
 }
@@ -1325,7 +1295,7 @@ footer .container .copy-right {
   top: 0;
   left: 0;
   z-index: 2000;
-  background: url("../image/preloader.gif") no-repeat center center;
+  background: url("../image/holidays.gif") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100%;
